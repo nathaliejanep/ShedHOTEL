@@ -1,0 +1,20 @@
+@import '_variables';
+
+body {
+  font-family: Untitled;
+}
+
+// BUTONS
+button {
+  cursor: pointer;
+}
+
+.green-btn {
+  color: $white;
+  font-family: Untitled;
+  font-size: 1rem;
+  background-color: $forestGreen;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+}

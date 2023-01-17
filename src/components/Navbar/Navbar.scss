@@ -1,0 +1,99 @@
+@import '../../sassStyles/_mixins.scss';
+@import '../../sassStyles/_variables.scss';
+
+.nav {
+  font-family: Untitled Sans;
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &-menu {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    // z-index: 10;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    background-color: $white; // maybe opacity
+    // border: 1px solid black;
+
+    &.expanded {
+      display: flex;
+    }
+  }
+
+  &-logo {
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+
+    &.hidden {
+      display: none;
+    }
+
+    img {
+      height: 4rem;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    .nav-links {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: $black;
+
+      &.active {
+        text-decoration: underline;
+      }
+
+      &.inactive:hover {
+        color: $bagnesBlue;
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media(desktop) {
+  .nav {
+    margin: 0 5rem;
+
+    &-menu {
+      position: relative;
+      display: flex;
+      font-size: 1rem;
+
+      .nav-logo {
+        position: relative;
+      }
+
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .green-btn:hover {
+          background-color: $black;
+        }
+      }
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+}

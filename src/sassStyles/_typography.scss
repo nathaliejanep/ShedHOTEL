@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Untitled';
+  font-weight: normal;
+  font-style: normal;
+  src: url(../assets/fonts/untitled/untitled-serif-regular.woff2)
+    format('woff2');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                                  'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'Untitled';
+  font-weight: normal;
+  font-style: italic;
+  src: url(../assets/fonts/untitled/untitled-serif-regular-italic.woff2)
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'Untitled';
+  font-weight: 600;
+  font-style: normal;
+  src: url(../assets/fonts/untitled/untitled-serif-medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Untitled';
+  font-weight: 600;
+  font-style: italic;
+  src: url(../assets/fonts/untitled/untitled-serif-medium-italic.woff2)
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'Untitled';
+  font-weight: bold;
+  font-style: normal;
+  src: url(../assets/fonts/untitled/untitled-serif-bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Untitled';
+  font-weight: bold;
+  font-style: italic;
+  src: url(../assets/fonts/untitled/untitled-serif-bold-italic.woff2)
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url(../assets/fonts/untitled/untitled-sans-regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url(../assets/fonts/untitled/untitled-sans-regular-italic.otf)
+    format('otf');
+}

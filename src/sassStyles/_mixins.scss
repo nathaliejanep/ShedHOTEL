@@ -1,0 +1,44 @@
+@import './variables';
+
+// Screen breakpoints
+@mixin phone {
+  @media only screen and (max-width: $maxPhone) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $minDesktop) {
+    @content;
+  }
+}
+
+// Function to include several screen breakpoints in one mixin
+@mixin media($screens...) {
+  @each $screen in $screens {
+    @if ($screen == phone) {
+      @include phone {
+        @content;
+      }
+    } @else if ($screen == tablet) {
+      @include tablet {
+        @content;
+      }
+    } @else if ($screen == desktop) {
+      @include desktop {
+        @content;
+      }
+    }
+  }
+}
+
+// Convert px to rem
+@mixin toRem($property, $value) {
+  #{$property}: calc($value / 16) + rem;
+}
