@@ -2,13 +2,39 @@
 @import '../../sassStyles/_variables.scss';
 
 .nav {
+  display: flex;
+  // align-items: center;
+  border: 1px solid black;
   font-family: Untitled Sans;
 
+  .season-picker {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid $goomahBlue;
+    align-self: center;
+    position: relative;
+
+    button {
+      border: none;
+      background: none;
+      color: $black;
+      font-family: Untitled;
+      font-size: 1.5rem;
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+    }
+  }
   .menu-icon {
-    display: block;
+    align-content: center;
+    border: 1px solid $goomahGreen;
     position: absolute;
-    top: 2rem;
     right: 2rem;
+    svg {
+      font-size: 2rem;
+    }
   }
 
   &-menu {
@@ -28,6 +54,10 @@
     // border: 1px solid black;
 
     &.expanded {
+      .menu-icon {
+        top: 0;
+        right: 2rem;
+      }
       display: flex;
     }
   }
@@ -49,6 +79,10 @@
   ul {
     list-style-type: none;
 
+    li {
+      margin: 0;
+    }
+
     .nav-links {
       margin-right: 1rem;
       text-decoration: none;
@@ -69,9 +103,10 @@
   }
 }
 
-@include media(desktop) {
+@include media(desktop, tablet) {
   .nav {
     margin: 0 5rem;
+    flex-direction: column;
 
     &-menu {
       position: relative;
@@ -93,7 +128,7 @@
       }
     }
     .menu-icon {
-      display: none;
+      visibility: hidden;
     }
   }
 }

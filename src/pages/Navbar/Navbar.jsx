@@ -1,24 +1,46 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogo from '../../assets/images/ShedLogo.svg';
 import { FaTimes, FaBars } from 'react-icons/fa';
+import { Context } from '../../context/SeasonContext';
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { season, setSeason } = useContext(Context);
   const path = useLocation();
 
-  const handleClick = () => setOpen(!open);
+  const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
+  const winterOnClick = () => {
+    setSeason('winter');
+  };
+  const summerOnClick = () => {
+    setSeason('summer');
+  };
 
   console.log(path.pathname);
+  console.log(season);
+
   return (
     <nav className="nav">
-      <div className="menu-icon" onClick={handleClick}>
+      <div className="burger-season-wrapper">
+        {path.pathname !== '/' || open ? (
+          ''
+        ) : (
+          <div className="season-picker">
+            <button onClick={winterOnClick}> Winter</button>
+            <button onClick={summerOnClick}> Summer</button>
+          </div>
+        )}
+      </div>
+
+      <div className="menu-icon" onClick={toggleNav}>
         {open ? '' : <FaBars />}
       </div>
 
       <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
-        <div className="menu-icon" onClick={handleClick}>
+        <div className="menu-icon" onClick={toggleNav}>
           {open ? <FaTimes /> : ''}
         </div>
 
@@ -26,8 +48,9 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) => 'nav-logo' + (isActive ? ' hidden' : '')}
         >
-          <img src={ShedLogo} alt="Shed Hotel Logo" onClick={handleClick} />
+          <img src={ShedLogo} alt="Shed Hotel Logo" onClick={toggleNav} />
         </NavLink>
+
         {path.pathname !== '/caffegoomah' ? (
           <ul>
             <li>
@@ -36,7 +59,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
-                onClick={closeMobileMenu}
+                onClick={toggleNav}
               >
                 Rooms
               </NavLink>
@@ -48,7 +71,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
-                onClick={closeMobileMenu}
+                onClick={toggleNav}
               >
                 Activities
               </NavLink>
@@ -60,6 +83,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
+                onClick={toggleNav}
               >
                 Caffè Goomah
               </NavLink>
@@ -71,7 +95,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
-                onClick={closeMobileMenu}
+                onClick={toggleNav}
               >
                 Gallery
               </NavLink>
@@ -83,7 +107,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
-                onClick={closeMobileMenu}
+                onClick={toggleNav}
               >
                 Contact
               </NavLink>
@@ -95,7 +119,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   'nav-links' + (isActive ? ' active' : ' inactive')
                 }
-                onClick={closeMobileMenu}
+                onClick={toggleNav}
               >
                 FAQ
               </NavLink>

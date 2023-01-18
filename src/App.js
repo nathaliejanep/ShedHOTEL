@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  Link,
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home, { determineSeason } from './components/Home/Home';
-import Rooms from './components/Rooms/Rooms';
-import Activities from './components/Activities/Activities';
-import Goomah from './components/Goomah/Goomah';
-import Gallery from './components/Gallery/Gallery';
-import Contact from './components/Contact/Contact';
-import Faq from './components/Faq/Faq';
-import Error from './components/Error/Error';
-export const ThemeContext = React.createContext();
+import Navbar from './pages/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import Rooms from './pages/Rooms/Rooms';
+import Activities from './pages/Activities/Activities';
+import Goomah from './pages/Goomah/Goomah';
+import Gallery from './pages/Gallery/Gallery';
+import Contact from './pages/Contact/Contact';
+import Faq from './pages/Faq/Faq';
+import Error from './pages/Error/Error';
+import { determineSeason } from './utils/determineSeason';
 
 function App() {
   console.log(window.location.pathname);
@@ -26,15 +25,11 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} loader={determineSeason} />
         <Route path="/rooms" element={<Rooms />} />
-        <Route
-          path="/activities"
-          element={<Activities />}
-          loader={determineSeason}
-        />
+        <Route path="/activities" element={<Activities />} />
         <Route path="/caffegoomah" element={<Goomah />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Faq />} loader={determineSeason} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/*" element={<Error />} />
       </Route>
     )
