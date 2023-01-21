@@ -1,0 +1,24 @@
+@import '../../sassStyles/_variables';
+
+.season-picker {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  align-self: center;
+  position: relative;
+
+  .active-season {
+    text-decoration: underline;
+  }
+  button {
+    border: none;
+    background: none;
+    color: $black;
+    font-family: Untitled;
+    font-size: 1rem;
+
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
+}

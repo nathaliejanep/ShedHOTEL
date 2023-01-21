@@ -1,0 +1,12 @@
+{
+  "home": [
+    {
+      "about-title": "Welcome",
+      "about": "About the hotel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula. Suspendisse elementum tristique est, eget pulvinar tellus tristique at. Donec imperdiet turpis vitae dictum fringilla. Curabitur scelerisque orci facilisis, semper erat non, interdum ex. Morbi quis turpis risus. Fusce convallis lectus eros, nec suscipit dolor condimentum scelerisque. Sed pulvinar eu dui et cursus.",
+      "room-title": "Stay with us",
+      "room": "About the rooms. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula. Suspendisse elementum tristique est, eget pulvinar tellus tristique at. Donec imperdiet turpis vitae dictum.",
+      "experience-title": "Come ramble with us",
+      "experience": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula. Suspendisse elementum tristique est, eget pulvinar tellus tristique at."
+    }
+  ]
+}

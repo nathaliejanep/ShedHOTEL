@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { determineSeason } from '../utils/determineSeason';
+// import { determineSeason } from '../utils/determineSeason';
 
 export const Context = React.createContext();
 export const NavContext = ({ children }) => {

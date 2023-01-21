@@ -1,38 +1,25 @@
 import React, { useContext, useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogo from '../../assets/images/ShedLogo.svg';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { Context } from '../../context/SeasonContext';
+import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { season, setSeason } = useContext(Context);
+  // const { winter, setWinter } = useContext(Context);
   const path = useLocation();
 
   const toggleNav = () => setOpen(!open);
-  const closeMobileMenu = () => setOpen(false);
-  const winterOnClick = () => {
-    setSeason('winter');
-  };
-  const summerOnClick = () => {
-    setSeason('summer');
-  };
+  // const closeMobileMenu = () => setOpen(false);
 
   console.log(path.pathname);
-  console.log(season);
 
   return (
     <nav className="nav">
       <div className="burger-season-wrapper">
-        {path.pathname !== '/' || open ? (
-          ''
-        ) : (
-          <div className="season-picker">
-            <button onClick={winterOnClick}> Winter</button>
-            <button onClick={summerOnClick}> Summer</button>
-          </div>
-        )}
+        {path.pathname !== '/' ? '' : <SeasonPicker />}
       </div>
 
       <div className="menu-icon" onClick={toggleNav}>

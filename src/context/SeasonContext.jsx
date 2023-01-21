@@ -3,10 +3,10 @@ import { determineSeason } from '../utils/determineSeason';
 
 export const Context = React.createContext();
 export const SeasonContext = ({ children }) => {
-  const [season, setSeason] = useState(determineSeason);
+  const [winter, setWinter] = useState(determineSeason);
 
   return (
-    <Context.Provider value={{ season, setSeason }}>
+    <Context.Provider value={{ winter, setWinter }}>
       {children}
     </Context.Provider>
   );
