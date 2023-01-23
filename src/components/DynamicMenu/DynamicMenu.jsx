@@ -1,46 +1,60 @@
 import React, { useState } from 'react';
+import './DynamicMenu.scss';
 import { useLocation } from 'react-router-dom';
+import ActivityComponent from '../ActivityComponent/ActivityComponent';
+import GalleryComponent from '../GalleryComponent/GalleryComponent';
 
 const DynamicMenu = ({ items }) => {
   const path = useLocation();
-
+  const urlPath = path.pathname;
   const [active, setActive] = useState('');
 
   const selectedTab = () => {
     switch (active) {
       case 'Hotel Happenings':
-        return <p>Hotel Happenings</p>;
       case 'Wine & Dine':
-        return <p>Wine & Dine</p>;
       case 'Lorem Ipsum':
-        return <p>Lorem Ipsum</p>;
       case 'Lorem Ipsum2':
-        return <p>Lorem Ipsum2</p>;
+        return <ActivityComponent tab={active} />;
+
       case 'Rooms':
-        return <p>Rooms</p>;
       case 'Nooks & Cranes':
-        return <p>Nooks & Cranes</p>;
+        return <GalleryComponent tab={active} />;
+
       default:
-        if (path.pathname === '/gallery') {
-          return <p>Rooms</p>;
+        if (urlPath === '/activities') {
+          setActive('Hotel Happenings');
+          return <p>Hotel Happenings</p>;
         }
-        return <p>Hotel Happenings</p>;
+        setActive('Rooms');
+        return <p>Rooms</p>;
     }
   };
-  console.log(active);
+  console.log('active', active);
 
-  console.log(items);
+  // console.log(items);
   return (
-    <div>
-      <p>Hello</p>
+    <div className="dynamic-menu">
       <ul>
         {items.map((item, i) => (
-          <li key={i} onClick={() => setActive(item)}>
-            <h4>{item}</h4>
+          <li>
+            <button
+              key={i}
+              onClick={() => setActive(item)}
+              className={`dynamic-menu-btn ${active === item ? 'active' : ''}`}
+            >
+              {item}
+            </button>
           </li>
         ))}
       </ul>
-      <div id="contains">{selectedTab()}</div>
+
+      <div
+        id="contains"
+        className={`${urlPath === '/activities' ? 'activities' : 'gallery'}`}
+      >
+        {selectedTab()}
+      </div>
     </div>
   );
 };

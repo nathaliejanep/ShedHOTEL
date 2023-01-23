@@ -10,16 +10,17 @@ import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';
 
 const Home = () => {
-  const { season } = useContext(Context);
+  const { winter } = useContext(Context);
 
   const navigation = useNavigation();
-  console.log(season);
+  console.log(winter);
 
   if (navigation.state === 'loading') {
     return <h1>Loading...</h1>;
   }
   return (
     <div className="home">
+      {winter ? <p>Its winteeer</p> : <p>Its summeeer</p>}
       <section className="full-width hero">
         <img className="hero-image" src={winter} alt="Winter" />
 
