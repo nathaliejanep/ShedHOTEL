@@ -1,16 +1,17 @@
-let season;
+let winter;
 export const determineSeason = () => {
   const date = new Date();
 
   const month = date.getMonth();
 
   if (month <= 3) {
-    season = 'winter';
+    winter = true;
   } else if (month >= 10 && month <= 11) {
-    season = 'winter';
+    winter = true;
   } else if (month >= 4 && month <= 9) {
-    season = 'summer';
+    //summer
+    winter = false;
   }
 
-  return season;
+  return winter;
 };
