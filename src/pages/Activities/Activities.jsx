@@ -29,10 +29,10 @@ const Activities = () => {
           enim quis fugiat aspernatur ullam!
         </p>
         <SeasonPicker />
-
-        <DynamicMenu items={activities} />
-        {/* <div id="contains">{selectedTab()}</div> */}
       </section>
+
+      <DynamicMenu items={activities} />
+      {/* <div id="contains">{selectedTab()}</div> */}
     </div>
   );
 };

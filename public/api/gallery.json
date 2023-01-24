@@ -1,0 +1,22 @@
+{
+  "rooms": [
+    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
+    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
+    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
+    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
+    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
+    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
+    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
+    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" }
+  ],
+  "amenities": [
+    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
+    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
+    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
+    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
+    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
+    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
+    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
+    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" }
+  ]
+}

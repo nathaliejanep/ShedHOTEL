@@ -24,22 +24,21 @@ const DynamicMenu = ({ items }) => {
       default:
         if (urlPath === '/activities') {
           setActive('Hotel Happenings');
-          return <p>Hotel Happenings</p>;
+          return <ActivityComponent tab={active} />;
         }
         setActive('Rooms');
-        return <p>Rooms</p>;
+        return <GalleryComponent tab={active} />;
     }
   };
-  console.log('active', active);
+  // console.log('active', active);
 
-  // console.log(items);
+  console.log(items);
   return (
     <div className="dynamic-menu">
       <ul>
         {items.map((item, i) => (
-          <li>
+          <li key={i}>
             <button
-              key={i}
               onClick={() => setActive(item)}
               className={`dynamic-menu-btn ${active === item ? 'active' : ''}`}
             >
@@ -50,7 +49,6 @@ const DynamicMenu = ({ items }) => {
       </ul>
 
       <div
-        id="contains"
         className={`${urlPath === '/activities' ? 'activities' : 'gallery'}`}
       >
         {selectedTab()}
