@@ -67,7 +67,7 @@ const Home = () => {
         </section>
         <section className="food-wrapper">
           <div className="left">
-            <h2>Wine & Dine</h2>
+            <h2>Wine, Dine & Pizza</h2>
             <p>
               About restaurant concepts. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit. By Shed. GROUP.
