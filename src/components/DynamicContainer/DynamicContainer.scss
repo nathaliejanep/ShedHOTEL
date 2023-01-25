@@ -2,8 +2,9 @@
 @import '../../sassStyles/_mixins';
 
 .dynamic-container {
+  margin: 0;
   .dynamic-menu {
-    margin: 5% 10%;
+    margin: 5% 0;
 
     ul {
       display: flex;

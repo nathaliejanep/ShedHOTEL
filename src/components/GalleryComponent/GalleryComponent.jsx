@@ -22,11 +22,11 @@ const GalleryComponent = ({ tab }) => {
   }, []);
 
   return (
-    <div>
+    <div className="gallery-wrapper">
       {tab === 'Rooms' ? (
         <>
           {data?.rooms?.map((room, i) => (
-            <div key={i}>
+            <div key={i} className="gallery-item">
               <img src={room.imgUrl} alt={room.alt} />
             </div>
           ))}
