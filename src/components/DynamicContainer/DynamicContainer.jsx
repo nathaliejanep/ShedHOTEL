@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './DynamicMenu.scss';
+import './DynamicContainer.scss';
 import { useLocation } from 'react-router-dom';
 import ActivityComponent from '../ActivityComponent/ActivityComponent';
 import GalleryComponent from '../GalleryComponent/GalleryComponent';
 
-const DynamicMenu = ({ items }) => {
+const DynamicContainer = ({ items }) => {
   const path = useLocation();
   const urlPath = path.pathname;
   const [active, setActive] = useState('');
@@ -34,19 +34,23 @@ const DynamicMenu = ({ items }) => {
 
   console.log(items);
   return (
-    <div className="dynamic-menu">
-      <ul>
-        {items.map((item, i) => (
-          <li key={i}>
-            <button
-              onClick={() => setActive(item)}
-              className={`dynamic-menu-btn ${active === item ? 'active' : ''}`}
-            >
-              {item}
-            </button>
-          </li>
-        ))}
-      </ul>
+    <div className="dynamic-container">
+      <div className="dynamic-menu">
+        <ul>
+          {items.map((item, i) => (
+            <li key={i}>
+              <button
+                onClick={() => setActive(item)}
+                className={`dynamic-menu-btn ${
+                  active === item ? 'active' : ''
+                }`}
+              >
+                {item}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div
         className={`${urlPath === '/activities' ? 'activities' : 'gallery'}`}
@@ -57,4 +61,4 @@ const DynamicMenu = ({ items }) => {
   );
 };
 
-export default DynamicMenu;
+export default DynamicContainer;

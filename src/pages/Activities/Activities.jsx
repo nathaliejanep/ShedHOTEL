@@ -1,5 +1,5 @@
 import React from 'react';
-import DynamicMenu from '../../components/DynamicMenu/DynamicMenu';
+import DynamicMenu from '../../components/DynamicContainer/DynamicContainer';
 import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
 import './Activities.scss';
 

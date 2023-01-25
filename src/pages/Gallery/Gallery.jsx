@@ -1,5 +1,5 @@
 import React from 'react';
-import DynamicMenu from '../../components/DynamicMenu/DynamicMenu';
+import DynamicMenu from '../../components/DynamicContainer/DynamicContainer';
 
 const Gallery = () => {
   const galleries = ['Rooms', 'Nooks & Cranes', 'Lorem Ipsum', 'Lorem Ipsum2'];

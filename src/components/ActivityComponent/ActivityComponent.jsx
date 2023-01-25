@@ -81,6 +81,22 @@ const ActivityComponent = ({ tab }) => {
             ))}
           </>
         ) : null}
+
+        {tab === 'Lorem Ipsum' ? (
+          <>
+            {data?.restaurants?.map((restaurant, i) => (
+              <section key={i} className="activities_card">
+                <div className={`activities_card-text ${restaurant.title}`}>
+                  <h2>{restaurant.title}</h2>
+                  <p>{restaurant.text}</p>
+                </div>
+                <div className="activities_card-image">
+                  <img src={restaurant.imgUrl} alt={restaurant.title} />
+                </div>
+              </section>
+            ))}
+          </>
+        ) : null}
       </>
     </>
   );

@@ -56,33 +56,41 @@
   // }
   // @include tablet {
   // }
-  @include media(tablet, phone) {
-    .container {
-      margin: 0 5%;
-      &_section {
-        padding: 5% 5%;
-      }
+}
 
-      //     &_card {
-      //       flex-direction: column;
-      //       width: 100%;
-      //       //   height: 100%;
-
-      //       &:nth-child(2n) {
-      //         flex-direction: column;
-      //       }
-      //       &-text {
-      //         flex: 1;
-      //       }
-
-      //       &-image {
-      //         flex: 1;
-
-      //         img {
-      //           //   width: 100%;
-      //           //   height: 100%;
-      //         }
-      //       }
+@include tablet {
+  .container {
+    margin: 0 5%;
+    &_section {
+      padding: 0;
     }
+  }
+}
+@include phone {
+  .container {
+    &_section {
+      padding: 5% 5%;
+    }
+
+    //     &_card {
+    //       flex-direction: column;
+    //       width: 100%;
+    //       //   height: 100%;
+
+    //       &:nth-child(2n) {
+    //         flex-direction: column;
+    //       }
+    //       &-text {
+    //         flex: 1;
+    //       }
+
+    //       &-image {
+    //         flex: 1;
+
+    //         img {
+    //           //   width: 100%;
+    //           //   height: 100%;
+    //         }
+    //       }
   }
 }

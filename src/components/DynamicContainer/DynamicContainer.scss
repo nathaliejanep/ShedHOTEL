@@ -1,0 +1,64 @@
+@import '../../sassStyles/_variables';
+@import '../../sassStyles/_mixins';
+
+.dynamic-container {
+  .dynamic-menu {
+    margin: 5% 10%;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        justify-content: center;
+        border: 1px solid $black;
+        border-right: none;
+        text-align: center;
+        margin: 0;
+
+        &:last-child {
+          border-right: 1px solid $black;
+        }
+      }
+    }
+
+    &-btn {
+      padding: 1rem 3.5rem;
+      width: 100%;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+
+      &.active {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+@include phone {
+  .dynamic-container {
+    .dynamic-menu {
+      margin: 5% 0;
+      ul {
+        flex-direction: column;
+
+        li {
+          border-right: 1px solid $black;
+          border-bottom: none;
+
+          &:last-child {
+            border-bottom: 1px solid $black;
+          }
+        }
+      }
+      &-btn {
+        color: $black;
+      }
+    }
+  }
+}

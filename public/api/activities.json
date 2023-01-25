@@ -1,18 +1,27 @@
 {
   "winterActivities": [
     {
-      "title": "Ski",
+      "title": "Trails",
       "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     },
-
     {
       "title": "Gear",
       "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     },
     {
-      "title": "Caffe Goomah",
+      "title": "Heliski",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Caffè Goomah",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Shed. Burgers",
       "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     }
@@ -20,6 +29,26 @@
   "summerActivities": [
     {
       "title": "Trails",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Gear",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Lorem",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Caffè Goomah",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Shed. Burgers",
       "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     }
