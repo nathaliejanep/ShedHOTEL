@@ -1,20 +1,35 @@
 @import './mixins.scss';
-// BASE TYPOGRAPHY
 
+/*
+     * ===================================================================================================
+     *                                       BASE TYPOGRAPHY
+     * ===================================================================================================
+*/
 h1 {
   font-family: Untitled Sans;
   font-size: toRem(51);
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 h2 {
+  font-family: Untitled Sans;
+  font-size: toRem(51);
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
   font-family: Untitled Sans;
   font-size: toRem(25);
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -23,8 +38,32 @@ p {
   line-height: toRem(36);
   text-align: center;
 }
-// IMPORTED FONTS
 
+/*
+     * ===================================================================================================
+     *                                       PHONE TYPOGRAPHY
+     * ===================================================================================================
+*/
+
+@include phone {
+  h1 {
+    font-size: toRem(41);
+  }
+
+  h2 {
+    font-size: toRem(41);
+  }
+
+  // h3 {
+  //   font-size: toRem(21);
+  // }
+}
+/*
+     * ===================================================================================================
+     *                                      IMPORTED FONTS
+     * ===================================================================================================
+     
+*/
 @font-face {
   font-family: 'Untitled';
   font-weight: normal;

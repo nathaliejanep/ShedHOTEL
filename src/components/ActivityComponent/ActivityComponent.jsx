@@ -27,47 +27,61 @@ const ActivityComponent = ({ tab }) => {
 
   return (
     <>
-      <div>
+      <>
         {tab === 'Hotel Happenings' ? (
-          <div>
+          <>
             {winter ? (
-              <section>
+              <>
                 {data?.winterActivities?.map((activity, i) => (
-                  <div key={i}>
-                    <h1>{activity.title}</h1>
-                    <p>{activity.text}</p>
-                    <div>
+                  <section key={i} className="activities_card">
+                    <div
+                      className={`activities_card-text winter ${activity.title}`}
+                    >
+                      <h2>{activity.title}</h2>
+                      <p>{activity.text}</p>
+                    </div>
+                    <div className="activities_card-image">
                       <img src={activity.imgUrl} alt={activity.title} />
                     </div>
-                  </div>
+                  </section>
                 ))}
-              </section>
+              </>
             ) : (
-              <section>
+              <>
                 {data?.summerActivities?.map((activity, i) => (
-                  <div key={i}>
-                    <h1>{activity.title}</h1>
-                    <p>{activity.text}</p>
-                    <img src={activity.imgUrl} alt={activity.title} />
-                  </div>
+                  <section key={i} className="activities_card">
+                    <div
+                      className={`activities_card-text summer ${activity.title}`}
+                    >
+                      <h2>{activity.title}</h2>
+                      <p>{activity.text}</p>
+                    </div>
+                    <div className="activities_card-image">
+                      <img src={activity.imgUrl} alt={activity.title} />
+                    </div>
+                  </section>
                 ))}
-              </section>
+              </>
             )}
-          </div>
+          </>
         ) : null}
 
         {tab === 'Wine & Dine' ? (
-          <section>
-            {data?.restaurants?.map((activity, i) => (
-              <div key={i}>
-                <h1>{activity.title}</h1>
-                <p>{activity.text}</p>
-                <img src={activity.imgUrl} alt={activity.title} />
-              </div>
+          <>
+            {data?.restaurants?.map((restaurant, i) => (
+              <section key={i} className="activities_card">
+                <div className={`activities_card-text ${restaurant.title}`}>
+                  <h2>{restaurant.title}</h2>
+                  <p>{restaurant.text}</p>
+                </div>
+                <div className="activities_card-image">
+                  <img src={restaurant.imgUrl} alt={restaurant.title} />
+                </div>
+              </section>
             ))}
-          </section>
+          </>
         ) : null}
-      </div>
+      </>
     </>
   );
 };

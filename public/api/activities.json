@@ -10,6 +10,11 @@
       "title": "Gear",
       "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
+    },
+    {
+      "title": "Caffe Goomah",
+      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "imgUrl": "../images/activity.jpg"
     }
   ],
   "summerActivities": [
@@ -22,13 +27,13 @@
 
   "restaurants": [
     {
-      "title": "Food",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "title": "Caffè Goomah",
+      "text": "About food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     },
     {
-      "title": "Wine",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
+      "title": "Shed. Burgers",
+      "text": "About food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
       "imgUrl": "../images/activity.jpg"
     }
   ]

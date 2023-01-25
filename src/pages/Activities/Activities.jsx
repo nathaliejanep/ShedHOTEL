@@ -1,15 +1,9 @@
-// import React, { useContext } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import DynamicMenu from '../../components/DynamicMenu/DynamicMenu';
 import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
-// import { useLoaderData } from 'react-router-dom';
-// import { Context } from '../../context/SeasonContext';
+import './Activities.scss';
 
 const Activities = () => {
-  // const season = useLoaderData();
-  // {winter ? <p>Winter</p> : <p>Summer</p>}
-  // const { winter } = useContext(Context);
-
   const activities = [
     'Hotel Happenings',
     'Wine & Dine',
@@ -19,8 +13,8 @@ const Activities = () => {
 
   // console.log(active);
   return (
-    <div>
-      <section>
+    <div className="container">
+      <section className="container_section">
         <h1>Explore</h1>
         <p>
           About experience. Lorem ipsum dolor sit amet consectetur adipisicing
