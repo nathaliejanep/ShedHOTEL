@@ -17,6 +17,7 @@ import Contact from './pages/Contact/Contact';
 import Faq from './pages/Faq/Faq';
 import Error from './pages/Error/Error';
 import { determineSeason } from './utils/determineSeason';
+import Footer from './components/Footer/Footer';
 
 function App() {
   console.log(window.location.pathname);
@@ -50,6 +51,7 @@ const Root = () => {
       <div>
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 };
