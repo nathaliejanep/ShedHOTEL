@@ -26,21 +26,19 @@ const ActivityComponent = ({ tab }) => {
   }, []);
 
   return (
-    <>
+    <div className="activity-component">
       <>
         {tab === 'Hotel Happenings' ? (
           <>
             {winter ? (
               <>
                 {data?.winterActivities?.map((activity, i) => (
-                  <section key={i} className="activities_card">
-                    <div
-                      className={`activities_card-text winter ${activity.title}`}
-                    >
+                  <section key={i} className="card">
+                    <div className={`card__text winter ${activity.title}`}>
                       <h2>{activity.title}</h2>
                       <p>{activity.text}</p>
                     </div>
-                    <div className="activities_card-image">
+                    <div className="card__image">
                       <img src={activity.imgUrl} alt={activity.title} />
                     </div>
                   </section>
@@ -49,14 +47,12 @@ const ActivityComponent = ({ tab }) => {
             ) : (
               <>
                 {data?.summerActivities?.map((activity, i) => (
-                  <section key={i} className="activities_card">
-                    <div
-                      className={`activities_card-text summer ${activity.title}`}
-                    >
+                  <section key={i} className="card">
+                    <div className={`card__text summer ${activity.title}`}>
                       <h2>{activity.title}</h2>
                       <p>{activity.text}</p>
                     </div>
-                    <div className="activities_card-image">
+                    <div className="card__image">
                       <img src={activity.imgUrl} alt={activity.title} />
                     </div>
                   </section>
@@ -69,12 +65,12 @@ const ActivityComponent = ({ tab }) => {
         {tab === 'Wine & Dine' ? (
           <>
             {data?.restaurants?.map((restaurant, i) => (
-              <section key={i} className="activities_card">
-                <div className={`activities_card-text ${restaurant.title}`}>
+              <section key={i} className="card">
+                <div className={`card__text ${restaurant.title}`}>
                   <h2>{restaurant.title}</h2>
                   <p>{restaurant.text}</p>
                 </div>
-                <div className="activities_card-image">
+                <div className="card__image">
                   <img src={restaurant.imgUrl} alt={restaurant.title} />
                 </div>
               </section>
@@ -85,12 +81,12 @@ const ActivityComponent = ({ tab }) => {
         {tab === 'Lorem Ipsum' ? (
           <>
             {data?.restaurants?.map((restaurant, i) => (
-              <section key={i} className="activities_card">
-                <div className={`activities_card-text ${restaurant.title}`}>
+              <section key={i} className="card">
+                <div className={`card__text ${restaurant.title}`}>
                   <h2>{restaurant.title}</h2>
                   <p>{restaurant.text}</p>
                 </div>
-                <div className="activities_card-image">
+                <div className="card__image">
                   <img src={restaurant.imgUrl} alt={restaurant.title} />
                 </div>
               </section>
@@ -98,7 +94,7 @@ const ActivityComponent = ({ tab }) => {
           </>
         ) : null}
       </>
-    </>
+    </div>
   );
 };
 

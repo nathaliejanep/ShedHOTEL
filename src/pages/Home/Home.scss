@@ -1,11 +1,18 @@
 @import '../../sassStyles/_mixins.scss';
+@import '../../sassStyles/_variables.scss';
+
 .home {
+  margin: 0;
+  background-color: $white; // TA BORT
+
   .hero {
     position: relative;
     top: 0;
     left: 0;
+
     &-image {
       position: relative;
+      display: block;
       top: 0;
       left: 0;
       width: 100%;
@@ -19,26 +26,9 @@
     }
   }
 
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .food-wrapper {
-    display: flex;
-    width: 100%;
-
-    .left {
-      display: flex;
-      flex-direction: column;
-    }
-    img {
-      width: 50%;
-    }
+  .card {
+    background-color: $forestGreen;
+    color: $white;
   }
 }
 

@@ -14,13 +14,13 @@ const Activities = () => {
   // console.log(active);
   return (
     <div className="container">
-      <section className="container_section">
+      <section className="container__section">
         <h1>Explore</h1>
         <p>
-          About experience. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dolor eos, laudantium, repudiandae obcaecati cupiditate officia,
-          cum odit laboriosam quae in temporibus consectetur? Sed sit suscipit
-          enim quis fugiat aspernatur ullam!
+          About experience. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.
+          Suspendisse elementum tristique est, eget pulvinar tellus tristique
+          at.
         </p>
         <SeasonPicker />
       </section>

@@ -6,7 +6,7 @@ const Gallery = () => {
 
   return (
     <div className="container">
-      <section className="container_section">
+      <section className="container__section">
         <h1>Gallery</h1>
         <p>
           About gallery. Lorem ipsum dolor sit, amet consectetur adipisicing
