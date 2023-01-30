@@ -18,4 +18,8 @@ button {
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $black;
+  }
 }

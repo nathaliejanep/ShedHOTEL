@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogo from '../../assets/images/ShedLogo.svg';
 import { FaTimes, FaBars } from 'react-icons/fa';
-import { Context } from '../../context/SeasonContext';
+// import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
 
 const Navbar = () => {
