@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { NavLink, useNavigation } from 'react-router-dom';
+
 import { Context } from '../../context/SeasonContext';
 import winterHero from '../../assets/images/winter-hero.jpg';
 import summerHero from '../../assets/images/summer-hero.jpg';
@@ -7,8 +8,10 @@ import shedLogoWhite from '../../assets/images/shed-logo-white.svg';
 import fasade from '../../assets/images/fasade-drawing.png';
 import roomBiggie from '../../assets/images/room-biggie.jpg';
 import pizza from '../../assets/images/pizza.jpg';
+
 import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';
+import Carousel from '../../components/Carousel/Carousel';
 
 const Home = () => {
   const { winter } = useContext(Context);
@@ -46,7 +49,7 @@ const Home = () => {
           <img src={fasade} alt="Drawing of Hotel Fasade" />
         </section>
         <section className="container__full-width">
-          <h1>Biggie</h1>
+          <h2>Biggie</h2>
           <NavLink to="/rooms">View Rooms</NavLink>
           <img src={roomBiggie} alt="Biggie Room" />
         </section>
@@ -86,6 +89,8 @@ const Home = () => {
             tristique at.
           </p>
         </section>
+
+        <Carousel />
       </div>
     </div>
   );
