@@ -54,7 +54,7 @@ const Home = () => {
           <img src={roomBiggie} alt="Biggie Room" />
         </section>
         <section className="container__section">
-          <h2>Stay with us</h2>
+          <h3>Stay with us</h3>
           <p>
             About the rooms. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
@@ -81,7 +81,7 @@ const Home = () => {
         </section>
 
         <section className="container__section">
-          <h2>Come ramble with us</h2>
+          <h3>Come ramble with us</h3>
           <p>
             About experience. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
@@ -91,6 +91,16 @@ const Home = () => {
         </section>
 
         <Carousel />
+
+        <section className="container__section subscribe">
+          <h3>Stay In Touch</h3>
+          <input
+            className="subscribe__input"
+            type="email"
+            placeholder="Email Address"
+          />
+          <button className="subscribe__btn">Subscribe</button>
+        </section>
       </div>
     </div>
   );
