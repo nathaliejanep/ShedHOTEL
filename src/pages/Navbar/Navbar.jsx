@@ -33,7 +33,11 @@ const Navbar = () => {
 
         <NavLink
           to="/"
-          className={({ isActive }) => 'nav-logo' + (isActive ? ' hidden' : '')}
+          className={({ isActive }) =>
+            'nav-logo' +
+            (isActive ? ' hidden' : '') +
+            (path.pathname === '/caffegoomah' ? ' goomah__nav' : '')
+          }
         >
           <img src={ShedLogo} alt="Shed Hotel Logo" onClick={toggleNav} />
         </NavLink>

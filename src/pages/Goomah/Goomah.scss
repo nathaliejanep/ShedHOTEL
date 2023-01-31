@@ -1,0 +1,75 @@
+@import '../../sassStyles/_mixins.scss';
+
+.goomah {
+  h1,
+  h2 {
+    font-size: toRem(51);
+    font-family: Untitled;
+    text-transform: none;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    background-color: $signalRed;
+
+    .mouth-logo {
+      width: min(50vw, 300px);
+      margin-top: 10%;
+      animation: rotation 10s infinite linear;
+
+      @keyframes rotation {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    p {
+      font-style: normal;
+    }
+
+    a {
+      text-decoration: underline;
+      font-family: Untitled Sans;
+      font-size: toRem(25);
+
+      &:hover {
+        // DO SOMETHING
+      }
+    }
+  }
+  &__nav {
+    position: absolute;
+  }
+
+  &__book {
+    background-color: $goomahBlue;
+    color: $white;
+  }
+
+  &__weekly {
+    background-color: $goatBeige;
+    h2 {
+      font-family: Untitled Sans;
+      text-transform: uppercase;
+    }
+
+    &-ingredients {
+      font-family: Untitled;
+      text-transform: uppercase;
+      font-size: toRem(36);
+    }
+  }
+
+  &__menu {
+    background-color: $goomahGreen;
+  }
+
+  &__soprano {
+    background-color: $white;
+  }
+}

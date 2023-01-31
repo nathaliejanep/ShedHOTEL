@@ -6,6 +6,7 @@ import { SeasonContext } from './context/SeasonContext';
 import reportWebVitals from './reportWebVitals';
 import './sassStyles/_global.scss';
 import './sassStyles/_typography.scss';
+import './sassStyles/layouts/_page-layout.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
