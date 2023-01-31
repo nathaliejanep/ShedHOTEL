@@ -4,7 +4,7 @@ import './Navbar.scss';
 import ShedLogo from '../../assets/images/ShedLogo.svg';
 import { FaTimes, FaBars } from 'react-icons/fa';
 // import { Context } from '../../context/SeasonContext';
-import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
+import SeasonPicker from '../SeasonPicker/SeasonPicker';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
