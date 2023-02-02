@@ -1,6 +1,20 @@
 @import '../../sassStyles/_mixins.scss';
 @import '../../sassStyles/_variables.scss';
+.slider-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dodgerblue solid;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999; // FIX Overlaps navbar mobile menu
 
+  color: $white;
+}
 .home {
   margin: 0;
   // background-color: $white; // TA BORT

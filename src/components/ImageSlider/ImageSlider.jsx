@@ -2,13 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 import './ImageSlider.scss';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentSlideNr = currentIndex + 1;
   const length = slides.length;
 
-  console.log(length);
+  const path = useLocation().pathname;
+
+  console.log(path);
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? length - 1 : currentIndex - 1;
@@ -22,15 +25,18 @@ const ImageSlider = ({ slides }) => {
   };
 
   return (
-    <div className="slider">
-      <div className="arrows">
+    <div className={path === '/' ? 'slider__home' : 'slider__rooms'}>
+      <div className="slide-arrows">
         <FaArrowLeft className="arrow__left" onClick={prevSlide} />
         <p>
           {currentSlideNr} / {length}
         </p>
         <FaArrowRight className="arrow__right" onClick={nextSlide} />
       </div>
-      <h2 className="hero-logo">{slides[currentIndex].alt}</h2>
+      <div className="slide-title">
+        <h2>{slides[currentIndex].alt}</h2>
+        <NavLink to="/rooms">View Rooms</NavLink>
+      </div>
       <img
         className=""
         src={slides[currentIndex].src}

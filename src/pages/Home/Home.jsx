@@ -12,12 +12,21 @@ import pizza from '../../assets/images/pizza.jpg';
 import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';
 import Carousel from '../../components/Carousel/Carousel';
+import ImageSlider from '../../components/ImageSlider/ImageSlider';
 
 const Home = () => {
   const { winter } = useContext(Context);
 
   const navigation = useNavigation();
   console.log(winter);
+
+  const slides = [
+    { src: '../images/room4.jpg', alt: 'room4' },
+    { src: '../images/room3.jpg', alt: 'room3' },
+    { src: '../images/balcony.jpg', alt: 'balcony' },
+    { src: '../images/room2.jpg', alt: 'room2' },
+    { src: '../images/room1.jpg', alt: 'room1' },
+  ];
 
   if (navigation.state === 'loading') {
     return <h1>Loading...</h1>;
@@ -48,10 +57,12 @@ const Home = () => {
 
           <img src={fasade} alt="Drawing of Hotel Fasade" />
         </section>
-        <section className="container__full-width">
-          <h2>Biggie</h2>
+        <section className="container__full-width hero ">
+          {/* <h2 className="hero-logo">Biggie</h2> */}
           <NavLink to="/rooms">View Rooms</NavLink>
-          <img src={roomBiggie} alt="Biggie Room" />
+          {/* <img className="hero-image" src={roomBiggie} alt="Biggie Room" /> */}
+
+          <ImageSlider slides={slides} className="hero-image" />
         </section>
         <section className="container__section">
           <h3>Stay with us</h3>

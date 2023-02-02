@@ -1,0 +1,34 @@
+{
+  "rooms": [
+    {
+      "type": "Biggie",
+      "beds": "2 King Size Beds + 1 Single Bed",
+      "size": "Approx 45m²",
+      "maxCapacity": "4 Adults + 3 Children",
+      "description": "With extra floor space, this is the perfect room for longer stays and when you want to spread out. After a day on the slopes, you can unwind in this two-bedroom and take in spectacular views from your big sunny balcony.",
+      "amenities": "Featuring two king-size beds, one single bed, mini living room, flat screen TV, safe, free WiFi, work desk and chair, bathroom with a hairdryer, and welcome products. Baby cot on request.",
+      "images": [
+        { "alt": "bath", "src": "../images/bathroom.jpg" },
+        { "alt": "bath", "src": "../images/room1.jpg" }
+      ]
+    },
+    {
+      "type": "Biggie",
+      "beds": "2 King Size Beds + 1 Single Bed",
+      "size": "Approx 45m²",
+      "maxCapacity": "4 Adults + 3 Children",
+      "description": "With extra floor space, this is the perfect room for longer stays and when you want to spread out. After a day on the slopes, you can unwind in this two-bedroom and take in spectacular views from your big sunny balcony.",
+      "amenities": "Featuring two king-size beds, one single bed, mini living room, flat screen TV, safe, free WiFi, work desk and chair, bathroom with a hairdryer, and welcome products. Baby cot on request.",
+      "images": [{ "alt": "room2", "src": "../images/room2.jpg" }]
+    },
+    {
+      "type": "Biggie",
+      "beds": "2 King Size Beds + 1 Single Bed",
+      "size": "Approx 45m²",
+      "maxCapacity": "4 Adults + 3 Children",
+      "description": "With extra floor space, this is the perfect room for longer stays and when you want to spread out. After a day on the slopes, you can unwind in this two-bedroom and take in spectacular views from your big sunny balcony.",
+      "amenities": "Featuring two king-size beds, one single bed, mini living room, flat screen TV, safe, free WiFi, work desk and chair, bathroom with a hairdryer, and welcome products. Baby cot on request.",
+      "images": [{ "alt": "room1", "src": "../images/room1.jpg" }]
+    }
+  ]
+}

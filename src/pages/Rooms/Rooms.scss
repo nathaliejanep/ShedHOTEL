@@ -1,0 +1,57 @@
+@import '../../sassStyles/_mixins.scss';
+
+.rooms {
+  &__card-wrapper {
+    margin: 0 10%;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+  &__card {
+    align-items: center;
+    background-color: $white;
+
+    &:hover {
+      background-color: $forestGreen;
+      color: $white;
+    }
+    //FIX: hover effect to change on hover of text only??
+
+    &-text {
+      &__capacity {
+        font-family: Untitled Sans;
+        text-transform: uppercase;
+      }
+    }
+    &-text:hover ~ .book-now {
+      background-color: $goatBeige;
+      color: $forestGreen;
+      // FIX add some nice transition
+    }
+
+    .book-now {
+      // center button
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: $goatBeige;
+        color: $forestGreen;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .rooms {
+    &__card-wrapper {
+      grid-auto-flow: row;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+}
