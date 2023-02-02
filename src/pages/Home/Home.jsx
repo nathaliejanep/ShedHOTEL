@@ -18,7 +18,7 @@ const Home = () => {
   const { winter } = useContext(Context);
 
   const navigation = useNavigation();
-  console.log(winter);
+  // console.log(winter);
 
   const slides = [
     { src: '../images/room4.jpg', alt: 'room4' },

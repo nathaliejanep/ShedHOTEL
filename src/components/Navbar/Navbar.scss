@@ -2,17 +2,21 @@
 @import '../../sassStyles/_variables.scss';
 
 .nav {
+  // border: 1px solid $goomahGreen;
+
   display: flex;
+  // align-items: center;
+  justify-content: center;
   font-family: Untitled Sans;
   background-color: $goatBeige;
-  padding-bottom: 1rem;
-  border: 1px solid $goomahGreen;
+  // padding-bottom: 1rem;
 
   .menu-icon {
-    align-content: center;
     border: 1px solid $goomahGreen;
+    align-content: center;
     position: absolute;
     right: 2rem;
+    z-index: 999;
 
     svg {
       font-size: 2rem;
@@ -24,10 +28,11 @@
     display: none;
     height: 100%;
     width: 100%;
+    position: fixed;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
     z-index: 2;
     text-align: center;
     font-size: 2rem;
@@ -41,6 +46,11 @@
         top: 0;
         right: 2rem;
       }
+
+      // &.hidden {
+      //   display: flex;
+      //   border: 10px dotted darkgoldenrod;
+      // }
       display: flex;
     }
   }
@@ -49,9 +59,17 @@
     position: absolute;
     top: 0;
     margin-top: 2rem;
-
+    z-index: 999;
+    .img {
+      width: 150px;
+      height: auto;
+    }
     &.hidden {
       display: none;
+    }
+
+    &.open {
+      display: flex;
     }
 
     img {
@@ -86,10 +104,11 @@
   }
 }
 
-@include media(desktop) {
+@media (min-width: 880px) {
   .nav {
     margin: 0 200px;
     flex-direction: column;
+    height: 120px;
 
     &-menu {
       position: relative;

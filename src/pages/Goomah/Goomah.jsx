@@ -1,5 +1,6 @@
 import React from 'react';
 import './Goomah.scss';
+import shedLogo from '../../assets/images/ShedLogo.svg';
 import goomahHero from '../../assets/images/goomah-hero.jpg';
 import goomahLogo from '../../assets/images/goomah-logo.svg';
 import goomahMouth from '../../assets/images/Goomah_mouth.png';
@@ -7,17 +8,25 @@ import pizzaBoutit from '../../assets/images/pizza-boutit.jpg';
 import menu from '../../assets/images/menu.svg';
 import mrSoprano from '../../assets/images/mr-soprano.jpg';
 import Banner from '../../components/Banner/Banner';
+import { NavLink } from 'react-router-dom';
 const Goomah = () => {
   return (
     <div className="goomah">
+      <NavLink to="/" className="nav-logo goomah__nav">
+        <img src={shedLogo} alt="Shed Hotel Logo" />
+      </NavLink>
       <section className="hero">
         <img
-          className="hero-image"
+          className="hero-image "
           src={goomahHero}
           alt="Pizza making at Goomah"
         />
 
-        <img className="hero-logo" src={goomahLogo} alt="Goomah Logo" />
+        <img
+          className="hero-logo goomah__hero-logo"
+          src={goomahLogo}
+          alt="Goomah Logo"
+        />
       </section>
 
       <Banner />
@@ -58,9 +67,8 @@ const Goomah = () => {
 
         <section className="card">
           <div className="card__text goomah__weekly">
-            <span>
-              <p>Weekly Special - No.01</p>
-            </span>
+            <p className="font-sans">Weekly Special - No.01</p>
+
             <h2>Porchetta Boutit</h2>
             <p className="goomah__weekly-ingredients">
               Porchetta, Taleggio, Red Onion, Garlic, Basil, Fennel Seed, Olive

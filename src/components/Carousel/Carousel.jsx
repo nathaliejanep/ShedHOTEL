@@ -29,7 +29,7 @@ const Carousel = () => {
             <h3>1Hotel Happening</h3>
             <p>There's a buzz in the air</p>
           </div>
-          <Image src={hikingBridge} isBgImage={true} />
+          <Image src={hikingBridge} />
         </Slide>
         <Slide index={2}>
           <div className="carousel__slide-text">
@@ -41,14 +41,14 @@ const Carousel = () => {
               </a>
             </p>
           </div>
-          <Image src={fwt} isBgImage={true} />
+          <Image src={fwt} />
         </Slide>
         <Slide index={3}>
           <div className="carousel__slide-text">
             <h3>2Hotel Happening</h3>
             <p>There's a buzz in the air</p>
           </div>
-          <Image src={hotelHappening} isBgImage={true} />
+          <Image src={hotelHappening} alt="Local event" />
         </Slide>
       </Slider>
     </CarouselProvider>

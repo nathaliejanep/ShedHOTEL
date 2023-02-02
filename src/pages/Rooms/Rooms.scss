@@ -45,7 +45,7 @@
   }
 }
 
-@include tablet {
+@include media(tablet, phone) {
   .rooms {
     &__card-wrapper {
       grid-auto-flow: row;

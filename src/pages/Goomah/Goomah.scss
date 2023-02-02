@@ -1,11 +1,27 @@
 @import '../../sassStyles/_mixins.scss';
 
 .goomah {
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__hero {
+    &-logo {
+      width: 80%;
+      height: auto;
+    }
+  }
+
   h1,
   h2 {
-    font-size: toRem(51);
     font-family: Untitled;
     text-transform: none;
+  }
+  .font-sans {
+    font-family: Untitled Sans;
   }
 
   &__about {
@@ -14,7 +30,7 @@
     background-color: $signalRed;
 
     .mouth-logo {
-      width: min(50vw, 300px);
+      width: min(25vw, 300px);
       margin-top: 10%;
       animation: rotation 10s infinite linear;
 
@@ -41,9 +57,6 @@
         // DO SOMETHING
       }
     }
-  }
-  &__nav {
-    position: absolute;
   }
 
   &__book {
