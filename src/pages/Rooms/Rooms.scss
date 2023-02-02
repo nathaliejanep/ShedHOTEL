@@ -3,7 +3,6 @@
 .rooms {
   &__card-wrapper {
     margin: 0 10%;
-
     display: grid;
     grid-auto-flow: column;
     grid-gap: 20px;
@@ -11,33 +10,33 @@
     grid-template-columns: 1fr 1fr;
     padding: 10px;
   }
+
   &__card {
     align-items: center;
     background-color: $white;
+    text-align: center;
 
+    //FIX: hover effect changes on image??
     &:hover {
       background-color: $forestGreen;
       color: $white;
     }
-    //FIX: hover effect to change on hover of text only??
 
     &-text {
       &__capacity {
         font-family: Untitled Sans;
         text-transform: uppercase;
       }
-    }
-    &-text:hover ~ .book-now {
-      background-color: $goatBeige;
-      color: $forestGreen;
-      // FIX add some nice transition
+
+      // Hover on text => changes "button" link
+      &:hover ~ a {
+        background-color: $goatBeige;
+        color: $forestGreen;
+        // FIX add some nice transition
+      }
     }
 
-    .book-now {
-      // center button
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    a {
       &:hover {
         background-color: $goatBeige;
         color: $forestGreen;

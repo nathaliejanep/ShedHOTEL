@@ -5,6 +5,8 @@
   display: flex;
   font-family: Untitled Sans;
   background-color: $goatBeige;
+  padding-bottom: 1rem;
+  border: 1px solid $goomahGreen;
 
   .menu-icon {
     align-content: center;
@@ -17,6 +19,7 @@
     }
   }
 
+  // OPEN MENU
   &-menu {
     display: none;
     height: 100%;
@@ -25,7 +28,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     text-align: center;
     font-size: 2rem;
     // line-height: 3rem;

@@ -73,7 +73,14 @@ const Rooms = () => {
                 with a hairdryer, and welcome products. Baby cot on request.
               </p>
             </div>
-            <button className="green-btn book-now">Book Now</button>
+            <a
+              href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="green-btn"
+            >
+              Book Now
+            </a>
           </div>
 
           <div className="rooms__card">
@@ -98,7 +105,14 @@ const Rooms = () => {
                 with a hairdryer, and welcome products. Baby cot on request.
               </p>
             </div>
-            <button className="green-btn book-now">Book Now</button>
+            <a
+              href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="green-btn"
+            >
+              Book Now
+            </a>
           </div>
 
           <div className="rooms__card">
@@ -123,7 +137,14 @@ const Rooms = () => {
                 with a hairdryer, and welcome products. Baby cot on request.
               </p>
             </div>
-            <button className="green-btn book-now">Book Now</button>
+            <a
+              href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="green-btn book-now"
+            >
+              Book Now
+            </a>
           </div>
         </div>
         {/* DYNAMIC SOLUTION */}

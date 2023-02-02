@@ -116,7 +116,14 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <button className="green-btn">Reserve</button>
+              <a
+                href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="green-btn"
+              >
+                Reserve
+              </a>
             </li>
           </ul>
         ) : (
