@@ -10,7 +10,7 @@ const GalleryComponent = ({ tab }) => {
     axios
       .get('api/gallery.json')
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));

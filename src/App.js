@@ -20,7 +20,7 @@ import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  console.log(window.location.pathname);
+  // console.log(window.location.pathname);
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>

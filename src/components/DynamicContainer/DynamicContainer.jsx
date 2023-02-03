@@ -32,7 +32,7 @@ const DynamicContainer = ({ items }) => {
   };
   // console.log('active', active);
 
-  console.log(items);
+  // console.log(items);
   return (
     <div className="dynamic-container">
       <div className="dynamic-menu">

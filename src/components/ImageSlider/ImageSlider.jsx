@@ -11,7 +11,7 @@ const ImageSlider = ({ slides }) => {
 
   const path = useLocation().pathname;
 
-  console.log(path);
+  // console.log(path);
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? length - 1 : currentIndex - 1;

@@ -5,37 +5,70 @@ import ShedLogo from '../../assets/images/ShedLogo.svg';
 import { FaTimes, FaBars } from 'react-icons/fa';
 // import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
+import { Squeeze as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [goBack, setGoBack] = useState(false);
   // const { winter, setWinter } = useContext(Context);
   const path = useLocation();
 
   const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
-  console.log('open', open);
-  return (
-    <nav className="nav">
-      <div className="burger-season-wrapper">
-        {path.pathname !== '/' ? '' : <SeasonPicker />}
-      </div>
 
+  window.addEventListener('locationchange', function () {});
+
+  // If user clicks back button, don't show logo
+  window.onpopstate = (e) => {
+    setGoBack(true);
+    console.log('went back');
+    console.log(goBack);
+  };
+
+  // console.log('open', open);
+  return (
+    <>
       {path.pathname !== '/caffegoomah' ? (
-        <>
-          <div className="menu-icon" onClick={toggleNav}>
-            {open ? '' : <FaBars />}
+        <nav className="nav">
+          <div className="burger-season-wrapper">
+            {path.pathname !== '/' ? '' : <SeasonPicker />}
           </div>
+
+          <NavLink
+            to="/"
+            className="nav-logo phone"
+            style={({ isActive }) =>
+              isActive ? { display: 'none' } : { display: 'block' }
+            }
+          >
+            <img
+              src={ShedLogo}
+              alt="Shed Hotel Logo"
+              onClick={closeMobileMenu}
+            />
+          </NavLink>
+
+          <Hamburger toggled={open} toggle={setOpen} />
+          {/* <div className="menu-icon" onClick={toggleNav}>
+            {open ? '' : <FaBars />}
+          </div> DELETE */}
           <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
-            <div className="menu-icon" onClick={toggleNav}>
+            {/* <div className="menu-icon" onClick={toggleNav}>
               {open ? <FaTimes /> : ''}
-            </div>
+            </div> DELETE */}
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                'nav-logo' +
-                (isActive ? ' hidden' : '') +
-                (open ? ' open' : '') +
-                (path.pathname === '/caffegoomah' ? ' goomah__nav' : '')
+              className={
+                // 'nav-logo' +
+                // (path.pathname === '/' ? ' hidden' : '') +
+                // (open ? ' open' : '')
+                ({ isActive }) =>
+                  'nav-logo' +
+                  (isActive ? ' hidden' : '') +
+                  (open ? ' open' : '')
+              }
+              style={({ isActive }) =>
+                isActive ? { display: 'none' } : { display: 'block' }
               }
             >
               <img
@@ -126,13 +159,13 @@ const Navbar = () => {
                   Reserve
                 </a>
               </li>
-            </ul>{' '}
+            </ul>
           </div>
-        </>
+        </nav>
       ) : (
         ''
       )}
-    </nav>
+    </>
   );
 };
 

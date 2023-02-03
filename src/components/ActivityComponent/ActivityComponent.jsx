@@ -14,7 +14,7 @@ const ActivityComponent = ({ tab }) => {
     axios
       .get('api/activities.json')
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));

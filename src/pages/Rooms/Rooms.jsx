@@ -21,19 +21,19 @@ const Rooms = () => {
     axios
       .get('api/rooms.json')
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));
     return;
   };
-  console.log(data.room);
+  // console.log(data.room);
 
   useEffect(() => {
     getData();
   }, []);
 
-  console.log(data.rooms);
+  // console.log(data.rooms);
   return (
     <div className="rooms">
       <section className="hero">
