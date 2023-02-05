@@ -2,71 +2,56 @@ import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogo from '../../assets/images/ShedLogo.svg';
-import { FaTimes, FaBars } from 'react-icons/fa';
 // import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [goBack, setGoBack] = useState(false);
+  // const [goBack, setGoBack] = useState(false);
   // const { winter, setWinter } = useContext(Context);
   const path = useLocation();
+  const browserWidth = window.innerWidth;
 
-  const toggleNav = () => setOpen(!open);
+  console.log(browserWidth);
+  // const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
 
   window.addEventListener('locationchange', function () {});
 
   // If user clicks back button, don't show logo
   window.onpopstate = (e) => {
-    setGoBack(true);
-    console.log('went back');
-    console.log(goBack);
+    // setGoBack(true);
+    // console.log('went back');
+    // console.log(goBack);
   };
 
-  // console.log('open', open);
   return (
     <>
       {path.pathname !== '/caffegoomah' ? (
         <nav className="nav">
           <div className="burger-season-wrapper">
-            {path.pathname !== '/' ? '' : <SeasonPicker />}
+            {path.pathname === '/' ? (
+              <div className="season-wrapper">
+                <SeasonPicker />
+              </div>
+            ) : (
+              <NavLink to="/" className="nav-logo-phone">
+                <img
+                  src={ShedLogo}
+                  alt="Shed Hotel Logo"
+                  onClick={closeMobileMenu}
+                />
+              </NavLink>
+            )}
+
+            <Hamburger toggled={open} toggle={setOpen} />
           </div>
 
-          <NavLink
-            to="/"
-            className="nav-logo phone"
-            style={({ isActive }) =>
-              isActive ? { display: 'none' } : { display: 'block' }
-            }
-          >
-            <img
-              src={ShedLogo}
-              alt="Shed Hotel Logo"
-              onClick={closeMobileMenu}
-            />
-          </NavLink>
-
-          <Hamburger toggled={open} toggle={setOpen} />
-          {/* <div className="menu-icon" onClick={toggleNav}>
-            {open ? '' : <FaBars />}
-          </div> DELETE */}
           <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
-            {/* <div className="menu-icon" onClick={toggleNav}>
-              {open ? <FaTimes /> : ''}
-            </div> DELETE */}
             <NavLink
               to="/"
-              className={
-                // 'nav-logo' +
-                // (path.pathname === '/' ? ' hidden' : '') +
-                // (open ? ' open' : '')
-                ({ isActive }) =>
-                  'nav-logo' +
-                  (isActive ? ' hidden' : '') +
-                  (open ? ' open' : '')
-              }
+              className={'nav-logo' + (open ? ' open' : '')}
               style={({ isActive }) =>
                 isActive ? { display: 'none' } : { display: 'block' }
               }
@@ -84,7 +69,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   Rooms
                 </NavLink>
@@ -96,7 +81,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   Activities
                 </NavLink>
@@ -108,7 +93,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   Caffè Goomah
                 </NavLink>
@@ -120,7 +105,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   Gallery
                 </NavLink>
@@ -132,7 +117,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   Contact
                 </NavLink>
@@ -144,7 +129,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
-                  onClick={toggleNav}
+                  onClick={closeMobileMenu}
                 >
                   FAQ
                 </NavLink>

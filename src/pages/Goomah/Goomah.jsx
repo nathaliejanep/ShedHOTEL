@@ -9,12 +9,14 @@ import menu from '../../assets/images/menu.svg';
 import mrSoprano from '../../assets/images/mr-soprano.jpg';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
+
 const Goomah = () => {
   return (
     <div className="goomah">
       <NavLink to="/" className="nav-logo goomah__nav">
         <img src={shedLogo} alt="Shed Hotel Logo" />
       </NavLink>
+
       <section className="hero">
         <img
           className="hero-image "
