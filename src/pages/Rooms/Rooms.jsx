@@ -42,7 +42,7 @@ const Rooms = () => {
 
       <div className="container">
         <section className="container__section">
-          <h1>Rooms</h1>
+          <h1>Our Rooms</h1>
           <p>
             About the rooms. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Donec elit ligula, laoreet et arcu at, dignissim blandit

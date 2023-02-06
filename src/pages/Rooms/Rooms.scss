@@ -1,21 +1,30 @@
 @import '../../sassStyles/_mixins.scss';
 
 .rooms {
+  h1 {
+    font-size: toRem(25);
+  }
   &__card-wrapper {
-    margin: 0 10%;
     display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    grid-template-columns: repeat(2, minmax(200px, 550px));
+    justify-content: center;
+    gap: 20px;
+    margin: 0 5%;
+
+    // margin: 0 10%;
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-gap: 20px;
+    // grid-template-rows: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+    // padding: 10px;
   }
 
   &__card {
     align-items: center;
     background-color: $white;
     text-align: center;
-
+    padding-bottom: 50px;
     //FIX: hover effect changes on image??
     &:hover {
       background-color: $forestGreen;
@@ -23,6 +32,12 @@
     }
 
     &-text {
+      padding-top: 50px;
+      transition: 0.8s;
+
+      p {
+        margin-top: 1rem;
+      }
       &__capacity {
         font-family: Untitled Sans;
         text-transform: uppercase;
@@ -37,6 +52,8 @@
     }
 
     a {
+      margin-top: 50px;
+      display: inline-block;
       &:hover {
         background-color: $goatBeige;
         color: $forestGreen;
