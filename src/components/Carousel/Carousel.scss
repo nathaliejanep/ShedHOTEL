@@ -10,10 +10,11 @@
     width: 100%;
   }
 
+  // SLIDE WRAPPERS
   .slide___3-Nqo {
-    // border: 10px dotted goldenrod;
     margin-right: 5%;
   }
+
   &__slide {
     background-color: $forestGreen;
     position: relative;
@@ -37,6 +38,7 @@
 
       p {
         font-size: toRem(20);
+        margin: 0;
       }
     }
   }

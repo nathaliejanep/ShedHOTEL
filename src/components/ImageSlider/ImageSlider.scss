@@ -1,4 +1,5 @@
 @import '../../sassStyles/_variables.scss';
+@import '../../sassStyles/_mixins.scss';
 
 .slider {
   //   border: 10px peachpuff dotted;
@@ -16,7 +17,7 @@
     }
   }
   &__home {
-    height: 800px;
+    height: 700px;
     width: 100%;
 
     .slide-title {
@@ -55,4 +56,25 @@
   z-index: 999; // FIX Overlaps navbar mobile menu
 
   color: $white;
+}
+@include tablet {
+  .slider {
+    &__home {
+      height: 500px;
+    }
+    &__rooms {
+      height: 300px;
+    }
+  }
+}
+
+@include phone {
+  .slider {
+    &__home {
+      height: 300px;
+    }
+    &__rooms {
+      height: 300px;
+    }
+  }
 }

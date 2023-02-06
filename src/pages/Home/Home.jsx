@@ -55,11 +55,14 @@ const Home = () => {
             dolor condimentum scelerisque. Sed pulvinar eu dui et cursus.
           </p>
 
-          <img src={fasade} alt="Drawing of Hotel Fasade" />
+          <img
+            src={fasade}
+            alt="Drawing of Hotel Fasade"
+            className="container__section-image"
+          />
         </section>
         <section className="container__full-width hero ">
           {/* <h2 className="hero-logo">Biggie</h2> */}
-          <NavLink to="/rooms">View Rooms</NavLink>
           {/* <img className="hero-image" src={roomBiggie} alt="Biggie Room" /> */}
 
           <ImageSlider slides={slides} className="hero-image" />
@@ -83,8 +86,17 @@ const Home = () => {
               About restaurant concepts. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit. By Shed. GROUP.
             </p>
-            <NavLink to="/caffegoomah">Caffè Goomah</NavLink>
-            <a href="https://shedburgers.ch/">Shed. BURGERS</a>
+            <NavLink to="/caffegoomah" className="card-link">
+              Caffè Goomah
+            </NavLink>
+            <a
+              href="https://shedburgers.ch/"
+              className="card-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Shed. BURGERS
+            </a>
           </div>
           <div className="card__image">
             <img src={pizza} alt="Pizza" />
@@ -103,7 +115,7 @@ const Home = () => {
 
         <Carousel />
 
-        <section className="container__section subscribe">
+        {/* <section className="container__section subscribe">
           <h3>Stay In Touch</h3>
           <input
             className="subscribe__input"
@@ -111,7 +123,7 @@ const Home = () => {
             placeholder="Email Address"
           />
           <button className="subscribe__btn">Subscribe</button>
-        </section>
+        </section> */}
       </div>
     </div>
   );

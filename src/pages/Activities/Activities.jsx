@@ -22,7 +22,9 @@ const Activities = () => {
           Suspendisse elementum tristique est, eget pulvinar tellus tristique
           at.
         </p>
-        <SeasonPicker />
+        <div className="season-section">
+          <SeasonPicker />
+        </div>
       </section>
 
       <DynamicMenu items={activities} />

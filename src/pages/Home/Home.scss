@@ -44,9 +44,16 @@
   .card {
     background-color: $forestGreen;
     color: $white;
+
+    &-link {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
   }
 
   .subscribe {
+    margin-top: 50px;
+    margin-bottom: 50px;
     &__input {
       // width: 100%;
       // padding: toRem(15) toRem(100);

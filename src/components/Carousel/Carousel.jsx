@@ -20,14 +20,16 @@ const Carousel = () => {
       <Slider>
         <Slide index={0}>
           <div className="carousel__slide-text">
-            <h3>0Hotel Happening</h3>
+            <h3>Verbier Music Festival</h3>
+            <p>23 - 30 April</p>
             <p>There's a buzz in the air</p>
           </div>
         </Slide>
         <Slide index={1}>
           <div className="carousel__slide-text">
-            <h3>1Hotel Happening</h3>
-            <p>There's a buzz in the air</p>
+            <h3>Hanging bridge event</h3>
+            <p>23 - 30 April</p>
+            <p>Walk over the bridge and see amazing views</p>
           </div>
           <Image src={hikingBridge} />
         </Slide>
@@ -45,10 +47,12 @@ const Carousel = () => {
         </Slide>
         <Slide index={3}>
           <div className="carousel__slide-text">
-            <h3>2Hotel Happening</h3>
-            <p>There's a buzz in the air</p>
+            <h3>Verbier DJ Awards</h3>
+            <p>26 March</p>
+            <p>
+              <a href="https://www.freerideworldtour.com/">Le Rouge</a>
+            </p>
           </div>
-          <Image src={hotelHappening} alt="Local event" />
         </Slide>
       </Slider>
     </CarouselProvider>

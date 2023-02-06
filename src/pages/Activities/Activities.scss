@@ -1,5 +1,11 @@
 @import '../../sassStyles/_mixins';
+.season-section {
+  margin-top: 50px;
 
+  .season-picker {
+    margin: 0;
+  }
+}
 //   &_card {
 //     display: flex;
 
