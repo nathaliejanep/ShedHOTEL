@@ -4,7 +4,7 @@
 }
 .activities {
   margin: 0 10%;
-
+  // padding: 0 5px;
   .card {
     &:nth-child(2n) {
       flex-direction: row-reverse;
@@ -56,14 +56,14 @@
   }
 }
 
-@include tablet {
-  .activities {
-    margin: 0;
-  }
-}
+// @include tablet {
+//   .activities {
+//     margin: 0;
+//   }
+// }
 
-@include phone {
+@include media(tablet, phone) {
   .activities {
-    margin: 0 5%;
+    margin: 0 5px;
   }
 }
