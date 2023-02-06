@@ -50,7 +50,7 @@ const Footer = () => {
           <NavLink to="/faq">FAQ</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/terms">Terms of Use</NavLink>
-          <NavLink to="/hotelpolice">Hotel Police</NavLink>
+          <NavLink to="/hotelpolicy">Hotel Policy</NavLink>
         </div>
       </footer>
     </div>

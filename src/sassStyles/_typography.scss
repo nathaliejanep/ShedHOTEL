@@ -41,9 +41,9 @@ p {
 
   // CREATE class componenets?
   .center-justified {
-    // text-align: justify;
-    // text-align-last: center;
   }
+  text-align: justify;
+  text-align-last: center;
 }
 
 a {
@@ -66,6 +66,9 @@ a {
     font-size: toRem(41);
   }
 
+  p {
+    text-align: center;
+  }
   // h3 {
   //   font-size: toRem(21);
   // }

@@ -46,13 +46,17 @@ const Home = () => {
         <section className="container__section">
           <h1>Welcome</h1>
           <p>
-            About the hotel. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
-            ligula. Suspendisse elementum tristique est, eget pulvinar tellus
-            tristique at. Donec imperdiet turpis vitae dictum fringilla.
-            Curabitur scelerisque orci facilisis, semper erat non, interdum ex.
-            Morbi quis turpis risus. Fusce convallis lectus eros, nec suscipit
-            dolor condimentum scelerisque. Sed pulvinar eu dui et cursus.
+            Only footsteps from the center of Verbier, Shed. Hotel offers
+            everything you need and nothing you don't. We're aiming to be the
+            cloud cuckoo land for everyone who wants to truly enjoy outdoor
+            pursuits in spectacular mountains. We're offering quick access to
+            limitless pleasure and in fact, sleeping with us saves you more
+            money for other fun activities than any other Verbier hotel.
+            <br />
+            <br />
+            The property is rigged with free wifi, parking spots and ski lockers
+            for a comfortable stay and upon arrival, you're always greeted with
+            a discount code on ski rentals + the juiciest burger joint in town.
           </p>
 
           <img
@@ -106,10 +110,15 @@ const Home = () => {
         <section className="container__section">
           <h3>Come ramble with us</h3>
           <p>
-            About experience. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
-            ligula. Suspendisse elementum tristique est, eget pulvinar tellus
-            tristique at.
+            2 hours from Geneva airport Geneva, Verbier offers a mix of Alpine
+            charm and international flair. The village’s potential as a ski
+            resort was not discovered until 1925 when a group of mountaineers
+            hiked up 15km for the sole purpose of skiing back down again. Since
+            then, the place has become one of the world’s foremost freeride
+            paradises. Today, everyone’s welcome here. Swing from beer-fuelled
+            après-skis to high end cocktail bars, from burgers to Michelin
+            stars. In Verbier, ski bums and celebs slalom, eat and even
+            paraglide in harmony.
           </p>
         </section>
 

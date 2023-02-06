@@ -1,0 +1,36 @@
+{
+  "policies": [
+    {
+      "title": "Arrival Policy",
+      "text": "Check-in time is at 3:00 p.m. Early check-in is offered based on availability.  If you require a guaranteed check-in for arrival prior to 3 p.m. then Pre-Registration and payment may be required.  Please contact Front Desk staff directly to make reservations and complete a credit card authorization form prior to your arrival. "
+    },
+    {
+      "title": "Check-in Requirements",
+      "text": "Guests must be at least 18 years of age to check in at Shed. HOTEL.  In the interests of security and to prevent fraud, guests are required to confirm their identity by providing their valid government issued photo identification at check-in.  A valid, signed, and pre-approved credit card in the name of the guest registration is also required.  "
+    },
+    {
+      "title": "PRE-AUTHORIZATION AT CHECK-IN",
+      "text": "We have required pre-authorized of credit cards/debit cards at check-in.  A pre-authorization is a temporary hold of a specific amount of your available credit limit balance placed on your credit/debit card for the full amount of your intended stay, plus tax.  All credit/debit cards are pre-authorized at check-in.  Pre-authorization is not a charge to your account, it is a hold on those funds.  Once your actual charge is posted at check-out it can take anywhere from 24 hours to 30 days for the original pre-authorization to be removed by your bank.  Generally, most banks release the hold within 3-5 days.  It is your responsibility to be aware of how your bank handles all of your transactions, including pre-authorizations.  We are unable to remove pre-authorizations directly through our hotel."
+    },
+    {
+      "title": "GUEST REGISTRATION",
+      "text": "We require valid contact information from the guest making the reservations including first and last name, address, phone number, and signature.  The names of all guests occupying the room must be registered."
+    },
+    {
+      "title": "DEPARTURE POLICY",
+      "text": "Room rental period expires at 11:00 a.m. If you require a later check-out, please contact Front Desk prior to the day of your departure and we will do our best to accommodate your request.  A charge may apply for late check-out."
+    },
+    {
+      "title": "GUARANTEED RESERVATIONS",
+      "text": "All reservations must be guaranteed with a valid major credit card.  Guests must be 18 years and older.  We accept Visa, Master Card, American Express.  We do not charge your credit card at the time you make your reservations.  Your credit card guarantees your reservations. Please make sure to receive a reservation confirmation number when you make a reservation.  Reservations will be held until 10:00 a.m. the morning following your scheduled arrival date.  If you have not checked in by that time, a no-show charge corresponding to the balance left will be charged to your credit card.  Shed. HOTEL is not responsible for weather conditions, personal emergencies, or schedule changes."
+    },
+    {
+      "title": "",
+      "text": ""
+    },
+    {
+      "title": "",
+      "text": ""
+    }
+  ]
+}
