@@ -4,6 +4,7 @@
 .dynamic-container {
   margin: 0;
   .dynamic-menu {
+    padding: 0 50px;
     margin: 5% 0;
 
     ul {
@@ -41,10 +42,10 @@
   }
 }
 
-@include phone {
+@include media(tablet, phone) {
   .dynamic-container {
     .dynamic-menu {
-      margin: 5% 0;
+      margin: 10px 20px;
       ul {
         flex-direction: column;
 
