@@ -6,7 +6,7 @@
      * ===================================================================================================
 */
 h1 {
-  font-family: Untitled Sans;
+  font-family: 'Untitled Sans';
   font-size: toRem(51);
   font-weight: normal;
   text-transform: uppercase;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-family: Untitled Sans;
+  font-family: 'Untitled Sans';
   font-size: toRem(51);
   font-weight: normal;
   text-transform: uppercase;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-family: Untitled Sans;
+  font-family: 'Untitled Sans';
   font-size: toRem(25);
   font-weight: normal;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-family: Untitled;
+  font-family: 'Untitled';
   font-size: toRem(20);
   line-height: toRem(36);
   // EDIT MAYBE move align to parent?
@@ -130,7 +130,8 @@ a {
   font-family: 'Untitled Sans';
   font-weight: normal;
   font-style: normal;
-  src: url(../assets/fonts/untitled/untitled-sans-regular.otf) format('otf');
+  src: url(../assets/fonts/untitled/untitled-sans-regular.otf)
+    format('opentype');
 }
 
 @font-face {
@@ -138,5 +139,5 @@ a {
   font-weight: normal;
   font-style: italic;
   src: url(../assets/fonts/untitled/untitled-sans-regular-italic.otf)
-    format('otf');
+    format('opentype');
 }
