@@ -8,7 +8,7 @@
   justify-content: center;
   font-family: 'Untitled Sans';
   background-color: $goatBeige;
-  height: 80px;
+  height: 100px;
   .season-wrapper {
     transform: translateX(2rem);
   }
@@ -17,7 +17,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-
+    justify-content: center;
     // BURGER / CLOSE
     .hamburger-react {
       z-index: 999;
@@ -32,20 +32,22 @@
     height: 100%;
     width: 100%;
     position: fixed;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 2;
     text-align: center;
-    font-size: 2rem;
+    font-size: toRem(20);
+
     // line-height: 3rem;
     text-transform: uppercase;
 
     background-color: $goatBeige; // maybe opacity
-    // border: 1px solid black;
 
     &.expanded {
+      .nav-links {
+        margin-bottom: 1rem;
+      }
       .menu-icon {
         top: 0;
         right: 2rem;
@@ -53,7 +55,6 @@
 
       // &.hidden {
       //   display: flex;
-      //   border: 10px dotted darkgoldenrod;
       // }
       display: flex;
     }
@@ -61,6 +62,8 @@
 
   // NAV LOGO PHONE - CLOSED
   .nav-logo-phone {
+    transform: translateX(2rem);
+
     // position: absolute;
     // top: 0;
     // margin-top: 2rem;
@@ -70,13 +73,10 @@
     // }
     // &.open {
     //   display: flex;
-    //   border: 10px solid dodgerblue;
     // }
-
     img {
       width: 150px;
       height: auto;
-      transform: translateX(2rem);
     }
   }
 
@@ -86,7 +86,7 @@
     top: 0;
 
     &.open {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
     // z-index: 999;
 
@@ -117,12 +117,35 @@
       text-decoration: none;
       color: $black;
 
+      display: inline-block;
+      padding: 2%;
+      transition: all 1s;
+      position: relative;
+
       &.active {
-        text-decoration: underline;
+        border-bottom: 1px solid $black;
       }
 
+      &.inactive:hover::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        // z-index: 1;
+        border-bottom: 1px solid $bagnesBlue;
+        animation: grow 0.4s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes grow {
+        100% {
+          width: 100%;
+        }
+      }
       &.inactive:hover {
-        color: $signalRed;
+        color: $bagnesBlue;
       }
 
       &.hidden {
@@ -134,9 +157,11 @@
 
 @media (min-width: 880px) {
   .nav {
-    margin: 20px 200px;
+    padding: 2rem;
+
+    margin: 10px 200px;
     flex-direction: column;
-    height: 100px;
+    height: 120px;
 
     .season-wrapper {
       transform: translateX(0);
@@ -160,9 +185,11 @@
       position: relative;
       display: flex;
       font-size: toRem(16);
-      padding: 1rem;
+      // padding: 1rem;
 
+      // DESKTOP LOGO
       .nav-logo {
+        margin-top: 1rem;
         position: relative;
       }
 
@@ -172,7 +199,7 @@
         justify-content: space-between;
         justify-items: center;
         align-items: center;
-        margin: 1rem;
+        padding: 1rem;
         li {
           width: 100%;
           margin-right: 1rem;
