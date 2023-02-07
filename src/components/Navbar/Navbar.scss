@@ -6,7 +6,7 @@
   display: flex;
   // align-items: center;
   justify-content: center;
-  font-family: Untitled Sans;
+  font-family: 'Untitled Sans';
   background-color: $goatBeige;
   height: 80px;
   .season-wrapper {
@@ -122,7 +122,7 @@
       }
 
       &.inactive:hover {
-        color: $bagnesBlue;
+        color: $signalRed;
       }
 
       &.hidden {

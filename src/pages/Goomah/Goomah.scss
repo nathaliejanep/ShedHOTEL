@@ -22,7 +22,7 @@
     text-transform: none;
   }
   .font-sans {
-    font-family: Untitled Sans;
+    font-family: 'Untitled Sans';
   }
 
   &__about {
@@ -51,7 +51,7 @@
 
     a {
       text-decoration: underline;
-      font-family: Untitled Sans;
+      font-family: 'Untitled Sans';
       font-size: toRem(25);
 
       &:hover {
@@ -68,7 +68,7 @@
   &__weekly {
     background-color: $goatBeige;
     h2 {
-      font-family: Untitled Sans;
+      font-family: 'Untitled Sans';
       text-transform: uppercase;
     }
 
