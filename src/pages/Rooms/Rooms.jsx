@@ -5,7 +5,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
-import room1 from '../../assets/images/room-hero.jpg';
+import keyLogo from '../../assets/images/logos/key-logo.svg';
+
 const Rooms = () => {
   const [data, setData] = useState([]);
 
@@ -147,6 +148,40 @@ const Rooms = () => {
             </a>
           </div>
         </div>
+
+        <section className="container__section rooms__amenities">
+          <img src={keyLogo} alt="Logo of Key" />
+          <h3>
+            <span>Guest Room Experience</span>
+            <span>and Hotel Amenities</span>
+          </h3>
+          <p>
+            <span>
+              Possibly list info about the rooms (label on bed linen etc.)
+            </span>
+            <span>BEDS DRESSED IN XXX</span>
+            <span>XXX BATHROOM AMENITIES</span>
+            <span>
+              XXX SLIPPERS & ROBE 24-HOUR IN-ROOM DINING & BEVERAGE COOLER
+            </span>
+            <span>GARMENT STEAMER, HAIR DRYER</span>
+            <span>
+              SITTING AREA AND/OR DESK, USB/USB-C PORTS, & LAPTOP SAFE
+            </span>
+            <span>
+              CURATED FREE CONTENT ON SAMSUNG LED TVS WITH SCREENCASTING
+              CAPABILTIES
+            </span>
+            <span>
+              FITNESS CENTER WITH PRECOR EQUIPMENT, PELOTON BIKES & THE MIRROR
+              BY XXX
+            </span>
+            <span>DAILY HOUSEKEEPING & LAUNDRY/DRY CLEANING SERVICES</span>
+            <span>
+              LES CLEFS D’OR CONCIERGE, BUSINESS CENTER, & VALET PARKING
+            </span>
+          </p>
+        </section>
         {/* DYNAMIC SOLUTION */}
         {/* {data?.rooms?.map((room, i) => (
           <div key={i} className="card rooms__card">
