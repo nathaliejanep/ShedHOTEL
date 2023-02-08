@@ -11,7 +11,7 @@ const DynamicContainer = ({ items }) => {
 
   const selectedTab = () => {
     switch (active) {
-      case 'Hotel Happenings':
+      case 'Activities':
       case 'Wine & Dine':
       case 'Lorem Ipsum':
       case 'Lorem Ipsum2':
@@ -23,7 +23,7 @@ const DynamicContainer = ({ items }) => {
 
       default:
         if (urlPath === '/activities') {
-          setActive('Hotel Happenings');
+          setActive('Activities');
           return <ActivityComponent tab={active} />;
         }
         setActive('Rooms');

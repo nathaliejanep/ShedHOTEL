@@ -5,7 +5,7 @@ import './Activities.scss';
 
 const Activities = () => {
   const activities = [
-    'Hotel Happenings',
+    'Activities',
     'Wine & Dine',
     'Lorem Ipsum',
     'Lorem Ipsum2',

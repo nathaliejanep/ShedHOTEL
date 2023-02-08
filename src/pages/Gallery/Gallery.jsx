@@ -9,11 +9,9 @@ const Gallery = () => {
       <section className="container__section">
         <h1>Gallery</h1>
         <p>
-          About gallery. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Quasi perferendis voluptatem dolorem laboriosam maxime error at
-          culpa ipsum qui accusantium molestias laborum quae praesentium
-          possimus hic consequuntur maiores iure ipsa totam necessitatibus,
-          ipsam eius dolores. Quam porro recusandae commodi ipsa!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iste
+          voluptatem reprehenderit consectetur itaque, quam at dolore cum atque
+          deleniti.
         </p>
       </section>
       <DynamicMenu items={galleries} />

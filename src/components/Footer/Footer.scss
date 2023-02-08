@@ -29,8 +29,10 @@
   }
 
   &-icons {
+    display: flex;
+    width: 80px;
+
     svg {
-      margin-right: 1rem;
       font-size: 1.25rem;
     }
   }
@@ -41,5 +43,24 @@
     align-self: center;
     width: 80%;
     margin: 50px;
+    font-size: toRem(20);
+  }
+
+  @include media(tablet, phone) {
+    &-info {
+      font-size: toRem(20);
+    }
+
+    &-icons {
+      border: 1px solid black;
+    }
+
+    &-links {
+      flex-direction: column;
+      align-items: center;
+      // width: 100%;
+      margin: 25px 0;
+      font-size: toRem(16);
+    }
   }
 }
