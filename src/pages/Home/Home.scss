@@ -20,23 +20,16 @@
   // background-color: $white; // TA BORT
 
   .hero {
-    position: relative;
-    top: 0;
-    left: 0;
+    // position: relative;
+    // top: 0;
+    // left: 0;
 
     &-image {
-      position: relative;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
+      object-position: 50% 70%;
     }
 
     &-logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      width: 150px;
     }
   }
 

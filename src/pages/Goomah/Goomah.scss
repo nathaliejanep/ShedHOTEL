@@ -7,9 +7,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
   }
 
-  &__hero {
+  .hero-image {
+  }
+
+  .hero {
+    height: calc(100vh - 50px);
+
     &-logo {
       width: 80%;
       height: auto;
@@ -65,7 +71,7 @@
     color: $white;
   }
 
-  &__weekly {
+  &__monthly {
     background-color: $goatBeige;
     h2 {
       font-family: 'Untitled Sans';
@@ -81,9 +87,25 @@
 
   &__menu {
     background-color: $goomahGreen;
+
+    img {
+      box-shadow: -40px 40px $forestGreen;
+    }
   }
 
   &__soprano {
     background-color: $white;
+    img {
+      height: 400px;
+      width: 300px;
+    }
+  }
+
+  @include phone {
+    &__menu {
+      img {
+        box-shadow: -20px 20px $forestGreen;
+      }
+    }
   }
 }

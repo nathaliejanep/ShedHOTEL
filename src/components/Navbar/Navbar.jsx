@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
-import ShedLogo from '../../assets/images/ShedLogo.svg';
+import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 // import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
@@ -38,7 +38,7 @@ const Navbar = () => {
             ) : (
               <NavLink to="/" className="nav-logo-phone">
                 <img
-                  src={ShedLogo}
+                  src={ShedLogoBlack}
                   alt="Shed Hotel Logo"
                   onClick={closeMobileMenu}
                 />
@@ -57,7 +57,7 @@ const Navbar = () => {
               }
             >
               <img
-                src={ShedLogo}
+                src={ShedLogoBlack}
                 alt="Shed Hotel Logo"
                 onClick={closeMobileMenu}
               />

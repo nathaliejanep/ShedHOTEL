@@ -2,9 +2,9 @@ import { useContext } from 'react';
 import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
-import winterHero from '../../assets/images/winter-hero.jpg';
+import winterHero from '../../assets/images/home/winter-hero.jpg';
 import summerHero from '../../assets/images/summer-hero.jpg';
-import shedLogoWhite from '../../assets/images/shed-logo-white.svg';
+import shedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import fasade from '../../assets/images/fasade-drawing.png';
 import roomBiggie from '../../assets/images/room-biggie.jpg';
 import pizza from '../../assets/images/pizza.jpg';
@@ -40,7 +40,7 @@ const Home = () => {
           alt={winter ? 'Winter' : 'Summer'}
         />
 
-        <img className="hero-logo" src={shedLogoWhite} alt="Shed Hotel Logo" />
+        <img className="hero-logo" src={shedLogoBlack} alt="Shed Hotel Logo" />
       </section>
       <div className="container">
         <section className="container__section">

@@ -134,7 +134,7 @@
         height: 0;
         width: 0;
         // z-index: 1;
-        border-bottom: 1px solid $bagnesBlue;
+        border-bottom: 1px solid $black;
         animation: grow 0.4s linear;
         animation-fill-mode: forwards;
       }
@@ -145,7 +145,7 @@
         }
       }
       &.inactive:hover {
-        color: $bagnesBlue;
+        color: $black;
       }
 
       &.hidden {

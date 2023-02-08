@@ -1,12 +1,12 @@
 import React from 'react';
 import './Goomah.scss';
-import shedLogo from '../../assets/images/ShedLogo.svg';
-import goomahHero from '../../assets/images/goomah-hero.jpg';
+import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
+import goomahHero from '../../assets/images/goomah/goomah-hero.jpg';
 import goomahLogo from '../../assets/images/goomah-logo.svg';
 import goomahMouth from '../../assets/images/Goomah_mouth.png';
-import pizzaBoutit from '../../assets/images/pizza-boutit.jpg';
-import menu from '../../assets/images/menu.svg';
-import mrSoprano from '../../assets/images/mr-soprano.jpg';
+import pizzaBoutit from '../../assets/images/goomah/monthly-pizza.jpg';
+import menu from '../../assets/images/goomah/take-away-menu.svg';
+import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
 
@@ -14,10 +14,10 @@ const Goomah = () => {
   return (
     <div className="goomah">
       <NavLink to="/" className="nav-logo goomah__nav">
-        <img src={shedLogo} alt="Shed Hotel Logo" />
+        <img src={shedLogoWhite} alt="Shed Hotel Logo" />
       </NavLink>
 
-      <section className="hero">
+      <section className="hero ">
         <img
           className="hero-image "
           src={goomahHero}
@@ -25,7 +25,7 @@ const Goomah = () => {
         />
 
         <img
-          className="hero-logo goomah__hero-logo"
+          className="hero-logo hero-logo"
           src={goomahLogo}
           alt="Goomah Logo"
         />
@@ -68,13 +68,13 @@ const Goomah = () => {
         </section>
 
         <section className="card">
-          <div className="card__text goomah__weekly">
-            <p className="font-sans">Weekly Special - No.01</p>
+          <div className="card__text goomah__monthly">
+            <p className="font-sans">Monthly Special - No.01</p>
 
-            <h2>Porchetta Boutit</h2>
-            <p className="goomah__weekly-ingredients">
-              Porchetta, Taleggio, Red Onion, Garlic, Basil, Fennel Seed, Olive
-              Oil, Lemon
+            <h2>Pizzaflette</h2>
+            <p className="goomah__monthly-ingredients">
+              Creme fraîche, Fior Di Latte, Potato, Confit Onion, Lardons,
+              Taleggio, Thyme
             </p>
           </div>
 
@@ -84,7 +84,8 @@ const Goomah = () => {
         </section>
 
         <section className="container__section goomah__menu">
-          <img src={menu} alt="Goomah's menu" />
+          <h2>Take Away</h2>
+          <img src={menu} alt="Take Away menu" />
         </section>
 
         <section className="container__section goomah__soprano">

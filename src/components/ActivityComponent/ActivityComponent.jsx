@@ -28,7 +28,7 @@ const ActivityComponent = ({ tab }) => {
   return (
     <div className="activity-component">
       <>
-        {tab === 'Hotel Happenings' ? (
+        {tab === 'Activities' ? (
           <>
             {winter ? (
               <>
