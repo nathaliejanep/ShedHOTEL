@@ -93,14 +93,25 @@
   }
 
   &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: $goomahGreen;
 
     img {
+      width: auto;
+      height: 200vh;
       box-shadow: -40px 40px $forestGreen;
     }
   }
 
   &__soprano {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $white;
     img {
       height: 400px;

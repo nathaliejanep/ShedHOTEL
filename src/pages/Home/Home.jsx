@@ -70,7 +70,7 @@ const Home = () => {
             className="container__section-image"
           />
         </section>
-        <section className="container__full-width ">
+        <section className="container__full-width home__image-slider">
           {/* <h2 className="hero-logo">Biggie</h2> */}
           {/* <img className="hero-image" src={roomBiggie} alt="Biggie Room" /> */}
 
