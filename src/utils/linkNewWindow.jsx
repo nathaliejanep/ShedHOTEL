@@ -12,6 +12,9 @@ const LinkNewWindow = ({ to, children }) => (
       e.preventDefault();
       openInNewWindow(to);
     }}
+    className={({ isActive }) =>
+      'nav-links' + (isActive ? ' active' : ' inactive')
+    }
   >
     {children}
   </NavLink>

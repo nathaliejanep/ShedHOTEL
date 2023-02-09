@@ -62,6 +62,18 @@ const Navbar = () => {
                 onClick={closeMobileMenu}
               />
             </NavLink>
+
+            {/* Show this on expanded phone */}
+            <NavLink
+              to="/"
+              className={'nav-logo phone' + (open ? ' open' : '')}
+            >
+              <img
+                src={ShedLogoBlack}
+                alt="Shed Hotel Logo"
+                onClick={closeMobileMenu}
+              />
+            </NavLink>
             <ul>
               <li>
                 <NavLink
@@ -88,13 +100,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <LinkNewWindow
-                  to="caffegoomah"
-                  className={({ isActive }) =>
-                    'nav-links' + (isActive ? ' active' : ' inactive')
-                  }
-                  onClick={closeMobileMenu}
-                >
+                <LinkNewWindow to="caffegoomah" onClick={closeMobileMenu}>
                   Caffè Goomah
                 </LinkNewWindow>
                 {/* <NavLink
