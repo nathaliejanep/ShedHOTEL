@@ -12,19 +12,12 @@ const Navbar = () => {
   // const { winter, setWinter } = useContext(Context);
   const path = useLocation();
   const browserWidth = window.innerWidth;
-
+  console.log(path.pathname);
   console.log(browserWidth);
   // const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
 
   window.addEventListener('locationchange', function () {});
-
-  // If user clicks back button, don't show logo
-  window.onpopstate = (e) => {
-    // setGoBack(true);
-    // console.log('went back');
-    // console.log(goBack);
-  };
 
   return (
     <>
