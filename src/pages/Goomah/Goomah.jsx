@@ -13,9 +13,12 @@ import { NavLink } from 'react-router-dom';
 const Goomah = () => {
   return (
     <div className="goomah">
-      <NavLink to="/" className="nav-logo goomah__nav">
-        <img src={shedLogoWhite} alt="Shed Hotel Logo" />
-      </NavLink>
+      {/* EDIT move to navbar */}
+      <div className="goomah__nav">
+        <NavLink to="/" className="goomah__nav-logo ">
+          <img src={shedLogoWhite} alt="Shed Hotel Logo" />
+        </NavLink>
+      </div>
 
       <section className="hero ">
         <img

@@ -19,6 +19,7 @@ import Error from './pages/Error/Error';
 import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 import Policy from './pages/Policy/Policy';
+import Test from './pages/Test/Test';
 
 function App() {
   // console.log(window.location.pathname);
@@ -49,7 +50,7 @@ const Root = () => {
   return (
     <>
       <Navbar />
-
+      <Test />
       <div>
         <Outlet />
       </div>

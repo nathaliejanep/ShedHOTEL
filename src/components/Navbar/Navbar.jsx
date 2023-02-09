@@ -5,7 +5,7 @@ import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 // import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
-
+import LinkNewWindow from '../../utils/linkNewWindow';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   // const [goBack, setGoBack] = useState(false);
@@ -88,7 +88,16 @@ const Navbar = () => {
               </li>
 
               <li>
-                <NavLink
+                <LinkNewWindow
+                  to="caffegoomah"
+                  className={({ isActive }) =>
+                    'nav-links' + (isActive ? ' active' : ' inactive')
+                  }
+                  onClick={closeMobileMenu}
+                >
+                  Caffè Goomah
+                </LinkNewWindow>
+                {/* <NavLink
                   to="/caffegoomah"
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
@@ -96,7 +105,7 @@ const Navbar = () => {
                   onClick={closeMobileMenu}
                 >
                   Caffè Goomah
-                </NavLink>
+                </NavLink> */}
               </li>
 
               <li>
