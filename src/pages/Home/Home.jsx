@@ -14,6 +14,7 @@ import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';
 import Carousel from '../../components/Carousel/Carousel';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
+import Subscribe from '../../components/Subscribe/Subscribe';
 
 const Home = () => {
   const { winter } = useContext(Context);
@@ -129,16 +130,10 @@ const Home = () => {
         </section>
 
         <Carousel />
-
-        {/* <section className="container__section subscribe">
+        <section className="container__section subscribe">
           <h3>Stay In Touch</h3>
-          <input
-            className="subscribe__input"
-            type="email"
-            placeholder="Email Address"
-          />
-          <button className="subscribe__btn">Subscribe</button>
-        </section> */}
+          <Subscribe />
+        </section>
       </div>
     </div>
   );

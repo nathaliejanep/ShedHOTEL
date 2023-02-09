@@ -46,49 +46,6 @@
       font-size: 1.2rem;
     }
   }
-
-  .subscribe {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    &__input {
-      // width: 100%;
-      // padding: toRem(15) toRem(100);
-      width: 350px;
-      height: 50px;
-      border: none;
-      font-size: toRem(14);
-      letter-spacing: 1px;
-      font-family: 'Untitled Sans';
-      text-transform: uppercase;
-      text-align: center;
-      margin-right: toRem(14);
-
-      &::placeholder {
-        color: $black;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    &__btn {
-      width: 200px;
-      height: 50px;
-      // padding: toRem(15) toRem(60);
-      border: none;
-      background-color: $forestGreen;
-      color: $white;
-      font-family: 'Untitled Sans';
-      font-size: toRem(14);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-
-      &:hover {
-        background-color: $black;
-      }
-    }
-  }
 }
 
 @include media(tablet) {
