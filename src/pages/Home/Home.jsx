@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
-import winterHero from '../../assets/images/home/winter-hero.jpg';
+import winterHero from '../../assets/images/home/view.jpg';
 import summerHero from '../../assets/images/summer-hero.jpg';
 import shedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
@@ -23,11 +23,11 @@ const Home = () => {
   // console.log(winter);
 
   const slides = [
-    { src: '../images/room4.jpg', alt: 'room4' },
-    { src: '../images/room3.jpg', alt: 'room3' },
-    { src: '../images/balcony.jpg', alt: 'balcony' },
-    { src: '../images/room2.jpg', alt: 'room2' },
-    { src: '../images/room1.jpg', alt: 'room1' },
+    { src: '../images/rooms/roomie.jpg', alt: 'Roomie' },
+    { src: '../images/rooms/biggie.jpg', alt: 'Biggie' },
+    { src: '../images/rooms/fancy-buddy-suite.jpg', alt: 'Fancy Buddy Suite' },
+    { src: '../images/rooms/buddy.jpg', alt: 'Buddy' },
+    { src: '../images/rooms/loonie.jpg', alt: 'loonie' },
   ];
 
   if (navigation.state === 'loading') {
@@ -42,11 +42,7 @@ const Home = () => {
           alt={winter ? 'Winter' : 'Summer'}
         />
 
-        <img
-          className="hero-logo"
-          src={winter ? shedLogoBlack : shedLogoWhite}
-          alt="Shed Hotel Logo"
-        />
+        <img className="hero-logo" src={shedLogoWhite} alt="Shed Hotel Logo" />
       </section>
       <div className="container">
         <section className="container__section">

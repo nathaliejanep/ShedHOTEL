@@ -4,7 +4,9 @@ import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import hotelHappening from '../../assets/images/hotel-happening.jpg';
 import hikingBridge from '../../assets/images/hiking-bridge.jpg';
-import fwt from '../../assets/images/fwt.jpeg';
+import fwt from '../../assets/images/events/fwt.JPG';
+import rentals from '../../assets/images/events/rentals.jpg';
+import palp from '../../assets/images/events/palp.jpg';
 
 const Carousel = () => {
   return (
@@ -20,37 +22,45 @@ const Carousel = () => {
       <Slider>
         <Slide index={0}>
           <div className="carousel__slide-text">
-            <h3>Verbier Music Festival</h3>
-            <p>23 - 30 April</p>
-            <p>There's a buzz in the air</p>
+            <h3>
+              <a href="https://palpfestival.ch/">Rocklette</a>
+            </h3>
+            <p>5 - 14 August</p>
+            <p>
+              Eat cheese with a view while listening to Jose Gonzalez or
+              Graveyard.
+            </p>
+          </div>
+          <Image src={palp} />
+        </Slide>
+        <Slide index={1} className="gear">
+          <div className="carousel__slide-text">
+            <a href="https://www.skiservice.com/en">
+              <h3>Gear</h3>
+            </a>
+            <p>Get 20% off your rentals when you stay with us.</p>
           </div>
         </Slide>
-        <Slide index={1}>
-          <div className="carousel__slide-text">
-            <h3>Hanging bridge event</h3>
-            <p>23 - 30 April</p>
-            <p>Walk over the bridge and see amazing views</p>
-          </div>
-          <Image src={hikingBridge} />
-        </Slide>
-        <Slide index={2}>
-          <div className="carousel__slide-text">
-            <h3>FWT VERBIER</h3>
+
+        <Slide index={2} className="fwt">
+          <div className="carousel__slide-text ">
+            <a href="https://www.freerideworldtour.com/">
+              <h3>Freeride World Tour</h3>
+            </a>
             <p>23 - 30 April</p>
             <p>
-              <a href="https://www.freerideworldtour.com/">
-                Freeride World Tour
-              </a>
+              Watch the finals of the famous Freeride World Tour at the top of
+              the mountain.
             </p>
           </div>
           <Image src={fwt} />
         </Slide>
-        <Slide index={3}>
+        <Slide index={3} className=" concierge">
           <div className="carousel__slide-text">
-            <h3>Verbier DJ Awards</h3>
-            <p>26 March</p>
+            <h3>Mountain Concierge</h3>
             <p>
-              <a href="https://www.freerideworldtour.com/">Le Rouge</a>
+              We can help you book ski lessons, helisking, massage, babysitting.
+              Just ask!
             </p>
           </div>
         </Slide>
