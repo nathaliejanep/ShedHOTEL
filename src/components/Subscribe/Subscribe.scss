@@ -1,0 +1,59 @@
+@import '../../sassStyles/_mixins.scss';
+@import '../../sassStyles/_variables.scss';
+
+.subscribe {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  h3 {
+    margin-bottom: 50px;
+  }
+  &__input {
+    width: 100%;
+    // padding: toRem(15) toRem(100);
+    width: 350px;
+    height: 50px;
+    margin-right: 1rem;
+    font-size: toRem(14);
+    letter-spacing: 1px;
+    font-family: 'Untitled Sans';
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+
+    &::placeholder {
+      color: $black;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 200px;
+    height: 50px;
+    // padding: toRem(15) toRem(60);
+    border: none;
+    background-color: $forestGreen;
+    color: $white;
+    font-family: 'Untitled Sans';
+    font-size: toRem(14);
+    letter-spacing: toRem(1);
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  @include media(tablet, phone) {
+    h3 {
+      margin-bottom: 25px;
+    }
+    &__input {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}
