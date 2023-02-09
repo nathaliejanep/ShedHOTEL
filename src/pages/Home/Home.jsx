@@ -52,17 +52,13 @@ const Home = () => {
         <section className="container__section">
           <h1>Welcome</h1>
           <p>
-            Only footsteps from the center of Verbier, Shed. Hotel offers
-            everything you need and nothing you don't. We're aiming to be the
-            cloud cuckoo land for everyone who wants to truly enjoy outdoor
-            pursuits in spectacular mountains. We're offering quick access to
-            limitless pleasure and in fact, sleeping with us saves you more
-            money for other fun activities than any other Verbier hotel.
-            <br />
-            <br />
-            The property is rigged with free wifi, parking spots and ski lockers
-            for a comfortable stay and upon arrival, you're always greeted with
-            a discount code on ski rentals + the juiciest burger joint in town.
+            Footsteps from the center of Verbier, Shed. HOTEL offers everything
+            you need and nothing you don't. Newly renovated and reopened by
+            three Swedish friends, our contemporary sportique hotel is the go-to
+            retreat if you want to feel at home while enjoying outdoor pursuits
+            in the Swiss mountains. Looking for a place where you sleep like a
+            log, eat like Robert de Niro and are treated like family? You've
+            just found it.
           </p>
 
           {/* <img
@@ -81,10 +77,12 @@ const Home = () => {
         <section className="container__section">
           <h3>Stay with us</h3>
           <p>
-            About the rooms. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
-            ligula. Suspendisse elementum tristique est, eget pulvinar tellus
-            tristique at. Donec imperdiet turpis vitae dictum.
+            Our selection of 16 newly renovated rooms feature contemporary
+            comfort in an alpine-scandi setting. In airy spaces, abstract art
+            and lifestyle books blend with luxurious duvets and a clean
+            botanical scent, while Tom Dixon carpets and views of craggy
+            mountain peaks create a contrast between industrial landscapes and
+            nature.
           </p>
         </section>
 
