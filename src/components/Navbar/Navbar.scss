@@ -192,6 +192,10 @@
       .nav-logo {
         margin-top: 1rem;
         position: relative;
+
+        &.phone {
+          display: none;
+        }
       }
 
       ul {
