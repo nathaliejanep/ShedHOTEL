@@ -70,12 +70,13 @@ const Home = () => {
             className="container__section-image"
           />
         </section>
-        <section className="container__full-width hero ">
+        <section className="container__full-width ">
           {/* <h2 className="hero-logo">Biggie</h2> */}
           {/* <img className="hero-image" src={roomBiggie} alt="Biggie Room" /> */}
 
           <ImageSlider slides={slides} className="hero-image" />
         </section>
+
         <section className="container__section">
           <h3>Stay with us</h3>
           <p>
