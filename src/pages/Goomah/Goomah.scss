@@ -2,12 +2,18 @@
 
 .goomah {
   &__nav {
-    width: 100%;
     z-index: 999;
+    width: 100%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+
+    img {
+      width: 150px;
+      height: auto;
+    }
   }
 
   .hero-image {
@@ -27,6 +33,7 @@
     font-family: Untitled;
     text-transform: none;
   }
+
   .font-sans {
     font-family: 'Untitled Sans';
   }
@@ -102,6 +109,10 @@
   }
 
   @include phone {
+    .hero {
+      height: calc(100vh - 155px);
+    }
+
     &__menu {
       img {
         box-shadow: -20px 20px $forestGreen;
