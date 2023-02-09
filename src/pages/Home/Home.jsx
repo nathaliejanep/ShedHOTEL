@@ -6,7 +6,7 @@ import winterHero from '../../assets/images/home/winter-hero.jpg';
 import summerHero from '../../assets/images/summer-hero.jpg';
 import shedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
-import fasade from '../../assets/images/fasade-drawing.png';
+// import fasade from '../../assets/images/fasade-drawing.png';
 import roomBiggie from '../../assets/images/room-biggie.jpg';
 import pizza from '../../assets/images/pizza.jpg';
 
@@ -64,11 +64,11 @@ const Home = () => {
             a discount code on ski rentals + the juiciest burger joint in town.
           </p>
 
-          <img
+          {/* <img
             src={fasade}
             alt="Drawing of Hotel Fasade"
             className="container__section-image"
-          />
+          /> */}
         </section>
         <section className="container__full-width home__image-slider">
           {/* <h2 className="hero-logo">Biggie</h2> */}
