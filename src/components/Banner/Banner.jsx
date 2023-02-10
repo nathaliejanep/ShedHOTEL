@@ -5,8 +5,8 @@ const Banner = () => {
   return (
     <div className="banner">
       <p className="banner__text">
-        open monday - friday 17.00 - 23.00 . open monday - friday 17.00 - 23.00
-        . open monday - friday 17.00 - 23.00 . open monday - friday 17.00 -
+        open monday - sunday 18.00 - 23.00 . open monday - sunday 18.00 - 23.00
+        . open monday - sunday 18.00 - 23.00 . open monday - sunday 18.00 -
         23.00 .
       </p>
     </div>

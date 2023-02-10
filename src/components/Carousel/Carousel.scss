@@ -77,8 +77,9 @@
     }
 
     p {
-      font-size: toRem(12);
-      line-height: toRem(16);
+      // font-size: toRem(12);
+      // line-height: toRem(16);
+      display: none;
     }
   }
 }

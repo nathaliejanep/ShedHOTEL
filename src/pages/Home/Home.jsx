@@ -21,13 +21,13 @@ const Home = () => {
   // console.log(winter);
 
   const slides = [
-    { src: '../images/rooms/roomie/roomie.jpg', alt: 'Roomie' },
     { src: '../images/rooms/biggie/biggie.jpg', alt: 'Biggie' },
     {
       src: '../images/rooms/suite/fancy-buddy-suite.jpg',
       alt: 'Fancy Buddy Suite',
     },
     { src: '../images/rooms/buddy/buddy.jpg', alt: 'Buddy' },
+    { src: '../images/rooms/roomie/roomie.jpg', alt: 'Roomie' },
     { src: '../images/rooms/loonie/loonie.jpg', alt: 'loonie' },
   ];
 

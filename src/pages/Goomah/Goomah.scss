@@ -99,7 +99,7 @@
     align-items: center;
     width: 100%;
     background-color: $goomahGreen;
-
+    padding-bottom: 50px;
     img {
       width: auto;
       height: 200vh;
@@ -113,9 +113,10 @@
     justify-content: center;
     align-items: center;
     background-color: $white;
+
     img {
-      height: 400px;
-      width: 300px;
+      height: 80vh;
+      width: auto;
     }
   }
 
@@ -128,6 +129,13 @@
       img {
         height: 100vh;
         box-shadow: -20px 20px $forestGreen;
+      }
+    }
+
+    &__soprano {
+      img {
+        height: 100%;
+        width: 100%;
       }
     }
   }
