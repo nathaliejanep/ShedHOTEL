@@ -40,10 +40,9 @@ const Goomah = () => {
         <section className="container__section goomah__about">
           <h1>Caffè Goomah</h1>
           <p>
-            About Goomah. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
-            ligula. Suspendisse elementum tristique est, eget pulvinar tellus
-            tristique at.
+            Indulge in American-Italian cuisine with a trendy twist. Savor
+            delicious dishes and craft cocktails in a stylish setting. Book your
+            table and experience dining like a boss.
           </p>
 
           <p>
@@ -63,10 +62,12 @@ const Goomah = () => {
             <a href="tel:+41772699795">+41 77 269 97 95</a>
           </p>
           <p>
-            About Goomah. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Donec elit ligula, laoreet et arcu at, dignissim blandit
-            ligula. Suspendisse elementum tristique est, eget pulvinar tellus
-            tristique at.
+            Step into our Chambre Séparée, the epitome of exclusivity and
+            privacy. Ideal for gatherings of 10 or more, this space is reserved
+            for those looking for a truly unique dining experience. But for the
+            spontaneous and adventurous, our doors are always open for walk-ins.
+            Embrace the unknown and be pleasantly surprised by the ambiance,
+            food and drink that await you.
           </p>
         </section>
 
@@ -74,10 +75,10 @@ const Goomah = () => {
           <div className="card__text goomah__monthly">
             <p className="font-sans">Monthly Special - No.01</p>
 
-            <h2>Pizzaflette</h2>
+            <h2>Pizzaboutit</h2>
             <p className="goomah__monthly-ingredients">
-              Creme fraîche, Fior Di Latte, Potato, Confit Onion, Lardons,
-              Taleggio, Thyme
+              Creme fraîche, Fior Di Latte, Confit Onion, Lardons, Taleggio,
+              Thyme
             </p>
           </div>
 
