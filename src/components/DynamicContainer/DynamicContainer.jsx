@@ -13,8 +13,6 @@ const DynamicContainer = ({ items }) => {
     switch (active) {
       case 'Activities':
       case 'Wine & Dine':
-      case 'Lorem Ipsum':
-      case 'Lorem Ipsum2':
         return <ActivityComponent tab={active} />;
 
       case 'Rooms':

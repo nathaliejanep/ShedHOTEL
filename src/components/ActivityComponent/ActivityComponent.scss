@@ -4,7 +4,7 @@
 }
 .activities {
   margin: 0 10%;
-  // padding: 0 5px;
+
   .card {
     &:nth-child(2n) {
       flex-direction: row-reverse;
@@ -23,7 +23,7 @@
       }
 
       &.winter {
-        &.Trails {
+        &.Ride {
           background-color: $forestGreen;
           color: $white;
         }
@@ -39,11 +39,11 @@
       }
 
       &.summer {
-        &.Trails {
+        &.Hike {
           background-color: $sunnyYellow;
         }
 
-        &.Gear {
+        &.Trails {
           background-color: $bagnesBlue;
         }
 
@@ -55,12 +55,6 @@
     }
   }
 }
-
-// @include tablet {
-//   .activities {
-//     margin: 0;
-//   }
-// }
 
 @include media(tablet, phone) {
   .activities {

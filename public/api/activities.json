@@ -1,69 +1,44 @@
 {
   "winterActivities": [
     {
-      "title": "Trails",
-      "text": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.",
-      "imgUrl": "../images/activity.jpg"
+      "title": "Ride",
+      "text": "Verbier is the ultimate ski or snowboard experience. Conveniently located near the slopes, enjoy endless mountain adventures and cozy après-ski comfort.",
+      "imgUrl": "../images/winter-activities/ride.jpg"
     },
     {
       "title": "Gear",
-      "text": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.",
-      "imgUrl": "../images/activity.jpg"
+      "text": "Rent top-quality skis, snowboards, off-piste gear, and skinning equipment, as well as stylish mountain attire to make the most of your adventures.",
+      "imgUrl": "../images/winter-activities/gear.jpg"
     },
     {
       "title": "Heliski",
-      "text": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Caffè Goomah",
-      "text": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Shed. Burgers",
-      "text": "About experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.",
-      "imgUrl": "../images/activity.jpg"
+      "text": "Take your mountain experience to new heights. Soar above the peaks and enjoy the thrill of untracked powder runs. Book now for an unforgettable adventure.",
+      "imgUrl": "../images/winter-activities/heliski.jpg"
     }
   ],
   "summerActivities": [
     {
+      "title": "Hike",
+      "text": "Discover the breathtaking beauty of Verbier's mountains on foot. Enjoy easy access to stunning hiking trails for all levels. Experience nature in its purest form.",
+      "imgUrl": "../images/summer-activities/trails.jpg"
+    },
+    {
       "title": "Trails",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Gear",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Lorem",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Caffè Goomah",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
-    },
-    {
-      "title": "Shed. Burgers",
-      "text": "About experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
+      "text": "Discover the thrilling mountain terrain of Verbier on two wheels. With trails for riders of all levels, gear up for an epic mountain biking adventure. Stunning scenery awaits you.",
+      "imgUrl": "../images/summer-activities/mountainbiking.jpg"
     }
   ],
 
   "restaurants": [
     {
       "title": "Caffè Goomah",
-      "text": "About food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
+      "text": "Indulge in American-Italian cuisine with a trendy twist at [Restaurant Name]. Savor delicious dishes and craft cocktails in a stylish setting. Book your table and experience dining like a boss.",
+      "imgUrl": "../images/eat/goomah.jpg"
     },
     {
       "title": "Shed. Burgers",
-      "text": "About food. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet nobis quisquam necessitatibus? Quisquam necessitatibus ipsum aliquid fuga ratione.",
-      "imgUrl": "../images/activity.jpg"
+      "text": "Satisfy your cravings after a long day on the slopes. Enjoy juicy burgers made with top-quality ingredients, paired with crafted cocktails in a relaxed and friendly atmosphere.",
+      "imgUrl": "../images/eat/shed.jpg"
     }
   ]
 }
