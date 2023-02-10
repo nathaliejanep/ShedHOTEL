@@ -3,12 +3,10 @@ import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
 import winterHero from '../../assets/images/home/view.jpg';
-import summerHero from '../../assets/images/summer-hero.jpg';
-import shedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
+import summerHero from '../../assets/images/home/summer-hero.jpg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 // import fasade from '../../assets/images/fasade-drawing.png';
-import roomBiggie from '../../assets/images/room-biggie.jpg';
-import pizza from '../../assets/images/pizza.jpg';
+import pizza from '../../assets/images/home/pizza.jpg';
 
 import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';

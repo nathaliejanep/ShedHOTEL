@@ -9,9 +9,9 @@ const Gallery = () => {
       <section className="container__section">
         <h1>Gallery</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iste
-          voluptatem reprehenderit consectetur itaque, quam at dolore cum atque
-          deleniti.
+          Get a glimpse of Shed. HOTEL. Discover the beauty and comfort of our
+          rooms, facilities, and surroundings before even booking your stay.
+          Explore now.
         </p>
       </section>
       <DynamicMenu items={galleries} />

@@ -2,10 +2,7 @@ import React from 'react';
 import './Carousel.scss';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import hotelHappening from '../../assets/images/hotel-happening.jpg';
-import hikingBridge from '../../assets/images/hiking-bridge.jpg';
 import fwt from '../../assets/images/events/fwt.JPG';
-import rentals from '../../assets/images/events/rentals.jpg';
 import palp from '../../assets/images/events/palp.jpg';
 
 const Carousel = () => {

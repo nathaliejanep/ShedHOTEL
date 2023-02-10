@@ -1,6 +1,6 @@
 import React from 'react';
 import './Rooms.scss';
-import roomHero from '../../assets/images/room-hero.jpg';
+import roomHero from '../../assets/images/rooms/room-hero.jpg';
 // import axios from 'axios';
 // import { useState } from 'react';
 // import { useEffect } from 'react';
