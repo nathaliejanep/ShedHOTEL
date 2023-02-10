@@ -4,12 +4,7 @@ import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
 import './Activities.scss';
 
 const Activities = () => {
-  const activities = [
-    'Activities',
-    'Wine & Dine',
-    'Lorem Ipsum',
-    'Lorem Ipsum2',
-  ];
+  const activities = ['Activities', 'Wine & Dine'];
 
   // console.log(active);
   return (
@@ -17,10 +12,9 @@ const Activities = () => {
       <section className="container__section">
         <h1>Explore</h1>
         <p>
-          About experience. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.
-          Suspendisse elementum tristique est, eget pulvinar tellus tristique
-          at.
+          Savor delicious cuisine and explore the stunning beauty of Verbier.
+          Whether you're a foodie or an adventure-seeker, this mountain
+          destination has something for everyone. Book your trip now.
         </p>
         <div className="season-section">
           <SeasonPicker />
@@ -28,7 +22,6 @@ const Activities = () => {
       </section>
 
       <DynamicMenu items={activities} />
-      {/* <div id="contains">{selectedTab()}</div> */}
     </div>
   );
 };

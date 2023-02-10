@@ -8,8 +8,6 @@ const ActivityComponent = ({ tab }) => {
   const { winter } = useContext(Context);
   const [data, setData] = useState([]);
 
-  // console.log('data', data);
-  // console.log('tab', tab);
   const getData = () => {
     axios
       .get('api/activities.json')
