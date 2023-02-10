@@ -1,6 +1,6 @@
 import React from 'react';
 import './Faq.scss';
-import { useLoaderData } from 'react-router-dom';
+// import { useLoaderData } from 'react-router-dom';
 
 const Faq = () => {
   // const season = useLoaderData();
