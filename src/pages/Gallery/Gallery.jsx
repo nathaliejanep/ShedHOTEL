@@ -2,7 +2,7 @@ import React from 'react';
 import DynamicMenu from '../../components/DynamicContainer/DynamicContainer';
 import './Gallery.scss';
 const Gallery = () => {
-  const galleries = ['Rooms', 'Hotel'];
+  const galleries = ['Hotel', 'Rooms'];
 
   return (
     <div className="container">
