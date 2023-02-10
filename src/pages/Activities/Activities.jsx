@@ -22,7 +22,6 @@ const Activities = () => {
       </section>
 
       <DynamicMenu items={activities} />
-      {/* <div id="contains">{selectedTab()}</div> */}
     </div>
   );
 };
