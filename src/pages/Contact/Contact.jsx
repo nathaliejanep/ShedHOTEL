@@ -12,10 +12,10 @@ const Contact = () => {
         <section className="container__section">
           <h1>Contact</h1>
           <p>
-            About us. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec elit ligula, laoreet et arcu at, dignissim blandit ligula.
-            Suspendisse elementum tristique est, eget pulvinar tellus tristique
-            at.
+            Contact us for any inquiries or to book a room. Our friendly staff
+            will be happy to assist you. For restaurant reservations, please
+            call 078 226 02 26 to secure your table and experience the finest
+            dining in town.
           </p>
           <p>
             <a href="mailto:info@shedhotels.com">info@shedhotels.com</a>
