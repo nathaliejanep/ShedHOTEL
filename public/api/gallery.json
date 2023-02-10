@@ -1,22 +1,72 @@
 {
   "rooms": [
-    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
-    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
-    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
-    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
-    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
-    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" },
-    { "alt": "Double Room", "imgUrl": "../images/room1.jpg" },
-    { "alt": "Single Room", "imgUrl": "../images/room2.jpg" }
+    { "src": "../images/rooms/roomie/roomie.jpg", "alt": "Roomie" },
+    { "src": "../images/rooms/roomie/roomie-bedroom.jpg", "alt": "Roomie" },
+    { "src": "../images/rooms/roomie/roomie-bathroom.jpg", "alt": "Roomie" },
+    { "src": "../images/rooms/biggie/biggie-balcony.jpg", "alt": "Biggie" },
+    { "src": "../images/rooms/biggie/biggie.jpg", "alt": "Biggie" },
+    { "src": "../images/rooms/biggie/biggie-bedroom.jpg", "alt": "Biggie" },
+    { "src": "../images/rooms/biggie/biggie-bathroom.jpg", "alt": "Biggie" },
+    {
+      "src": "../images/rooms/suite/fancy-buddy-suite.jpg",
+      "alt": "Fancy Buddy Suite"
+    },
+    {
+      "src": "../images/rooms/suite/suite-livingroom.jpg",
+      "alt": "Fancy Buddy Suite"
+    },
+    {
+      "src": "../images/rooms/suite/suite-balcony.jpg",
+      "alt": "Fancy Buddy Suite"
+    },
+    {
+      "src": "../images/rooms/suite/suite-bathroom.jpg",
+      "alt": "Fancy Buddy Suite"
+    },
+    {
+      "src": "../images/rooms/suite/suite-shower.jpg",
+      "alt": "Fancy Buddy Suite"
+    },
+    { "src": "../images/rooms/buddy/buddy.jpg", "alt": "Buddy" },
+    { "src": "../images/rooms/buddy/buddy-entrance.jpg", "alt": "Buddy" },
+    { "src": "../images/rooms/buddy/buddy-bedroom.jpg", "alt": "Buddy" },
+    { "src": "../images/rooms/buddy/buddy-bathroom.jpg", "alt": "Buddy" },
+    { "src": "../images/rooms/loonie/loonie-bathroom.jpg", "alt": "Loonie" },
+    { "src": "../images/rooms/loonie/loonie-desktop.jpg", "alt": "Loonie" }
   ],
-  "amenities": [
-    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
-    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
-    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
-    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
-    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
-    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" },
-    { "alt": "Bathroom", "imgUrl": "../images/bathroom.jpg" },
-    { "alt": "Balcony", "imgUrl": "../images/balcony.jpg" }
+  "hotel": [
+    { "src": "../images/amenities/lights.jpg", "alt": "Lights" },
+    {
+      "src": "../images/amenities/bedside.jpg",
+      "alt": "Bedside"
+    },
+    {
+      "src": "../images/amenities/wall.jpg",
+      "alt": "Wall"
+    },
+    {
+      "src": "../images/amenities/toilet.jpg",
+      "alt": "Toilet"
+    },
+    {
+      "src": "../images/amenities/chair.jpg",
+      "alt": "Chair"
+    },
+    {
+      "src": "../images/amenities/room-nr.jpg",
+      "alt": "Room number"
+    },
+    {
+      "src": "../images/amenities/breakfast.jpg",
+      "alt": "breakfast"
+    },
+    {
+      "src": "../images/amenities/shelf.jpg",
+      "alt": "shelf"
+    },
+    {
+      "src": "../images/amenities/self-check-in.jpg",
+      "alt": "self-check-in"
+    }
   ]
 }

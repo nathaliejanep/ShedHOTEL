@@ -27,17 +27,17 @@ const GalleryComponent = ({ tab }) => {
         <>
           {data?.rooms?.map((room, i) => (
             <div key={i} className="gallery-item">
-              <img src={room.imgUrl} alt={room.alt} />
+              <img src={room.src} alt={room.alt} />
             </div>
           ))}
         </>
       ) : null}
 
-      {tab === 'Nooks & Cranes' ? (
+      {tab === 'Hotel' ? (
         <>
-          {data?.amenities?.map((room, i) => (
-            <div key={i}>
-              <img src={room.imgUrl} alt={room.alt} />
+          {data?.hotel?.map((room, i) => (
+            <div key={i} className="gallery-item">
+              <img src={room.src} alt={room.alt} />
             </div>
           ))}
         </>

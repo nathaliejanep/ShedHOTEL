@@ -15,8 +15,8 @@ const DynamicContainer = ({ items }) => {
       case 'Wine & Dine':
         return <ActivityComponent tab={active} />;
 
+      case 'Hotel':
       case 'Rooms':
-      case 'Nooks & Cranes':
         return <GalleryComponent tab={active} />;
 
       default:
@@ -24,7 +24,7 @@ const DynamicContainer = ({ items }) => {
           setActive('Activities');
           return <ActivityComponent tab={active} />;
         }
-        setActive('Rooms');
+        setActive('Hotel');
         return <GalleryComponent tab={active} />;
     }
   };
