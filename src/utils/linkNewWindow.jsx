@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const openInNewWindow = (url) => {
   window.open(url, '_blank');
+  console.log('check if we reach this function on deployment');
 };
 
 const LinkNewWindow = ({ to, children }) => (
