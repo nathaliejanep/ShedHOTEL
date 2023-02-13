@@ -2,12 +2,15 @@
 
 This project is built for Shed. HOTEL and its restaurant - Caffé Goomah. The website has been designed with simplicity and ease-of-use in mind. Providing visitors with all the information they need in just a few clicks to plan a fantastic stay or visit. We hope that visitors will find the website to be a warm and exciting platform that makes them feel at home and eager to book their next trip.
 
-- Site will be deployed offically when all the content such as copywriting and images are available.
+Site will be deployed offically when all the content such as copywriting and images are available.\
+Meanwhile the site is deployed on Netlify: [Shed Hotel Test Website](https://shedhotel-test.netlify.app/)
 
 ## Tech Stack
 - React
 - Javascript
 - Sass
+- GoDaddy
+- Netlify (Until offical deployment)
 
 ## Packages
 - jest
