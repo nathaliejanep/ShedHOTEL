@@ -93,7 +93,7 @@ const Navbar = () => {
               </li>
 
               <li onClick={closeMobileMenu}>
-                <LinkNewWindow to="caffegoomah">Caffè Goomah</LinkNewWindow>
+                <LinkNewWindow to="/caffegoomah">Caffè Goomah</LinkNewWindow>
                 {/* <NavLink
                   to="/caffegoomah"
                   className={({ isActive }) =>
