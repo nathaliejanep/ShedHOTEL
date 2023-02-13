@@ -1,9 +1,8 @@
-let winter;
 export const determineSeason = () => {
+  let winter;
   const date = new Date();
-
   const month = date.getMonth();
-
+  console.log(winter);
   // January - April
   if (month <= 4) {
     winter = true;
@@ -18,5 +17,5 @@ export const determineSeason = () => {
     winter = false;
   }
 
-  return winter;
+  return (winter = true);
 };
