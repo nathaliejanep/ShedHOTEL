@@ -2,18 +2,13 @@ import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
-// import { Context } from '../../context/SeasonContext';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import LinkNewWindow from '../../utils/linkNewWindow';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  // const [goBack, setGoBack] = useState(false);
-  // const { winter, setWinter } = useContext(Context);
   const path = useLocation();
-  const browserWidth = window.innerWidth;
-  console.log(path.pathname);
-  console.log(browserWidth);
+
   // const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
 
@@ -93,8 +88,8 @@ const Navbar = () => {
               </li>
 
               <li onClick={closeMobileMenu}>
-                <LinkNewWindow to="/caffegoomah">Caffè Goomah</LinkNewWindow>
-                {/* <NavLink
+                {/* <LinkNewWindow to="/caffegoomah">Caffè Goomah</LinkNewWindow> */}
+                <NavLink
                   to="/caffegoomah"
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
@@ -102,7 +97,7 @@ const Navbar = () => {
                   onClick={closeMobileMenu}
                 >
                   Caffè Goomah
-                </NavLink> */}
+                </NavLink>
               </li>
 
               <li>
