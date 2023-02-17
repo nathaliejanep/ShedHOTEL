@@ -50,12 +50,11 @@ const Home = () => {
           <h1>Welcome</h1>
           <p>
             Footsteps from the center of Verbier, Shed. HOTEL offers everything
-            you need and nothing you don't. Newly renovated and reopened by
-            three Swedish friends, our contemporary sportique hotel is the go-to
-            retreat if you want to feel at home while enjoying outdoor pursuits
-            in the Swiss mountains. Looking for a place where you sleep like a
-            log, eat like Robert de Niro and are treated like family? You've
-            just found it.
+            you need and nothing you don't. Renovated and rebranded in 2022 by
+            three Swedish friends, the building now houses a vibrant, intimate
+            sportque hotel with spacious rooms, a stone-baked pizza restaurant,
+            a bold feel at home energy, and a personal team that caters to your
+            most spontaneous requests.
           </p>
 
           {/* <img
@@ -76,21 +75,18 @@ const Home = () => {
           <p>
             Our selection of 16 newly renovated rooms feature contemporary
             comfort in an alpine-scandi setting. In airy spaces, abstract art
-            and lifestyle books blend with luxurious duvets and a clean
-            botanical scent, while Tom Dixon carpets and views of craggy
-            mountain peaks create a contrast between industrial landscapes and
-            nature.
+            and eccentric books co-exist with luxurious duvets, while Tom Dixon
+            carpets and views of craggy mountains create a contrast between
+            industrial landscapes and nature.
           </p>
         </section>
 
         <section className="card">
           <div className="card__text">
-            <h2>
-              Wine, Dine <br />& Pizza
-            </h2>
+            <h2>Shed. GROUP</h2>
             <p>
-              About restaurant concepts. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. By Shed. GROUP.
+              It all started with a dream about turning our strong gastronomic
+              affinity into passion projects. This is Shed. GROUP.
             </p>
             <NavLink to="/caffegoomah" className="card-link">
               Caffè Goomah
@@ -112,15 +108,9 @@ const Home = () => {
         <section className="container__section">
           <h3>Come ramble with us</h3>
           <p>
-            2 hours from Geneva airport Geneva, Verbier offers a mix of Alpine
-            charm and international flair. The village’s potential as a ski
-            resort was not discovered until 1925 when a group of mountaineers
-            hiked up 15km for the sole purpose of skiing back down again. Since
-            then, the place has become one of the world’s foremost freeride
-            paradises. Today, everyone’s welcome here. Swing from beer-fuelled
-            après-skis to high end cocktail bars, from burgers to Michelin
-            stars. In Verbier, ski bums and celebs slalom, eat and even
-            paraglide in harmony.
+            Shed. HOTEL welcomes everyone to step into comfortable living with a
+            youthful and personal touch. It's your holiday home where you sleep
+            like a log, eat like De Niro and get treated like family.
           </p>
         </section>
 

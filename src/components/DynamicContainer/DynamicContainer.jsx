@@ -11,7 +11,7 @@ const DynamicContainer = ({ items }) => {
 
   const selectedTab = () => {
     switch (active) {
-      case 'Activities':
+      case 'Explore':
       case 'Wine & Dine':
         return <ActivityComponent tab={active} />;
 
@@ -20,8 +20,8 @@ const DynamicContainer = ({ items }) => {
         return <GalleryComponent tab={active} />;
 
       default:
-        if (urlPath === '/activities') {
-          setActive('Activities');
+        if (urlPath === '/explore') {
+          setActive('Explore');
           return <ActivityComponent tab={active} />;
         }
         setActive('Hotel');
@@ -50,9 +50,7 @@ const DynamicContainer = ({ items }) => {
         </ul>
       </div>
 
-      <div
-        className={`${urlPath === '/activities' ? 'activities' : 'gallery'}`}
-      >
+      <div className={`${urlPath === '/explore' ? 'explore' : 'gallery'}`}>
         {selectedTab()}
       </div>
     </div>

@@ -12,10 +12,11 @@ const Contact = () => {
         <section className="container__section">
           <h1>Contact</h1>
           <p>
-            Contact us for any inquiries or to book a room. Our friendly staff
-            will be happy to assist you. For restaurant reservations, please
-            call 078 226 02 26 to secure your table and experience the finest
-            dining in town.
+            With a personal approach to service, everyone at Shed. HOTEL is at
+            your disposal to ensure that even your most spontaneous requests are
+            met when booking your next stay with us. Just call or email us with
+            any enquiries. Having questions about our restaurant? Please contact
+            078 226 02 26
           </p>
           <p>
             <a href="mailto:info@shedhotels.com">info@shedhotels.com</a>

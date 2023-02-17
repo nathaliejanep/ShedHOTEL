@@ -10,7 +10,7 @@ import {
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import Rooms from './pages/Rooms/Rooms';
-import Activities from './pages/Activities/Activities';
+import Explore from './pages/Explore/Explore';
 import Goomah from './pages/Goomah/Goomah';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
@@ -27,7 +27,7 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} loader={determineSeason} />
         <Route path="/rooms" element={<Rooms />} />
-        <Route path="/activities" element={<Activities />} />
+        <Route path="/explore" element={<Explore />} />
         <Route path="/caffegoomah" element={<Goomah />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />

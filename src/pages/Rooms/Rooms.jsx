@@ -87,10 +87,10 @@ const Rooms = () => {
           <h1>Our Rooms</h1>
           <p>
             Escape to the mountains and experience the ultimate comfort at Shed.
-            HOTEL. Our cozy rooms, decorated in scandinavian style, offer
-            breathtaking views of the surrounding peaks. Each room is equipped
-            with modern amenities to ensure a pleasant stay. Book your mountain
-            retreat now and immerse yourself in the beauty of the Alps.
+            With categories that cater to everyone's demands, all our newly
+            renovated rooms feature ultra-comfy beds, desks for your remote
+            work, smart TVs, views over the mountain peaks, eccentric books and
+            curated artworks.
           </p>
         </section>
         <div className="rooms__card-wrapper">
@@ -104,10 +104,11 @@ const Rooms = () => {
                 2 king size beds + 1 single bed | approx 30m² up to 3 adults
               </p>
               <p>
-                A comfortable room for couples or buddies, with a king size bed,
-                a cozy corner from where you’ll forget the flat screen TV, to
-                focus on the big balcony and its mountain view – a feast for the
-                eyes.
+                With lots of space to take in the air of the Alps, Roomie is the
+                go-to room for those wanting that extra space to stretch out the
+                legs after a day on the mountain. Enjoy your après on the big
+                balcony, your book on the sofa and your sleep in the comfy king
+                size bed.
               </p>
               <p>
                 Featuring a king size bed and a single bed, mini living-room,
@@ -136,10 +137,10 @@ const Rooms = () => {
                 children
               </p>
               <p>
-                With extra floor space, this is the perfect room for longer
-                stays and when you want to spread out. After a day on the
-                slopes, you can unwind in this two-bedroom and take in
-                spectacular views from your big sunny balcony.
+                With extra space over two connected bedrooms, featuring a king
+                size bed in each, Biggie is perfect for longer stays with
+                friends or family. After a full day of exploring the mountains,
+                this room, with its big sunny balcony, brings you back together.
               </p>
               <p>
                 Featuring two king-size beds, one single bed, mini living room,
@@ -168,10 +169,11 @@ const Rooms = () => {
                 children
               </p>
               <p>
-                Comfy atmosphere, this is the ideal cozy nest for your holidays.
-                Spacious, comfortable, facing the most beautiful mountains of
-                the Val de Bagnes ... It is unique and will delight all those
-                wishing to share good times as a couple or with friends.
+                Situated on the top floor with a sunny balcony overlooking the
+                Grand Combin, our Big Buddie Suite is the ideal nest for your
+                Alp holiday. Spacious, comfortable and contemporary, this suite
+                welcomes you with luxurious duvets, an area for relaxation and a
+                desk for your work break.
               </p>
               <p>
                 Featuring a king size bed, living-room, flat screen TV, safe,
@@ -199,11 +201,10 @@ const Rooms = () => {
                 1 King size bed | Approx 20m² up to 2 adults + 1 children.
               </p>
               <p>
-                With your special someone, this is the best way to spend time in
-                Verbier. You will find all the essentials here, enough to build
-                up your strength for each day in the mountains. Oriented north,
-                the room offer a breathtaking view of some of the biggest
-                freerides in Verbier!
+                Comfortable and contemporary, Buddie is the perfect choice for
+                those traveling with a partner or a friend. Oriented north, the
+                room offers a large balcony overlooking Alpine peaks, a king
+                size bed, a desk and all the essentials you'll need.
               </p>
               <p>
                 Featuring a king size bed, flat screen TV, safe, free WiFi,
@@ -230,9 +231,10 @@ const Rooms = () => {
                 1 large single bed | approx 15m² up to 1 adult
               </p>
               <p>
-                Loonie is compact yet comfy – the perfect room for the
-                mountaineer. Provided with a single bed, you’re guaranteed a
-                good night’s sleep in between your adventures.
+                Loonie is compact yet comfy - the perfect room for the
+                mountaineer. Expect views of your next mission's peaks, a desk
+                for your remote work and a comfortable, large single bed for a
+                good night's sleep.
               </p>
               <p>
                 Featuring 1 large single bed, flat screen TV, safe, free WiFi,

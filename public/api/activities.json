@@ -1,30 +1,35 @@
 {
   "winterActivities": [
     {
-      "title": "Ride",
-      "text": "Verbier is the ultimate ski or snowboard experience. Conveniently located near the slopes, enjoy endless mountain adventures and cozy après-ski comfort.",
+      "title": "Slopes",
+      "text": "In the 4 Vallées playground, a single ticket gives you access to 412 km of bumps, steeps, trees and runs suitable for all levels of skill - whether you're here to ski, snowboard or toboggan.",
       "imgUrl": "../images/winter-activities/ride.jpg"
     },
     {
-      "title": "Gear",
-      "text": "Rent top-quality skis, snowboards, off-piste gear, and skinning equipment, as well as stylish mountain attire to make the most of your adventures.",
+      "title": "Town",
+      "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. So - whether you're looking for it melted, in a pot or on a burger, cheese lovers: we welcome you home.",
       "imgUrl": "../images/winter-activities/gear.jpg"
     },
     {
-      "title": "Heliski",
-      "text": "Take your mountain experience to new heights. Soar above the peaks and enjoy the thrill of untracked powder runs. Book now for an unforgettable adventure.",
+      "title": "Sky",
+      "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
       "imgUrl": "../images/winter-activities/heliski.jpg"
     }
   ],
   "summerActivities": [
     {
-      "title": "Hike",
-      "text": "Discover the breathtaking beauty of Verbier's mountains on foot. Enjoy easy access to stunning hiking trails for all levels. Experience nature in its purest form.",
+      "title": "Trails",
+      "text": "Want to run trails, get on a downhill bike, swim in mountain lakes or spend the night in a hut? Thanks to a vast network of routes and hikes, this place allows you to lose yourself in nature.",
       "imgUrl": "../images/summer-activities/trails.jpg"
     },
     {
-      "title": "Trails",
-      "text": "Discover the thrilling mountain terrain of Verbier on two wheels. With trails for riders of all levels, gear up for an epic mountain biking adventure. Stunning scenery awaits you.",
+      "title": "Town",
+      "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. Summer here welcomes music festivals, a horse show, golf, yoga classes, kids camps, cows and edelweiss.",
+      "imgUrl": "../images/summer-activities/mountainbiking.jpg"
+    },
+    {
+      "title": "Sky",
+      "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
       "imgUrl": "../images/summer-activities/mountainbiking.jpg"
     }
   ],

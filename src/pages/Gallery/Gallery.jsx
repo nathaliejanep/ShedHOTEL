@@ -8,11 +8,7 @@ const Gallery = () => {
     <div className="container">
       <section className="container__section">
         <h1>Gallery</h1>
-        <p>
-          Get a glimpse of Shed. HOTEL. Discover the beauty and comfort of our
-          rooms, facilities, and surroundings before even booking your stay.
-          Explore now.
-        </p>
+        <p>Take a visual stroll through our place, people and projects.</p>
       </section>
       <DynamicMenu items={galleries} />
     </div>

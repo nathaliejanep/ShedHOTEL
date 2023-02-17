@@ -2,7 +2,7 @@
 
 .activity-component {
 }
-.activities {
+.explore {
   margin: 0 10%;
 
   .card {
@@ -23,31 +23,31 @@
       }
 
       &.winter {
-        &.Ride {
+        &.Slopes {
           background-color: $forestGreen;
           color: $white;
         }
 
-        &.Gear {
+        &.Town {
           background-color: $bagnesBlue;
           color: $white;
         }
 
-        &.Heliski {
+        &.Sky {
           background-color: $sunnyYellow;
         }
       }
 
       &.summer {
-        &.Hike {
-          background-color: $sunnyYellow;
-        }
-
         &.Trails {
           background-color: $bagnesBlue;
         }
 
-        &.Lorem {
+        &.Town {
+          background-color: $sunnyYellow;
+        }
+
+        &.Sky {
           background-color: $forestGreen;
           color: $white;
         }
@@ -57,7 +57,7 @@
 }
 
 @include media(tablet, phone) {
-  .activities {
+  .explore {
     margin: 0 5px;
   }
 }
