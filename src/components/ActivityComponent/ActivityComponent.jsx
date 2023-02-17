@@ -26,7 +26,7 @@ const ActivityComponent = ({ tab }) => {
   return (
     <div className="activity-component">
       <>
-        {tab === 'Activities' ? (
+        {tab === 'Explore' ? (
           <>
             {winter ? (
               <>

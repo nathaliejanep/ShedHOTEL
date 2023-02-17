@@ -77,13 +77,13 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to="/activities"
+                  to="/explore"
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Activities
+                  Explore
                 </NavLink>
               </li>
 
