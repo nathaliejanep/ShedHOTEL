@@ -2,6 +2,7 @@
 @import '../../sassStyles/_variables.scss';
 
 .carousel {
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -26,11 +27,9 @@
     left: 0;
     margin-left: 100px;
 
-    &___3-Nqo {
-      border: 10px dotted goldenrod;
-    }
     &-text {
       position: absolute;
+      width: 80%;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
@@ -45,16 +44,21 @@
         font-size: toRem(20);
         line-height: toRem(32);
       }
+
       a:hover {
         color: $sunnyYellow;
       }
     }
-    &.gear {
+
+    &.snow-forecast {
       background-color: $bagnesBlue;
       color: $white;
     }
+    &.gear {
+      background-color: $sunnyYellow;
+    }
     &.fwt {
-      color: $forestGreen;
+      color: $white;
     }
 
     &.concierge {
@@ -67,19 +71,19 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 10% 10%;
     display: block;
   }
 
   @include phone {
     h3 {
-      font-size: toRem(14);
+      font-size: toRem(18);
     }
 
     p {
-      // font-size: toRem(12);
-      // line-height: toRem(16);
-      display: none;
+      font-size: toRem(14);
+      line-height: toRem(16);
+      // display: none;
     }
   }
 }

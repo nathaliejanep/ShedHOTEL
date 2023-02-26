@@ -5,6 +5,8 @@ import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import LinkNewWindow from '../../utils/linkNewWindow';
+import Button from '../Button/Button';
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const path = useLocation();
@@ -137,14 +139,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <a
-                  href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="green-btn"
-                >
-                  Reserve
-                </a>
+                <Button />
               </li>
             </ul>
           </div>

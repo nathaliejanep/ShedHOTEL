@@ -13,6 +13,7 @@ import '../../sassStyles/layouts/_page-layout.scss';
 import Carousel from '../../components/Carousel/Carousel';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Subscribe from '../../components/Subscribe/Subscribe';
+import Button from '../../components/Button/Button';
 
 const Home = () => {
   const { winter } = useContext(Context);
@@ -105,13 +106,14 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="container__section">
+        <section className="container__section home__ramble">
           <h3>Come ramble with us</h3>
           <p>
             Shed. HOTEL welcomes everyone to step into comfortable living with a
             youthful and personal touch. It's your holiday home where you sleep
             like a log, eat like De Niro and get treated like family.
           </p>
+          <Button />
         </section>
 
         <Carousel />

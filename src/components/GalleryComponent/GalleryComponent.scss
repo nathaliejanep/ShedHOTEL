@@ -26,6 +26,10 @@
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%;
+      // &:hover {
+      //   -webkit-transform: scale(1.5, 1.5);
+      //   z-index: 10;
+      // }
     }
   }
 }
@@ -36,8 +40,11 @@
 
     &-wrapper {
       // grid-auto-flow: row;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 1px;
+    }
+    &-item {
+      height: 400px;
     }
   }
 }
