@@ -2,7 +2,7 @@ import React from 'react';
 import './Carousel.scss';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import fwt from '../../assets/images/events/fwt.jpeg';
+import fwt from '../../assets/images/events/fwt.jpg';
 
 const Carousel = () => {
   return (
