@@ -79,7 +79,7 @@
     // margin: 0 5%;
 
     &__section {
-      padding: 25px 10%;
+      padding: 50px 20px;
 
       // DELETE - move to home and rename?
       &-image {
@@ -88,6 +88,8 @@
     }
     p {
       margin: 0;
+      line-height: toRem(30);
+      letter-spacing: 0.5px;
     }
   }
 }
