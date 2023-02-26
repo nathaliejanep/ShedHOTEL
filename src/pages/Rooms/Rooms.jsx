@@ -259,18 +259,13 @@ const Rooms = () => {
             <span>and Hotel Amenities</span>
           </h3>
           <p>
+            <span>FREE WIFI</span>
             <span>BEDS DRESSED IN COTTON</span>
-            <span>MALIN+GOETZ BATHROOM AMENITIES</span>
-
-            <span>HAIR DRYER</span>
-            <span>SITTING AREA AND/OR DESK</span>
-            <span>USB/USB-C PORTS</span>
-            <span>
-              CURATED FREE CONTENT ON SAMSUNG LED TVS WITH SCREENCASTING
-              CAPABILTIES
-            </span>
+            <span>LUXURIOUS BATHROOM AMENITIES</span>
             <span>DAILY HOUSEKEEPING & LAUNDRY/DRY CLEANING SERVICES</span>
-            <span>LES CLEFS D’OR CONCIERGE, RESTAURANT & PARKING</span>
+            <span>APP CONCIERGE</span>
+            <span>RESTAURANT & CONFERENCE ROOM</span>
+            <span>INDOOR PARKING</span>
           </p>
         </section>
         {/* DYNAMIC SOLUTION */}
