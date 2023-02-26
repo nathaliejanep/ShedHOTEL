@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import './ImageSlider.scss';
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import LeftArrow from '../../assets/images/logos/arrow-left.svg';
+import RightArrow from '../../assets/images/logos/arrow-right.svg';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const ImageSlider = ({ slides }) => {
@@ -11,7 +12,6 @@ const ImageSlider = ({ slides }) => {
 
   const path = useLocation().pathname;
 
-  // console.log(path);
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? length - 1 : currentIndex - 1;
@@ -27,21 +27,17 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className={path === '/' ? 'slider__home' : 'slider__rooms'}>
       <div className="slide-arrows">
-        <FaArrowLeft className="arrow__left" onClick={prevSlide} />
+        <img src={LeftArrow} alt="Left arrow" onClick={prevSlide} />
         <p>
-          {currentSlideNr} / {length}
+          {currentSlideNr}/{length}
         </p>
-        <FaArrowRight className="arrow__right" onClick={nextSlide} />
+        <img src={RightArrow} alt="Right arrow" onClick={nextSlide} />
       </div>
       <div className="slide-title">
         <h2>{slides[currentIndex].alt}</h2>
         <NavLink to="/rooms">View Rooms</NavLink>
       </div>
-      <img
-        className=""
-        src={slides[currentIndex].src}
-        alt={slides[currentIndex].alt}
-      />
+      <img src={slides[currentIndex].src} alt={slides[currentIndex].alt} />
     </div>
   );
 };
