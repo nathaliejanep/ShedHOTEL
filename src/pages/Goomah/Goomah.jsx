@@ -77,12 +77,12 @@ const Goomah = () => {
 
         <section className="card">
           <div className="card__text goomah__monthly">
-            <p className="font-sans">Monthly Special - No.01</p>
+            <p className="font-sans">Our Favourite Pick - No.01</p>
 
-            <h2>Pizzaboutit</h2>
+            <h2>Robert De Nitro</h2>
             <p className="goomah__monthly-ingredients">
-              Creme fraîche, Fior Di Latte, Confit Onion, Lardons, Taleggio,
-              Thyme
+              San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja, Red
+              Onion, Basil, Oregano, Hot Honey
             </p>
           </div>
 

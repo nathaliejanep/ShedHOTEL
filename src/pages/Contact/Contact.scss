@@ -1,6 +1,13 @@
+@import '../../sassStyles/_mixins.scss';
 .contact {
   a {
     text-transform: uppercase;
     font-family: 'Untitled Sans';
+  }
+}
+
+@include media(phone, tablet) {
+  .hotel-hero {
+    object-position: 30%;
   }
 }
