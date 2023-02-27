@@ -16,9 +16,6 @@
     }
   }
 
-  .hero-image {
-  }
-
   .hero {
     height: calc(100vh - 50px);
 
@@ -45,7 +42,8 @@
 
     .mouth-logo {
       width: min(25vw, 300px);
-      margin-top: 10%;
+      margin-top: 25px;
+      margin-bottom: 50px;
       animation: rotation 10s infinite linear;
 
       @keyframes rotation {
@@ -60,7 +58,7 @@
 
     p {
       font-style: normal;
-      border: 1px solid black;
+      margin-bottom: 50px;
     }
 
     a {
@@ -69,7 +67,7 @@
       font-size: toRem(25);
 
       &:hover {
-        // DO SOMETHING
+        color: $white;
       }
     }
   }
@@ -77,6 +75,14 @@
   &__book {
     background-color: $goomahBlue;
     color: $white;
+
+    p {
+      font-family: 'Untitled Sans';
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: toRem(25);
+    }
   }
 
   &__monthly {
@@ -125,7 +131,10 @@
     .hero {
       height: calc(100vh - 155px);
     }
-
+    .mouth-logo {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     &__menu {
       img {
         height: 100vh;
