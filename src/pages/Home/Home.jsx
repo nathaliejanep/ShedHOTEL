@@ -87,7 +87,9 @@ const Home = () => {
             <h2>Shed. GROUP</h2>
             <p>
               It all started with a dream about turning our strong gastronomic
-              affinity into passion projects. This is Shed. GROUP.
+              affinity into passion projects.
+              <br />
+              This is Shed. GROUP.
             </p>
             <NavLink to="/caffegoomah" className="card-link">
               Caffè Goomah

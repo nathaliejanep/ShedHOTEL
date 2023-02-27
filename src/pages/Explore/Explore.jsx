@@ -16,8 +16,8 @@ const Explore = () => {
           a group of mountaineers hiked up 15km for the sole purpose of skiing
           back down again. Today, the place is one of the world's foremost
           freeride paradises, equally down to earth and out of this world.
-          Welcome to explore the place where ski bums, families and celebs
-          slalom, eat and paraglide in harmony.
+          Explore the place where ski bums, families and celebs slalom, eat and
+          paraglide in harmony.
         </p>
         <div className="season-section">
           <SeasonPicker />
