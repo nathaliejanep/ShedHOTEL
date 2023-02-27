@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
@@ -15,6 +15,12 @@ const Navbar = () => {
   const closeMobileMenu = () => setOpen(false);
 
   window.addEventListener('locationchange', function () {});
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>

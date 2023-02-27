@@ -65,23 +65,9 @@ const ActivityComponent = ({ tab }) => {
             {data?.restaurants?.map((restaurant, i) => (
               <section key={i} className="card">
                 <div className={`card__text ${restaurant.title}`}>
-                  <h2>{restaurant.title}</h2>
-                  <p>{restaurant.text}</p>
-                </div>
-                <div className="card__image">
-                  <img src={restaurant.imgUrl} alt={restaurant.title} />
-                </div>
-              </section>
-            ))}
-          </>
-        ) : null}
-
-        {tab === 'Lorem Ipsum' ? (
-          <>
-            {data?.restaurants?.map((restaurant, i) => (
-              <section key={i} className="card">
-                <div className={`card__text ${restaurant.title}`}>
-                  <h2>{restaurant.title}</h2>
+                  <a href="https://shedburgers.ch/">
+                    <h2>{restaurant.title}</h2>
+                  </a>
                   <p>{restaurant.text}</p>
                 </div>
                 <div className="card__image">

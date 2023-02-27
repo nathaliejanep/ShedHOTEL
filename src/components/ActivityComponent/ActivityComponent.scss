@@ -13,11 +13,19 @@
     &__text {
       &.Caffè {
         background-color: $signalRed;
+
+        a:hover {
+          color: $goomahGreen;
+        }
       }
 
       &.Burgers {
         background-color: $black;
         color: $white;
+
+        a:hover {
+          color: $signalRed;
+        }
       }
 
       &.winter {
