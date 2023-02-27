@@ -41,15 +41,16 @@
       &.summer {
         &.Trails {
           background-color: $bagnesBlue;
+          color: $white;
         }
 
         &.Town {
-          background-color: $sunnyYellow;
+          background-color: $white;
+          color: $forestGreen;
         }
 
         &.Sky {
-          background-color: $forestGreen;
-          color: $white;
+          background-color: $sunnyYellow;
         }
       }
     }

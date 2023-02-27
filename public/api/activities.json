@@ -3,17 +3,17 @@
     {
       "title": "Slopes",
       "text": "In the 4 Vallées playground, a single ticket gives you access to 412 km of bumps, steeps, trees and runs suitable for all levels of skill - whether you're here to ski, snowboard or toboggan.",
-      "imgUrl": "../images/winter-activities/ride.jpg"
+      "imgUrl": "../images/winter-activities/slopes.jpg"
     },
     {
       "title": "Town",
       "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. So - whether you're looking for it melted, in a pot or on a burger, cheese lovers: we welcome you home.",
-      "imgUrl": "../images/winter-activities/gear.jpg"
+      "imgUrl": "../images/winter-activities/town.jpg"
     },
     {
       "title": "Sky",
       "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
-      "imgUrl": "../images/winter-activities/heliski.jpg"
+      "imgUrl": "../images/winter-activities/sky.jpg"
     }
   ],
   "summerActivities": [
@@ -25,12 +25,12 @@
     {
       "title": "Town",
       "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. Summer here welcomes music festivals, a horse show, golf, yoga classes, kids camps, cows and edelweiss.",
-      "imgUrl": "../images/summer-activities/mountainbiking.jpg"
+      "imgUrl": "../images/summer-activities/town.jpg"
     },
     {
       "title": "Sky",
       "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
-      "imgUrl": "../images/summer-activities/mountainbiking.jpg"
+      "imgUrl": "../images/winter-activities/sky.jpg"
     }
   ],
 
