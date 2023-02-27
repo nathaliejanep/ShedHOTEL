@@ -19,6 +19,7 @@ import Error from './pages/Error/Error';
 import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 import Policy from './pages/Policy/Policy';
+import Terms from './pages/Terms/Terms';
 
 function App() {
   // console.log(window.location.pathname);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/hotelpolicy" element={<Policy />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="/*" element={<Error />} />
       </Route>
     )

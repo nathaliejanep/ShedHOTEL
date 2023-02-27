@@ -1,5 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Faq.scss';
+
 // import { useLoaderData } from 'react-router-dom';
 
 const Faq = () => {
@@ -32,13 +34,16 @@ const Faq = () => {
           for this service, but it will be worth it to have your pet by your
           side during your stay.
         </p>
+        <h3>Is breakfast included in the room rate?</h3>
+        <p>
+          Yes, breakfast is included in the room rate and is served daily in our
+          on-site restaurant.
+        </p>
         <h3>Do you have a restaurant on-site?</h3>
         <p>
-          Yes, we have a restaurant that serves a variety of delicious dishes.
-          Our restaurant offers a wide range of menu options, including local
-          specialties, international dishes, and vegetarian options. Whether you
-          are in the mood for a hearty breakfast, a light lunch, or a romantic
-          dinner, our restaurant has something to suit every taste and occasion.
+          Yes, we have a restaurant located inside the hotel. Check the link for
+          more information
+          <NavLink to="/caffegoomah"> Caffè Goomah</NavLink>
         </p>
         <h3>What type of payment do you accept?</h3>
         <p>
@@ -50,29 +55,19 @@ const Faq = () => {
         </p>
         <h3>Do you offer airport transfer services?</h3>
         <p>
-          Yes, we offer airport transfer services for a fee. Our airport
-          transfer service is a convenient and comfortable way to start your
-          stay with us. Whether you are traveling alone or with a group, we have
-          vehicles to accommodate your needs. Our drivers are professional,
-          friendly, and knowledgeable, and they will be happy to answer any
-          questions you may have about the area and the hotel.
+          We've partnered with local transportation companies for reliable
+          airport transfers. Let us know your travel plans and we'll arrange
+          transportation for you. We're committed to making your travel
+          experience comfortable and hassle-free.
         </p>
         <h3>Is parking available for guests?</h3>
         <p>
-          Yes, we have parking available for guests at no additional cost. Our
-          hotel provides ample parking for all guests, so you never have to
-          worry about finding a spot for your vehicle. Whether you are driving a
-          car, a truck, or a motorcycle, we have a space for you. Our parking is
-          secure, well-lit, and easily accessible, so you can park with peace of
-          mind and enjoy your stay.
-        </p>
-        <h3>Do you offer room service?</h3>
-        <p>
-          Yes, we offer room service for guests who would like to dine in their
-          room. Our room service menu features a selection of delicious dishes,
-          including breakfast items, light snacks, and full meals. Whether you
-          prefer to enjoy a quiet breakfast in bed, a late-night snack, or a
-          romantic dinner by candlelight
+          We offer on-site parking in a garage for a fee, but please note that
+          it is limited and subject to availability. Due to the limited
+          availability of parking spaces, we recommend reserving your spot in
+          advance to ensure availability during your stay. Our team will be
+          happy to assist you with any questions or concerns you may have about
+          parking.
         </p>
       </section>
     </div>

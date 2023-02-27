@@ -1,0 +1,23 @@
+@import '../_mixins.scss';
+.terms {
+  &__section {
+    padding: 0 50px;
+  }
+
+  p {
+    margin-bottom: 3rem;
+    line-height: toRem(32);
+  }
+
+  @include media(tablet, phone) {
+    &__section {
+      padding: 1rem;
+
+      h3 {
+        margin-bottom: toRem(10);
+        font-size: toRem(22);
+        font-weight: bold;
+      }
+    }
+  }
+}
