@@ -65,7 +65,7 @@ const Goomah = () => {
         <section className="container__section goomah__book">
           <h2>Book your table</h2>
           <p>
-            <a href="tel:+41772699795">+41 77 269 97 95</a>
+            <a href="tel:+41782260226">+41 78 226 02 26</a>
           </p>
           <p>
             Caffè Goomah is a walk-in only restaurant, offering a private

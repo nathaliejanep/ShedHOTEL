@@ -5,6 +5,8 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import shedFooterLogo from '../../assets/images/logos/shed-footer-logo.svg';
+import goomahLogo from '../../assets/images/logos/goomah-logo.svg';
+
 const Footer = () => {
   const path = useLocation().pathname;
   return (
@@ -14,9 +16,18 @@ const Footer = () => {
       >
         {/* EDIT ADDRESS TAG\ */}
         <div className="footer-info">
-          <img src={shedFooterLogo} alt="Shed Hotel Logo" />
+          <img
+            className="footer-logo"
+            src={path === '/caffegoomah' ? goomahLogo : shedFooterLogo}
+            alt="Shed Hotel Logo"
+          />
           <address>
-            <a href="tel:+41772699795">+41 77 269 97 95</a>
+            {path === '/caffegoomah' ? (
+              <a href="tel:+41782260226">+41 78 226 02 26</a>
+            ) : (
+              <a href="tel:+41772699795">+41 77 269 97 95</a>
+            )}
+
             {/* <a href="mailto:info@shedhotels.com">info@shedhotels.com</a> */}
 
             <a

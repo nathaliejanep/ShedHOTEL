@@ -52,11 +52,11 @@
       }
     }
 
-    // Book now button
-    &-btn {
-      border: 1px solid black;
-      align-self: flex-end;
+    &-image {
+      width: 100%;
     }
+
+    // Book now button
     a {
       display: inline-block;
       margin-top: auto;

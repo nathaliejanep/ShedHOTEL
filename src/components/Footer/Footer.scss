@@ -5,6 +5,12 @@
   flex-direction: column;
   font-size: toRem(25);
   padding-top: 50px;
+
+  // goomah
+  &-logo {
+    width: 300px;
+    height: auto;
+  }
   &-goomah {
     background-color: $signalRed;
   }
