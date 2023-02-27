@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <section className="hero">
-        <img className="hero-image" src={contactHero} alt="People talking" />
+        <img className="hero-image" src={contactHero} alt="Shed Hotel fasade" />
       </section>
 
       <div className="container">

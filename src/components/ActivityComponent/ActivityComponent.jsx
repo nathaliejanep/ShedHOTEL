@@ -24,7 +24,7 @@ const ActivityComponent = ({ tab }) => {
   }, []);
 
   return (
-    <div className="activity-component">
+    <div>
       <>
         {tab === 'Explore' ? (
           <>
