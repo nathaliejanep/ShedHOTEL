@@ -63,10 +63,6 @@
     {
       "src": "../images/amenities/shelf.jpg",
       "alt": "shelf"
-    },
-    {
-      "src": "../images/amenities/self-check-in.jpg",
-      "alt": "self-check-in"
     }
   ]
 }
