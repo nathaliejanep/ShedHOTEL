@@ -86,7 +86,6 @@ const Rooms = () => {
         <section className="container__section">
           <h1>Our Rooms</h1>
           <p>
-            Escape to the mountains and experience the ultimate comfort at Shed.
             With categories that cater to everyone's demands, all our newly
             renovated rooms feature ultra-comfy beds, desks for your remote
             work, smart TVs, views over the mountain peaks, eccentric books and
@@ -109,11 +108,6 @@ const Rooms = () => {
                 legs after a day on the mountain. Enjoy your après on the big
                 balcony, your book on the sofa and your sleep in the comfy king
                 size bed.
-              </p>
-              <p>
-                Featuring a king size bed and a single bed, mini living-room,
-                flat screen TV, safe, free WiFi, work desk and chair, bathroom
-                with hairdryer and welcome products, baby cot on request.
               </p>
             </div>
             <a
@@ -142,11 +136,6 @@ const Rooms = () => {
                 friends or family. After a full day of exploring the mountains,
                 this room, with its big sunny balcony, brings you back together.
               </p>
-              <p>
-                Featuring two king-size beds, one single bed, mini living room,
-                flat screen TV, safe, free WiFi, work desk and chair, bathroom
-                with a hairdryer, and welcome products. Baby cot on request.
-              </p>
             </div>
             <a
               href="https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633"
@@ -163,7 +152,7 @@ const Rooms = () => {
               <ImageSlider slides={suite} />
             </div>
             <div className="rooms__card-text">
-              <h3>Fancy Buddy Suite</h3>
+              <h3>Big Buddie Suite</h3>
               <p className="rooms__card-text__capacity">
                 1 king size bed + 1 sofa bed | approx 45m² up to 2 adults + 2
                 children
@@ -174,11 +163,6 @@ const Rooms = () => {
                 Alp holiday. Spacious, comfortable and contemporary, this suite
                 welcomes you with luxurious duvets, an area for relaxation and a
                 desk for your work break.
-              </p>
-              <p>
-                Featuring a king size bed, living-room, flat screen TV, safe,
-                free WiFi, work desk and chair, bathroom with hairdryer and
-                welcome products, additional bed and baby cot on request.
               </p>
             </div>
             <a
@@ -196,7 +180,7 @@ const Rooms = () => {
               <ImageSlider slides={buddy} />
             </div>
             <div className="rooms__card-text">
-              <h3>Buddy</h3>
+              <h3>Buddie</h3>
               <p className="rooms__card-text__capacity">
                 1 King size bed | Approx 20m² up to 2 adults + 1 children.
               </p>
@@ -205,10 +189,6 @@ const Rooms = () => {
                 those traveling with a partner or a friend. Oriented north, the
                 room offers a large balcony overlooking Alpine peaks, a king
                 size bed, a desk and all the essentials you'll need.
-              </p>
-              <p>
-                Featuring a king size bed, flat screen TV, safe, free WiFi,
-                bathroom with hairdryer and welcome products.
               </p>
             </div>
             <a
@@ -235,10 +215,6 @@ const Rooms = () => {
                 mountaineer. Expect views of your next mission's peaks, a desk
                 for your remote work and a comfortable, large single bed for a
                 good night's sleep.
-              </p>
-              <p>
-                Featuring 1 large single bed, flat screen TV, safe, free WiFi,
-                bathroom with hairdryer and welcome products.
               </p>
             </div>
             <a
