@@ -83,6 +83,20 @@
     a {
       font-size: toRem(25);
     }
+    .reserve {
+      color: $goomahBlue;
+      font-family: Untitled;
+      text-transform: none;
+      font-size: 1rem;
+      background-color: $white;
+      padding: 12px 20px;
+      border: none;
+      font-family: 'Untitled Sans';
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__monthly {
