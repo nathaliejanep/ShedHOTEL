@@ -2,7 +2,7 @@ import React from 'react';
 import './Carousel.scss';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import fwt from '../../assets/images/events/fwt.jpg';
+import yoga from '../../assets/images/events/yoga.jpg';
 
 const Carousel = () => {
   return (
@@ -44,27 +44,22 @@ const Carousel = () => {
           </div>
         </Slide>
 
-        <Slide index={2} className="fwt">
-          <div className="carousel__slide-text ">
-            <a
-              href="https://www.freerideworldtour.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h3>Freeride World Tour</h3>
-            </a>
-            <p>23 - 30 April</p>
-          </div>
-          <Image src={fwt} />
-        </Slide>
-
-        <Slide index={3} className=" concierge">
+        <Slide index={2} className=" concierge">
           <div className="carousel__slide-text">
             <a href="https://www.redbull.com/ch-fr/events/homerun">
               <h3>Red Bull Home Run</h3>
             </a>
             <p>15 April</p>
           </div>
+        </Slide>
+        <Slide index={3} className=" yoga">
+          <div className="carousel__slide-text">
+            <a href="https://www.inspireyogafestival.com/">
+              <h3>Inspire Yoga Festival</h3>
+            </a>
+            <p>25 - 27 August</p>
+          </div>
+          <Image src={yoga} />
         </Slide>
       </Slider>
     </CarouselProvider>

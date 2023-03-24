@@ -5,7 +5,7 @@ import { Context } from '../../context/SeasonContext';
 import winterHero from '../../assets/images/home/view.jpg';
 import summerHero from '../../assets/images/home/summer-hero.jpg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
-// import fasade from '../../assets/images/fasade-drawing.png';
+import fasade from '../../assets/images/home/fasade-drawing.gif';
 import pizza from '../../assets/images/home/pizza.jpg';
 
 import './Home.scss';
@@ -58,11 +58,11 @@ const Home = () => {
             most spontaneous requests.
           </p>
 
-          {/* <img
+          <img
             src={fasade}
             alt="Drawing of Hotel Fasade"
-            className="container__section-image"
-          /> */}
+            className="container__section-image fasade-drawing"
+          />
         </section>
         <section className="container__full-width home__image-slider">
           {/* <h2 className="hero-logo">Biggie</h2> */}
