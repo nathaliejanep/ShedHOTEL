@@ -53,7 +53,7 @@ const Home = () => {
             Footsteps from the center of Verbier, Shed. HOTEL offers everything
             you need and nothing you don't. Renovated and rebranded in 2022 by
             three Swedish friends, the building now houses a vibrant, intimate
-            sportque hotel with spacious rooms, a stone-baked pizza restaurant,
+            sportique hotel with spacious rooms, a stone-baked pizza restaurant,
             a bold feel at home energy, and a personal team that caters to your
             most spontaneous requests.
           </p>
