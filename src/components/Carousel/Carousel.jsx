@@ -54,10 +54,11 @@ const Carousel = () => {
         </Slide>
         <Slide index={3} className=" yoga">
           <div className="carousel__slide-text">
-            <a href="https://www.inspireyogafestival.com/">
-              <h3>Inspire Yoga Festival</h3>
+            <a href="https://www.inspireverbier.com/yogaandmovementworkshops">
+              <h3>YOGA & MOVEMENT </h3>
             </a>
-            <p>25 - 27 August</p>
+            <p>WORKSHOPS WEEKEND</p>
+            <p>21 - 23 April</p>
           </div>
           <Image src={yoga} />
         </Slide>
