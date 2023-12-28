@@ -10,7 +10,7 @@ import pizza from '../../assets/images/home/pizza.jpg';
 
 import './Home.scss';
 import '../../sassStyles/layouts/_page-layout.scss';
-import Carousel from '../../components/Carousel/Carousel';
+// import Carousel from '../../components/Carousel/Carousel';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Subscribe from '../../components/Subscribe/Subscribe';
 import Button from '../../components/Button/Button';

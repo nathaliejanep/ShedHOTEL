@@ -1,175 +1,176 @@
 @import '../../sassStyles/_mixins.scss';
 
 .goomah {
-    &__nav {
-        z-index: 999;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1rem;
+  &__nav {
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
 
-        img {
-            width: 150px;
-            height: auto;
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .hero {
+    height: calc(100vh - 50px);
+
+    &-logo {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  h1,
+  h2 {
+    font-family: Untitled;
+    text-transform: none;
+  }
+
+  .font-sans {
+    font-family: 'Untitled Sans';
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    background-color: $signalRed;
+
+    .mouth-logo {
+      width: min(25vw, 300px);
+      margin-top: 25px;
+      margin-bottom: 50px;
+      animation: rotation 10s infinite linear;
+
+      @keyframes rotation {
+        from {
+          transform: rotate(360deg);
         }
+        to {
+          transform: rotate(0deg);
+        }
+      }
     }
 
-    .hero {
-        height: calc(100vh - 50px);
-
-        &-logo {
-            width: 80%;
-            height: auto;
-        }
+    p {
+      font-style: normal;
+      margin-bottom: 50px;
     }
 
-    h1,
-    h2 {
-        font-family: Untitled;
-        text-transform: none;
-    }
+    a {
+      text-decoration: underline;
+      font-family: 'Untitled Sans';
+      font-size: toRem(25);
 
-    .font-sans {
-        font-family: 'Untitled Sans';
-    }
-
-    &__about {
-        display: flex;
-        flex-direction: column;
-        background-color: $signalRed;
-
-        .mouth-logo {
-            width: min(25vw, 300px);
-            margin-top: 25px;
-            margin-bottom: 50px;
-            animation: rotation 10s infinite linear;
-
-            @keyframes rotation {
-                from {
-                    transform: rotate(360deg);
-                }
-                to {
-                    transform: rotate(0deg);
-                }
-            }
-        }
-
-        p {
-            font-style: normal;
-            margin-bottom: 50px;
-        }
-
-        a {
-            text-decoration: underline;
-            font-family: 'Untitled Sans';
-            font-size: toRem(25);
-
-            &:hover {
-                color: $white;
-            }
-        }
-    }
-
-    &__book {
-        background-color: $goomahBlue;
+      &:hover {
         color: $white;
+      }
+    }
+  }
 
-        p {
-            font-family: 'Untitled Sans';
-            margin-bottom: 1rem;
-        }
-        a {
-            font-size: toRem(25);
-        }
-        .reserve {
-            color: $goomahBlue;
-            font-family: Untitled;
-            text-transform: none;
-            font-size: 1rem;
-            background-color: $white;
-            padding: 12px 20px;
-            border: none;
-            font-family: 'Untitled Sans';
+  &__book {
+    background-color: $goomahBlue;
+    color: $white;
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+    p {
+      font-family: 'Untitled Sans';
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: toRem(25);
+    }
+    .reserve {
+      color: $goomahBlue;
+      font-family: Untitled;
+      text-transform: none;
+      font-size: 1rem;
+      background-color: $white;
+      padding: 12px 20px;
+      border: none;
+      font-family: 'Untitled Sans';
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__monthly {
+    background-color: $goatBeige;
+    h2 {
+      font-family: 'Untitled Sans';
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin: 1rem 0;
     }
 
-    &__monthly {
-        background-color: $goatBeige;
-        h2 {
-            font-family: 'Untitled Sans';
-            text-transform: uppercase;
-            font-weight: bolder;
-            margin: 1rem 0;
-        }
+    &-ingredients {
+      font-family: Untitled;
+      text-transform: uppercase;
+      font-size: toRem(32);
+      line-height: 1.2;
+    }
+  }
 
-        &-ingredients {
-            font-family: Untitled;
-            text-transform: uppercase;
-            font-size: toRem(32);
-            line-height: 1.2;
-        }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $goomahGreen;
+    padding-bottom: 100px;
+
+    h2 {
+      font-size: toRem(20);
+      text-transform: uppercase;
     }
 
+    img {
+      width: auto;
+      height: 200vh;
+      box-shadow: -40px 40px $forestGreen;
+    }
+  }
+
+  &__soprano {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    img {
+      height: 80vh;
+      width: auto;
+    }
+  }
+
+  @include phone {
+    .hero {
+      height: calc(100vh - 155px);
+    }
+    .mouth-logo {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     &__menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: $goomahGreen;
-        padding-bottom: 50px;
-
-        h2 {
-            font-size: toRem(20);
-            text-transform: uppercase;
-        }
-
-        img {
-            width: auto;
-            height: 200vh;
-            box-shadow: -40px 40px $forestGreen;
-        }
+      img {
+        height: 100vh;
+        box-shadow: -20px 20px $forestGreen;
+      }
+      padding-bottom: 50px;
     }
 
     &__soprano {
+      img {
+        height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $white;
-
-        img {
-            height: 80vh;
-            width: auto;
-        }
+      }
     }
-
-    @include phone {
-        .hero {
-            height: calc(100vh - 155px);
-        }
-        .mouth-logo {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        &__menu {
-            img {
-                height: 100vh;
-                box-shadow: -20px 20px $forestGreen;
-            }
-        }
-
-        &__soprano {
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
+  }
 }
