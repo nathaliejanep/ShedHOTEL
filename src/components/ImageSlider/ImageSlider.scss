@@ -79,9 +79,11 @@
       cursor: pointer;
     }
   }
+
   p {
     margin: 0;
     font-family: 'Untitled Sans';
+    width: 50px;
   }
 }
 @include tablet {
