@@ -46,16 +46,26 @@ const Goomah = () => {
         <section className='container__section goomah__about'>
           <h1>Caffè Goomah</h1>
           <p>
-            Perfecting the art of pizza making had been on our bucket list for a while - so we drove to Alba, filled the trunk with stone
-            milled flour and started experimenting with possibilities for the perfect pie.
+            Perfecting the art of pizza making had been on our bucket list for a
+            while - so we drove to Alba, filled the trunk with stone milled
+            flour and started experimenting with possibilities for the perfect
+            pie.
           </p>
           <p>
-            Meant to be shared the Italian way, the food reflects our vibe - convivial and loud. Expect a décor infused with a homelike
-            feel, dough being tossed in the open kitchen air, and us spinning vinyls and natural wines.
+            Meant to be shared the Italian way, the food reflects our vibe -
+            convivial and loud. Expect a décor infused with a homelike feel,
+            dough being tossed in the open kitchen air, and us spinning vinyls
+            and natural wines.
           </p>
 
           <p>
-            <a href='https://www.instagram.com/caffegoomah/'>INSTAGRAM</a>
+            <a
+              href='https://www.instagram.com/shed.goomah/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              INSTAGRAM
+            </a>
           </p>
 
           <img
@@ -72,8 +82,10 @@ const Goomah = () => {
           </p>
 
           <p>
-            You can now reserve your spot at our Caffè Goomah! For groups larger than ten persons we offer a private dining room with an
-            intimate homelike appeal. To book this space, please contact us directly via phone or email.
+            You can now reserve your spot at our Caffè Goomah! For groups larger
+            than ten persons we offer a private dining room with an intimate
+            homelike appeal. To book this space, please contact us directly via
+            phone or email.
           </p>
 
           <p>
@@ -97,7 +109,8 @@ const Goomah = () => {
               De Nitro 2.0
             </h2>
             <p className='goomah__monthly-ingredients'>
-              San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja, Pickled Jalapeños, Basil, Oregano
+              San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja,
+              Pickled Jalapeños, Basil, Oregano
             </p>
           </div>
 
