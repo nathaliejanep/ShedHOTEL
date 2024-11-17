@@ -24,29 +24,35 @@ const Navbar = () => {
 
   return (
     <>
-      {path.pathname !== '/caffegoomah' ? (
-        <nav className="nav">
-          <div className="burger-season-wrapper">
+      {path.pathname !== '/shedgoomah' ? (
+        <nav className='nav'>
+          <div className='burger-season-wrapper'>
             {path.pathname === '/' ? (
-              <div className="season-wrapper">
+              <div className='season-wrapper'>
                 <SeasonPicker />
               </div>
             ) : (
-              <NavLink to="/" className="nav-logo-phone">
+              <NavLink
+                to='/'
+                className='nav-logo-phone'
+              >
                 <img
                   src={ShedLogoBlack}
-                  alt="Shed Hotel Logo"
+                  alt='Shed Hotel Logo'
                   onClick={closeMobileMenu}
                 />
               </NavLink>
             )}
 
-            <Hamburger toggled={open} toggle={setOpen} />
+            <Hamburger
+              toggled={open}
+              toggle={setOpen}
+            />
           </div>
 
           <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
             <NavLink
-              to="/"
+              to='/'
               className={'nav-logo' + (open ? ' open' : '')}
               style={({ isActive }) =>
                 isActive ? { display: 'none' } : { display: 'block' }
@@ -54,26 +60,26 @@ const Navbar = () => {
             >
               <img
                 src={ShedLogoBlack}
-                alt="Shed Hotel Logo"
+                alt='Shed Hotel Logo'
                 onClick={closeMobileMenu}
               />
             </NavLink>
 
             {/* Show this on expanded phone */}
             <NavLink
-              to="/"
+              to='/'
               className={'nav-logo phone' + (open ? ' open' : '')}
             >
               <img
                 src={ShedLogoBlack}
-                alt="Shed Hotel Logo"
+                alt='Shed Hotel Logo'
                 onClick={closeMobileMenu}
               />
             </NavLink>
             <ul>
               <li>
                 <NavLink
-                  to="/rooms"
+                  to='/rooms'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
@@ -85,7 +91,7 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to="/explore"
+                  to='/explore'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
@@ -99,19 +105,19 @@ const Navbar = () => {
                 {/* Use this to open in new window - not working on deployment on Netlify, should work on goDaddy */}
                 {/* <LinkNewWindow to="/caffegoomah">Caffè Goomah</LinkNewWindow> */}
                 <NavLink
-                  to="/caffegoomah"
+                  to='/shedgoomah'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Caffè Goomah
+                  Eat
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  to="/gallery"
+                  to='/gallery'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
@@ -123,7 +129,7 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to="/contact"
+                  to='/contact'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
@@ -135,7 +141,7 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to="/faq"
+                  to='/faq'
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }

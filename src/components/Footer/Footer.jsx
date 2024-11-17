@@ -12,17 +12,17 @@ const Footer = () => {
   return (
     <div>
       <footer
-        className={path === '/caffegoomah' ? 'footer footer-goomah' : 'footer'}
+        className={path === '/shedgoomah' ? 'footer footer-goomah' : 'footer'}
       >
         {/* EDIT ADDRESS TAG\ */}
         <div className='footer-info'>
           <img
             className='footer-logo'
-            src={path === '/caffegoomah' ? goomahLogo : shedFooterLogo}
+            src={path === '/shedgoomah' ? goomahLogo : shedFooterLogo}
             alt='Shed Hotel Logo'
           />
           <address>
-            {path === '/caffegoomah' ? (
+            {path === '/shedgoomah' ? (
               <a href='tel:+41782260226'>+41 78 226 02 26</a>
             ) : (
               <a href='tel:+41772699795'>+41 77 269 97 95</a>

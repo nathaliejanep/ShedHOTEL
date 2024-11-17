@@ -36,7 +36,7 @@
 
   "restaurants": [
     {
-      "title": "Caffè Goomah",
+      "title": "Shed. GOOMAH",
       "text": "Indulge in American-Italian cuisine with a trendy twist at our Hotel. Savor delicious dishes and craft cocktails in a stylish setting. Book your table and experience dining like a boss.",
       "imgUrl": "../images/eat/goomah.jpg",
       "link": "https://shedburgers.ch/"
@@ -45,7 +45,7 @@
       "title": "Shed. Burgers",
       "text": "Satisfy your cravings after a long day on the slopes. Enjoy juicy burgers made with top-quality ingredients, paired with crafted cocktails in a relaxed and friendly atmosphere.",
       "imgUrl": "../images/eat/shed.jpg",
-      "link": "https://www.shedhotels.com/caffegoomah"
+      "link": "https://www.shedhotels.com/goomah"
     }
   ]
 }

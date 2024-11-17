@@ -54,9 +54,12 @@ const Home = () => {
         <section className='container__section'>
           <h1>Welcome</h1>
           <p>
-            Footsteps from the center of Verbier, Shed. HOTEL offers everything you need and nothing you don't. Renovated and rebranded in
-            2022 by three Swedish friends, the building now houses a vibrant, intimate sportique hotel with spacious rooms, a stone-baked
-            pizza restaurant, a bold feel at home energy, and a personal team that caters to your most spontaneous requests.
+            Footsteps from the center of Verbier, Shed. HOTEL offers everything
+            you need and nothing you don't. Renovated and rebranded in 2022 by
+            three Swedish friends, the building now houses a vibrant, intimate
+            sportique hotel with spacious rooms, a stone-baked pizza restaurant,
+            a bold feel at home energy, and a personal team that caters to your
+            most spontaneous requests.
           </p>
 
           <img
@@ -78,9 +81,11 @@ const Home = () => {
         <section className='container__section'>
           <h3>Stay with us</h3>
           <p>
-            Our selection of 16 newly renovated rooms feature contemporary comfort in an alpine-scandi setting. In airy spaces, abstract art
-            and eccentric books co-exist with luxurious duvets, while Tom Dixon carpets and views of craggy mountains create a contrast
-            between industrial landscapes and nature.
+            Our selection of 16 newly renovated rooms feature contemporary
+            comfort in an alpine-scandi setting. In airy spaces, abstract art
+            and eccentric books co-exist with luxurious duvets, while Tom Dixon
+            carpets and views of craggy mountains create a contrast between
+            industrial landscapes and nature.
           </p>
         </section>
 
@@ -88,15 +93,16 @@ const Home = () => {
           <div className='card__text'>
             <h2>Shed. GROUP</h2>
             <p>
-              It all started with a dream about turning our strong gastronomic affinity into passion projects.
+              It all started with a dream about turning our strong gastronomic
+              affinity into passion projects.
               <br />
               This is Shed. GROUP.
             </p>
             <NavLink
-              to='/caffegoomah'
+              to='/shedgoomah'
               className='card-link'
             >
-              Caffè Goomah
+              Shed. GOOMAH
             </NavLink>
             <a
               href='https://shedburgers.ch/'
@@ -118,8 +124,9 @@ const Home = () => {
         <section className='container__section home__ramble'>
           <h3>Come ramble with us</h3>
           <p>
-            Shed. HOTEL welcomes everyone to step into comfortable living with a youthful and personal touch. It's your holiday home where
-            you sleep like a log, eat like De Niro and get treated like family.
+            Shed. HOTEL welcomes everyone to step into comfortable living with a
+            youthful and personal touch. It's your holiday home where you sleep
+            like a log, eat like De Niro and get treated like family.
           </p>
           <Button />
         </section>

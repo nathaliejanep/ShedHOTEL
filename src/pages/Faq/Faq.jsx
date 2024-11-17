@@ -7,8 +7,8 @@ import './Faq.scss';
 const Faq = () => {
   // const season = useLoaderData();
   return (
-    <div className="container faq">
-      <section className="container__section">
+    <div className='container faq'>
+      <section className='container__section'>
         <h3>What are your check-in and check-out times?</h3>
         <p>
           Check-in is at 3 PM and check-out is at 11 AM. We kindly request that
@@ -43,7 +43,7 @@ const Faq = () => {
         <p>
           Yes, we have a restaurant located inside the hotel. Check the link for
           more information
-          <NavLink to="/caffegoomah"> Caffè Goomah</NavLink>
+          <NavLink to='/shedgoomah'> Shed. GOOMAH</NavLink>
         </p>
         <h3>What type of payment do you accept?</h3>
         <p>

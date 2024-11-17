@@ -44,7 +44,7 @@ const Goomah = () => {
 
       <div className='container'>
         <section className='container__section goomah__about'>
-          <h1>Caffè Goomah</h1>
+          <h1>Shed. GOOMAH</h1>
           <p>
             Perfecting the art of pizza making had been on our bucket list for a
             while - so we drove to Alba, filled the trunk with stone milled
@@ -82,7 +82,7 @@ const Goomah = () => {
           </p>
 
           <p>
-            You can now reserve your spot at our Caffè Goomah! For groups larger
+            You can now reserve your spot at our Shed. GOOMAH! For groups larger
             than ten persons we offer a private dining room with an intimate
             homelike appeal. To book this space, please contact us directly via
             phone or email.

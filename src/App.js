@@ -20,28 +20,67 @@ import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 import Policy from './pages/Policy/Policy';
 import Terms from './pages/Terms/Terms';
+import CaffeGoomah from './pages/OldGoomah/CaffeGoomah';
 
 function App() {
   // console.log(window.location.pathname);
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Root />}>
-        <Route index element={<Home />} loader={determineSeason} />
-        <Route path="/rooms" element={<Rooms />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/caffegoomah" element={<Goomah />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/hotelpolicy" element={<Policy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/*" element={<Error />} />
+      <Route
+        path='/'
+        element={<Root />}
+      >
+        <Route
+          index
+          element={<Home />}
+          loader={determineSeason}
+        />
+        <Route
+          path='/rooms'
+          element={<Rooms />}
+        />
+        <Route
+          path='/explore'
+          element={<Explore />}
+        />
+        <Route
+          path='/shedgoomah'
+          element={<Goomah />}
+        />
+        <Route
+          path='/gallery'
+          element={<Gallery />}
+        />
+        <Route
+          path='/contact'
+          element={<Contact />}
+        />
+        <Route
+          path='/faq'
+          element={<Faq />}
+        />
+        <Route
+          path='/hotelpolicy'
+          element={<Policy />}
+        />
+        <Route
+          path='/terms'
+          element={<Terms />}
+        />
+        <Route
+          path='/caffegoomah'
+          element={<CaffeGoomah />}
+        />
+        <Route
+          path='/*'
+          element={<Error />}
+        />
       </Route>
     )
   );
 
   return (
-    <div className="App">
+    <div className='App'>
       <RouterProvider router={router} />
     </div>
   );

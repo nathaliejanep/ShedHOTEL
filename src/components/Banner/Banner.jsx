@@ -5,11 +5,11 @@ const Banner = () => {
   return (
     <div className='banner'>
       <p className='banner__text'>
-        (wednesday to saturday 17 - late & sunday 12 - 18) . (wednesday to
-        saturday 17 - late & sunday 12 - 18) . (wednesday to saturday 17 - late
-        & sunday 12 - 18) . (wednesday to saturday 17 - late & sunday 12 - 18) .
-        (wednesday to saturday 17 - late & sunday 12 - 18) . (wednesday to
-        saturday 17 - late & sunday 12 - 18) .
+        Opening on the 5th of december . Opening on the 5th of december .
+        Opening on the 5th of december . Opening on the 5th of december .
+        Opening on the 5th of december . Opening on the 5th of december .
+        Opening on the 5th of december . Opening on the 5th of december .
+        Opening on the 5th of december . Opening on the 5th of december .
       </p>
     </div>
   );

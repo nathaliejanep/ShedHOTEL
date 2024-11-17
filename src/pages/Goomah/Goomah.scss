@@ -18,10 +18,15 @@
 
   .hero {
     height: calc(100vh - 50px);
+    &-image {
+      filter: brightness(60%);
+    }
 
     &-logo {
       width: 80%;
       height: auto;
+      filter: none;
+      z-index: 1;
     }
   }
 
