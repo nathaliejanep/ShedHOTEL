@@ -20,7 +20,6 @@ import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 import Policy from './pages/Policy/Policy';
 import Terms from './pages/Terms/Terms';
-import CaffeGoomah from './pages/OldGoomah/CaffeGoomah';
 
 function App() {
   // console.log(window.location.pathname);
@@ -66,10 +65,6 @@ function App() {
         <Route
           path='/terms'
           element={<Terms />}
-        />
-        <Route
-          path='/caffegoomah'
-          element={<CaffeGoomah />}
         />
         <Route
           path='/*'

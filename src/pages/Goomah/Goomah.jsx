@@ -5,7 +5,8 @@ import goomahHero from '../../assets/images/goomah/goomah-hero.jpg';
 import goomahLogo from '../../assets/images//logos/goomah-logo.svg';
 import goomahMouth from '../../assets/images/logos/goomah-mouth.png';
 import pizzaBoutit from '../../assets/images/goomah/monthly-pizza.jpg';
-import menu from '../../assets/images/goomah/take-away-menu.svg';
+import menu from '../../assets/images/goomah/menu.svg';
+import menu2 from '../../assets/images/goomah/menu2.svg';
 import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
@@ -122,9 +123,14 @@ const Goomah = () => {
           </div>
         </section>
 
-        <section className='container__section goomah__menu'>
+        {/* <section className='container__section goomah__menu'> */}
+        <section className='container goomah__section goomah__menu'>
           <img
             src={menu}
+            alt='Take Away menu'
+          />
+          <img
+            src={menu2}
             alt='Take Away menu'
           />
         </section>

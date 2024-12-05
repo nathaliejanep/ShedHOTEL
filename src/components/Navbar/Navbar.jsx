@@ -4,7 +4,7 @@ import './Navbar.scss';
 import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
-import LinkNewWindow from '../../utils/linkNewWindow';
+// import LinkNewWindow from '../../utils/linkNewWindow';
 import Button from '../Button/Button';
 
 const Navbar = () => {
@@ -103,7 +103,7 @@ const Navbar = () => {
 
               <li onClick={closeMobileMenu}>
                 {/* Use this to open in new window - not working on deployment on Netlify, should work on goDaddy */}
-                {/* <LinkNewWindow to="/caffegoomah">Caffè Goomah</LinkNewWindow> */}
+                {/* <LinkNewWindow to="/shedgoomah">Caffè Goomah</LinkNewWindow> */}
                 <NavLink
                   to='/shedgoomah'
                   className={({ isActive }) =>
