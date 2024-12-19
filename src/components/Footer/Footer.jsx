@@ -23,12 +23,16 @@ const Footer = () => {
           />
           <address>
             {path === '/shedgoomah' ? (
-              <a href='tel:+41782260226'>+41 78 226 02 26</a>
+              <>
+                <a href='tel:+41782260226'>+41 78 226 02 26</a>
+                <a href='mailto:goomah@shedhotels.com'>goomah@shedhotels.com</a>
+              </>
             ) : (
-              <a href='tel:+41772699795'>+41 77 269 97 95</a>
+              <>
+                <a href='tel:+41772699795'>+41 77 269 97 95</a>
+                <a href='mailto:info@shedhotels.com'>info@shedhotels.com</a>
+              </>
             )}
-
-            {/* <a href="mailto:info@shedhotels.com">info@shedhotels.com</a> */}
 
             <a
               href='https://www.google.com/maps/place/Shed.+HOTEL/@46.0968015,7.2191013,15z/data=!3m1!4b1!4m8!3m7!1s0x478ecf045bc5b98b:0x51f11a6ba4cf7f63!5m2!4m1!1i2!8m2!3d46.096787!4d7.2278561'
