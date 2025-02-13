@@ -47,16 +47,12 @@ const Goomah = () => {
         <section className='container__section goomah__about'>
           <h1>Shed. GOOMAH</h1>
           <p>
-            Perfecting the art of pizza making had been on our bucket list for a
-            while - so we drove to Alba, filled the trunk with stone milled
-            flour and started experimenting with possibilities for the perfect
-            pie.
-          </p>
-          <p>
-            Meant to be shared the Italian way, the food reflects our vibe -
-            convivial and loud. Expect a décor infused with a homelike feel,
-            dough being tossed in the open kitchen air, and us spinning vinyls
-            and natural wines.
+            Shed. GOOMAH brings Little Italy to Verbier, blending American
+            favourites with luxurious Italian cuisine. Everything is homemade
+            with a creative twist on classic dishes. Don't miss the entrecôte
+            with bone marrow butter or the butternut and gorgonzola arancini
+            with truffle pumpkin cream. At GOOMAH each bite is crafted with
+            passion and originality.
           </p>
 
           <p>
