@@ -50,9 +50,8 @@ const Goomah = () => {
             Shed. GOOMAH brings Little Italy to Verbier, blending American
             favourites with luxurious Italian cuisine. Everything is homemade
             with a creative twist on classic dishes. Don't miss the entrecôte
-            with bone marrow butter or the butternut and gorgonzola arancini
-            with truffle pumpkin cream. At GOOMAH each bite is crafted with
-            passion and originality.
+            with bone marrow butter or the taleggio and black truffle arancini.
+            At GOOMAH each bite is crafted with passion and originality.
           </p>
 
           <p>
@@ -74,27 +73,33 @@ const Goomah = () => {
 
         <section className='container__section goomah__book'>
           <h2>Book your table</h2>
-          <p>
-            <a href='tel:+41782260226'>+41 78 226 02 26</a>
-          </p>
 
-          <p>
-            You can now reserve your spot at our Shed. GOOMAH! For groups larger
-            than ten persons we offer a private dining room with an intimate
-            homelike appeal. To book this space, please contact us directly via
-            phone or email.
-          </p>
-
-          <p>
-            <a
-              href='https://tables.hostmeapp.com/reserve/32514'
-              target='_blank'
-              rel='noreferrer'
-              className='reserve'
-            >
-              RESERVE NOW
-            </a>
-          </p>
+          <div className='goomah__book-btn'>
+            <p>
+              <a
+                href='https://tables.hostmeapp.com/reserve/32514'
+                target='_blank'
+                rel='noreferrer'
+              >
+                I'm hungry - Book Now
+              </a>
+            </p>
+          </div>
+          <div className='goomah__book-groups'>
+            <p>
+              For groups larger than 12 guests, we offer a private dining room
+              with an intimate homelike appeal. To book this space, please
+              contact us directly via phone or email.
+            </p>
+            <p>
+              <a href='tel:+41782260226'>+41 78 226 02 26</a>
+            </p>
+            <p>
+              <a href='mailto:goomah@shedhotels.com?subject=Booking Inquiry&body=Hello, I would like to make a reservation.'>
+                goomah@shedhotels.com
+              </a>
+            </p>
+          </div>
         </section>
 
         <section className='card'>
