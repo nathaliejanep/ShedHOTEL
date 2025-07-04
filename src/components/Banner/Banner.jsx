@@ -5,13 +5,33 @@ const Banner = () => {
   return (
     <div className='banner'>
       <p className='banner__text'>
-        SUNDAY TO THURSDAY 19 - LATE . FRIDAY TO SATURDAY 18 - LATE . SUNDAY TO
-        THURSDAY 19 - LATE . FRIDAY TO SATURDAY 18 - LATE . SUNDAY TO THURSDAY
-        19 - LATE . FRIDAY TO SATURDAY 18 - LATE . SUNDAY TO THURSDAY 19 - LATE
-        . FRIDAY TO SATURDAY 18 - LATE . SUNDAY TO THURSDAY 19 - LATE . FRIDAY
-        TO SATURDAY 18 - LATE . SUNDAY TO THURSDAY 19 - LATE . FRIDAY TO
-        SATURDAY 18 - LATE . SUNDAY TO THURSDAY 19 - LATE . FRIDAY TO SATURDAY
-        18 - LATE .
+        <span className='banner__day'>MONDAY TO TUESDAY CLOSED</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>WEDNESDAY - SATURDAY 16:00 - LATE</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>SUNDAY 12:00 - 17:00</span>
+        <span className='banner__separator'>-</span>
+
+        <span className='banner__day'>MONDAY TO TUESDAY CLOSED</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>WEDNESDAY - SATURDAY 16:00 - LATE</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>SUNDAY 12:00 - 17:00</span>
+        <span className='banner__separator'>-</span>
+
+        <span className='banner__day'>MONDAY TO TUESDAY CLOSED</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>WEDNESDAY - SATURDAY 16:00 - LATE</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>SUNDAY 12:00 - 17:00</span>
+        <span className='banner__separator'>-</span>
+
+        <span className='banner__day'>MONDAY TO TUESDAY CLOSED</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>WEDNESDAY - SATURDAY 16:00 - LATE</span>
+        <span className='banner__separator'>-</span>
+        <span className='banner__day'>SUNDAY 12:00 - 17:00</span>
+        <span className='banner__separator'>-</span>
       </p>
     </div>
   );

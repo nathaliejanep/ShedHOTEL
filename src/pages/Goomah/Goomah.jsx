@@ -10,6 +10,7 @@ import menu2 from '../../assets/images/goomah/menu2.svg';
 import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
+import Reservation from '../../components/Reservation/Reservation';
 
 const Goomah = () => {
   return (
@@ -73,8 +74,8 @@ const Goomah = () => {
 
         <section className='container__section goomah__book'>
           <h2>Book your table</h2>
-
-          <div className='goomah__book-btn'>
+          <Reservation />
+          {/* <div className='goomah__book-btn'>
             <p>
               <a
                 href='https://tables.hostmeapp.com/reserve/32514'
@@ -84,7 +85,7 @@ const Goomah = () => {
                 I'm hungry - Book Now
               </a>
             </p>
-          </div>
+          </div> */}
           <div className='goomah__book-groups'>
             <p>
               For groups larger than 12 guests, we offer a private dining room

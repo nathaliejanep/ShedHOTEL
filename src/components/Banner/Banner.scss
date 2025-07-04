@@ -19,6 +19,34 @@
     font-family: 'Untitled Sans';
     text-transform: uppercase;
     color: $black;
+
+    // Add spacing between elements
+    span {
+      margin: 0 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__day {
+    font-weight: 600;
+  }
+
+  &__status {
+    color: $black;
+    font-weight: 700;
+  }
+
+  &__hours {
+    color: $black;
+    font-weight: 600;
+  }
+
+  &__separator {
+    color: rgba($black, 0.6);
+    font-weight: 400;
   }
 
   @keyframes marquee {
