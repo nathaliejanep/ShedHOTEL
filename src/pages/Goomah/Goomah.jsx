@@ -109,7 +109,7 @@ const Goomah = () => {
 
             <h2>
               Robert <br />
-              De Nitro 2.0
+              De Nitro
             </h2>
             <p className='goomah__monthly-ingredients'>
               San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja,
