@@ -19,7 +19,6 @@ const Home = () => {
   const { winter } = useContext(Context);
 
   const navigation = useNavigation();
-  // console.log(winter);
 
   const slides = [
     { src: '../images/rooms/biggie/biggie.jpg', alt: 'Biggie' },
@@ -38,11 +37,32 @@ const Home = () => {
   return (
     <div className='home'>
       <section className='full-width hero'>
-        <img
+        {/* <img
           className='hero-image'
           src={winter ? winterHero : summerHero}
           alt={winter ? 'Winter' : 'Summer'}
-        />
+        /> */}
+        {winter ? (
+          <video
+            className='hero-video'
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source
+              src='/videos/hero-video.mp4'
+              type='video/mp4'
+            />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img
+            className='hero-image'
+            src={summerHero}
+            alt='Summer'
+          />
+        )}
 
         <img
           className='hero-logo'
