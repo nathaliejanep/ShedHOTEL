@@ -6,6 +6,7 @@ import roomHero from '../../assets/images/rooms/room-hero.jpg';
 // import { useEffect } from 'react';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import keyLogo from '../../assets/images/logos/key-logo.svg';
+import { mewsReserveLink } from '../../utils/config';
 
 const Rooms = () => {
   // const [data, setData] = useState([]);
@@ -90,8 +91,10 @@ const Rooms = () => {
         <section className='container__section'>
           <h1>Our Rooms</h1>
           <p>
-            With categories that cater to everyone's demands, all our newly renovated rooms feature ultra-comfy beds, desks for your remote
-            work, smart TVs, views over the mountain peaks, eccentric books and curated artworks.
+            With categories that cater to everyone's demands, all our newly
+            renovated rooms feature ultra-comfy beds, desks for your remote
+            work, smart TVs, views over the mountain peaks, eccentric books and
+            curated artworks.
           </p>
         </section>
         <div className='rooms__card-wrapper'>
@@ -102,16 +105,19 @@ const Rooms = () => {
             <div className='rooms__card-text'>
               <h3>Roomie</h3>
               <p className='rooms__card-text__capacity'>
-                1 king size beds + 1 single bed | approx 30m² <br /> up to 3 adults
+                1 king size beds + 1 single bed | approx 30m² <br /> up to 3
+                adults
               </p>
               <p>
-                With lots of space to take in the air of the Alps, Roomie is the go-to room for those wanting that extra space to stretch
-                out the legs after a day on the mountain. Enjoy your après on the big balcony, your book on the sofa and your sleep in the
-                comfy king size bed.
+                With lots of space to take in the air of the Alps, Roomie is the
+                go-to room for those wanting that extra space to stretch out the
+                legs after a day on the mountain. Enjoy your après on the big
+                balcony, your book on the sofa and your sleep in the comfy king
+                size bed.
               </p>
             </div>
             <a
-              href='https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633'
+              href={mewsReserveLink}
               target='_blank'
               rel='noopener noreferrer'
               className='green-btn'
@@ -131,13 +137,14 @@ const Rooms = () => {
                 up to 5 adults + 1 children
               </p>
               <p>
-                With extra space over two connected bedrooms, featuring a king size bed in each, Biggie is perfect for longer stays with
-                friends or family. After a full day of exploring the mountains, this room, with its big sunny balcony, brings you back
-                together.
+                With extra space over two connected bedrooms, featuring a king
+                size bed in each, Biggie is perfect for longer stays with
+                friends or family. After a full day of exploring the mountains,
+                this room, with its big sunny balcony, brings you back together.
               </p>
             </div>
             <a
-              href='https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633'
+              href={mewsReserveLink}
               target='_blank'
               rel='noopener noreferrer'
               className='green-btn'
@@ -157,13 +164,15 @@ const Rooms = () => {
                 up to 2 adults + 2 children
               </p>
               <p>
-                Situated on the top floor with a sunny balcony overlooking the Grand Combin, our Big Buddie Suite is the ideal nest for your
-                Alp holiday. Spacious, comfortable and contemporary, this suite welcomes you with luxurious duvets, an area for relaxation
-                and a desk for your work break.
+                Situated on the top floor with a sunny balcony overlooking the
+                Grand Combin, our Big Buddie Suite is the ideal nest for your
+                Alp holiday. Spacious, comfortable and contemporary, this suite
+                welcomes you with luxurious duvets, an area for relaxation and a
+                desk for your work break.
               </p>
             </div>
             <a
-              href='https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633'
+              href={mewsReserveLink}
               target='_blank'
               rel='noopener noreferrer'
               className='green-btn'
@@ -183,12 +192,14 @@ const Rooms = () => {
                 up to 2 adults.
               </p>
               <p>
-                Comfortable and contemporary, Buddie is the perfect choice for those traveling with a partner or a friend. Oriented north,
-                the room offers a view of Alpine peaks, a king size bed, a desk and all the essentials you'll need.
+                Comfortable and contemporary, Buddie is the perfect choice for
+                those traveling with a partner or a friend. Oriented north, the
+                room offers a view of Alpine peaks, a king size bed, a desk and
+                all the essentials you'll need.
               </p>
             </div>
             <a
-              href='https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633'
+              href={mewsReserveLink}
               target='_blank'
               rel='noopener noreferrer'
               className='green-btn'
@@ -208,12 +219,14 @@ const Rooms = () => {
                 up to 1 adult
               </p>
               <p>
-                Loonie is compact yet comfy - the perfect room for the mountaineer. Expect views of your next mission's peaks, a desk for
-                your remote work and a comfortable, large single bed for a good night's sleep.
+                Loonie is compact yet comfy - the perfect room for the
+                mountaineer. Expect views of your next mission's peaks, a desk
+                for your remote work and a comfortable, large single bed for a
+                good night's sleep.
               </p>
             </div>
             <a
-              href='https://sky-eu1.clock-software.com/spa/pms-wbe/#/hotel/12633'
+              href={mewsReserveLink}
               target='_blank'
               rel='noopener noreferrer'
               className='green-btn book-now'
