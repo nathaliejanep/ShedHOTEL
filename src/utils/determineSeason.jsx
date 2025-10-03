@@ -1,21 +1,22 @@
 export const determineSeason = () => {
-    const date = new Date();
-    const month = date.getMonth();
-    let winter;
+  const date = new Date();
+  const month = date.getMonth();
 
-    // January - April
-    if (month <= 4) {
-        winter = true;
+  let winter = true; // default to winter
 
-        // October - December
-    } else if (month >= 10 && month <= 12) {
-        winter = true;
+  // January - April
+  if (month <= 3) {
+    winter = true;
 
-        // May - September
-    } else if (month >= 5 && month <= 9) {
-        //summer
-        winter = false;
-    }
+    // October - December
+  } else if (month >= 9 && month <= 11) {
+    winter = true;
 
-    return winter;
+    // May - September
+  } else if (month >= 5 && month <= 8) {
+    //summer
+    winter = false;
+  }
+
+  return winter;
 };
