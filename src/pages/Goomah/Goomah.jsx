@@ -127,14 +127,30 @@ const Goomah = () => {
 
         {/* <section className='container__section goomah__menu'> */}
         <section className='container goomah__section goomah__menu'>
-          <img
+          <h2>Take Away & Delivery</h2>
+          <p>
+            We're happy to bring the pizza to your table, order online for
+            delivery.
+          </p>
+          <button
+            className='goomah__menu-btn'
+            onClick={() =>
+              window.open(
+                'https://mylightspeed.app/WUWNSVOE/C-ordering/menu',
+                '_blank'
+              )
+            }
+          >
+            order now
+          </button>
+          {/* <img
             src={menu}
             alt='Take Away menu'
           />
           <img
             src={menu2}
             alt='Take Away menu'
-          />
+          /> */}
         </section>
 
         <section className='container__section goomah__soprano'>
