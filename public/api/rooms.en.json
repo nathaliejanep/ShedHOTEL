@@ -1,0 +1,80 @@
+{
+  "rooms": [
+    {
+      "id": "roomie",
+      "name": "Roomie",
+      "capacity": "1 king size beds + 1 single bed | approx 30m²",
+      "adults": "up to 3 adults",
+      "description": "With lots of space to take in the air of the Alps, Roomie is the go-to room for those wanting that extra space to stretch out the legs after a day on the mountain. Enjoy your après on the big balcony, your book on the sofa and your sleep in the comfy king size bed.",
+      "images": [
+        { "src": "../images/rooms/roomie/roomie.jpg", "alt": "Roomie" },
+        { "src": "../images/rooms/roomie/roomie-bedroom.jpg", "alt": "Roomie" },
+        { "src": "../images/rooms/roomie/roomie-bathroom.jpg", "alt": "Roomie" }
+      ]
+    },
+    {
+      "id": "biggie",
+      "name": "Biggie",
+      "capacity": "2 king size beds | approx 45m²",
+      "adults": "up to 5 adults + 1 children",
+      "description": "With extra space over two connected bedrooms, featuring a king size bed in each, Biggie is perfect for longer stays with friends or family. After a full day of exploring the mountains, this room, with its big sunny balcony, brings you back together.",
+      "images": [
+        { "src": "../images/rooms/biggie/biggie-balcony.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie-bedroom.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie-bathroom.jpg", "alt": "Biggie" }
+      ]
+    },
+    {
+      "id": "suite",
+      "name": "Big Buddie Suite",
+      "capacity": "1 king size bed + 1 sofa bed | approx 40m²",
+      "adults": "up to 2 adults + 2 children",
+      "description": "Situated on the top floor with a sunny balcony overlooking the Grand Combin, our Big Buddie Suite is the ideal nest for your Alp holiday. Spacious, comfortable and contemporary, this suite welcomes you with luxurious duvets, an area for relaxation and a desk for your work break.",
+      "images": [
+        { "src": "../images/rooms/suite/fancy-buddy-suite.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-livingroom.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-balcony.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-bathroom.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-shower.jpg", "alt": "Fancy Buddy Suite" }
+      ]
+    },
+    {
+      "id": "buddy",
+      "name": "Buddie",
+      "capacity": "1 King size bed | Approx 20m²",
+      "adults": "up to 2 adults.",
+      "description": "Comfortable and contemporary, Buddie is the perfect choice for those traveling with a partner or a friend. Oriented north, the room offers a view of Alpine peaks, a king size bed, a desk and all the essentials you'll need.",
+      "images": [
+        { "src": "../images/rooms/buddy/buddy.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-entrance.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-bedroom.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-bathroom.jpg", "alt": "Buddy" }
+      ]
+    },
+    {
+      "id": "loonie",
+      "name": "Loonie",
+      "capacity": "1 large single bed | approx 15m²",
+      "adults": "up to 1 adult",
+      "description": "Loonie is compact yet comfy - the perfect room for the mountaineer. Expect views of your next mission's peaks, a desk for your remote work and a comfortable, large single bed for a good night's sleep.",
+      "images": [
+        { "src": "../images/rooms/loonie/loonie-bedroom.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie-bathroom.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie-desktop.jpg", "alt": "Loonie" }
+      ]
+    }
+  ],
+  "amenitiesTitle": "Guest Room Experience",
+  "amenitiesSubtitle": "and Hotel Amenities",
+  "amenities": [
+    "FREE WIFI",
+    "BEDS DRESSED IN COTTON",
+    "LUXURIOUS BATHROOM AMENITIES",
+    "DAILY HOUSEKEEPING & LAUNDRY/DRY CLEANING SERVICES",
+    "APP CONCIERGE",
+    "RESTAURANT & CONFERENCE ROOM",
+    "INDOOR PARKING"
+  ]
+}

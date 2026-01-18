@@ -1,0 +1,80 @@
+{
+  "rooms": [
+    {
+      "id": "roomie",
+      "name": "Roomie",
+      "capacity": "1 lit king size + 1 lit simple | environ 30m²",
+      "adults": "jusqu'à 3 adultes",
+      "description": "Avec beaucoup d'espace pour profiter de l'air des Alpes, Roomie est la chambre idéale pour ceux qui veulent cet espace supplémentaire pour s'étirer les jambes après une journée en montagne. Profitez de votre après-ski sur le grand balcon, de votre livre sur le canapé et de votre sommeil dans le lit king size confortable.",
+      "images": [
+        { "src": "../images/rooms/roomie/roomie.jpg", "alt": "Roomie" },
+        { "src": "../images/rooms/roomie/roomie-bedroom.jpg", "alt": "Roomie" },
+        { "src": "../images/rooms/roomie/roomie-bathroom.jpg", "alt": "Roomie" }
+      ]
+    },
+    {
+      "id": "biggie",
+      "name": "Biggie",
+      "capacity": "2 lits king size | environ 45m²",
+      "adults": "jusqu'à 5 adultes + 1 enfant",
+      "description": "Avec un espace supplémentaire sur deux chambres reliées, avec un lit king size dans chacune, Biggie est parfait pour des séjours plus longs avec des amis ou en famille. Après une journée complète d'exploration des montagnes, cette chambre, avec son grand balcon ensoleillé, vous réunit.",
+      "images": [
+        { "src": "../images/rooms/biggie/biggie-balcony.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie-bedroom.jpg", "alt": "Biggie" },
+        { "src": "../images/rooms/biggie/biggie-bathroom.jpg", "alt": "Biggie" }
+      ]
+    },
+    {
+      "id": "suite",
+      "name": "Big Buddie Suite",
+      "capacity": "1 lit king size + 1 canapé-lit | environ 40m²",
+      "adults": "jusqu'à 2 adultes + 2 enfants",
+      "description": "Située au dernier étage avec un balcon ensoleillé surplombant le Grand Combin, notre Big Buddie Suite est le nid idéal pour vos vacances dans les Alpes. Spacieuse, confortable et contemporaine, cette suite vous accueille avec des couettes luxueuses, un espace de détente et un bureau pour votre pause de travail.",
+      "images": [
+        { "src": "../images/rooms/suite/fancy-buddy-suite.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-livingroom.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-balcony.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-bathroom.jpg", "alt": "Fancy Buddy Suite" },
+        { "src": "../images/rooms/suite/suite-shower.jpg", "alt": "Fancy Buddy Suite" }
+      ]
+    },
+    {
+      "id": "buddy",
+      "name": "Buddie",
+      "capacity": "1 lit king size | Environ 20m²",
+      "adults": "jusqu'à 2 adultes.",
+      "description": "Confortable et contemporaine, Buddie est le choix parfait pour ceux qui voyagent avec un partenaire ou un ami. Orientée au nord, la chambre offre une vue sur les sommets alpins, un lit king size, un bureau et tous les éléments essentiels dont vous aurez besoin.",
+      "images": [
+        { "src": "../images/rooms/buddy/buddy.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-entrance.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-bedroom.jpg", "alt": "Buddy" },
+        { "src": "../images/rooms/buddy/buddy-bathroom.jpg", "alt": "Buddy" }
+      ]
+    },
+    {
+      "id": "loonie",
+      "name": "Loonie",
+      "capacity": "1 grand lit simple | environ 15m²",
+      "adults": "jusqu'à 1 adulte",
+      "description": "Loonie est compact mais confortable - la chambre parfaite pour l'alpiniste. Attendez-vous à des vues sur les sommets de votre prochaine mission, un bureau pour votre travail à distance et un grand lit simple confortable pour une bonne nuit de sommeil.",
+      "images": [
+        { "src": "../images/rooms/loonie/loonie-bedroom.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie-bathroom.jpg", "alt": "Loonie" },
+        { "src": "../images/rooms/loonie/loonie-desktop.jpg", "alt": "Loonie" }
+      ]
+    }
+  ],
+  "amenitiesTitle": "Expérience en chambre",
+  "amenitiesSubtitle": "et équipements de l'hôtel",
+  "amenities": [
+    "WIFI GRATUIT",
+    "LITS EN COTON",
+    "ARTICLES DE TOILETTE LUXUEUX",
+    "MÉNAGE QUOTIDIEN ET SERVICES DE BLANCHISSERIE/NETTOYAGE À SEC",
+    "CONCIERGERIE PAR APPLICATION",
+    "RESTAURANT ET SALLE DE CONFÉRENCE",
+    "PARKING INTÉRIEUR"
+  ]
+}

@@ -29,48 +29,7 @@
   "rooms": {
     "title": "Nos chambres",
     "intro": "Avec des catégories qui répondent aux exigences de chacun, toutes nos chambres récemment rénovées disposent de lits ultra-confortables, de bureaux pour votre travail à distance, de téléviseurs intelligents, de vues sur les sommets montagneux, de livres excentriques et d'œuvres d'art soigneusement sélectionnées.",
-    "bookNow": "Réserver maintenant",
-    "roomie": {
-      "name": "Roomie",
-      "capacity": "1 lit king size + 1 lit simple | env. 30m²",
-      "adults": "jusqu'à 3 adultes",
-      "description": "Avec beaucoup d'espace pour profiter de l'air des Alpes, Roomie est la chambre idéale pour ceux qui veulent cet espace supplémentaire pour s'étirer les jambes après une journée en montagne. Profitez de votre après-ski sur le grand balcon, de votre livre sur le canapé et de votre sommeil dans le lit king size confortable."
-    },
-    "biggie": {
-      "name": "Biggie",
-      "capacity": "2 lits king size | env. 45m²",
-      "adults": "jusqu'à 5 adultes + 1 enfant",
-      "description": "Avec un espace supplémentaire réparti sur deux chambres connectées, avec un lit king size dans chacune, Biggie est parfait pour les séjours prolongés avec des amis ou en famille. Après une journée complète d'exploration des montagnes, cette chambre, avec son grand balcon ensoleillé, vous réunit."
-    },
-    "suite": {
-      "name": "Big Buddie Suite",
-      "capacity": "1 lit king size + 1 canapé-lit | env. 40m²",
-      "adults": "jusqu'à 2 adultes + 2 enfants",
-      "description": "Située au dernier étage avec un balcon ensoleillé surplombant le Grand Combin, notre Big Buddie Suite est le nid idéal pour vos vacances alpines. Spacieuse, confortable et contemporaine, cette suite vous accueille avec des couettes luxueuses, un espace de détente et un bureau pour votre pause de travail."
-    },
-    "buddy": {
-      "name": "Buddie",
-      "capacity": "1 lit king size | Env. 20m²",
-      "adults": "jusqu'à 2 adultes.",
-      "description": "Confortable et contemporain, Buddie est le choix parfait pour ceux qui voyagent avec un partenaire ou un ami. Orientée au nord, la chambre offre une vue sur les sommets alpins, un lit king size, un bureau et tous les éléments essentiels dont vous aurez besoin."
-    },
-    "loonie": {
-      "name": "Loonie",
-      "capacity": "1 grand lit simple | env. 15m²",
-      "adults": "jusqu'à 1 adulte",
-      "description": "Loonie est compact mais confortable - la chambre parfaite pour l'alpiniste. Attendez-vous à des vues sur les sommets de votre prochaine mission, un bureau pour votre travail à distance et un grand lit simple confortable pour une bonne nuit de sommeil."
-    },
-    "amenitiesTitle": "Expérience en chambre",
-    "amenitiesSubtitle": "et équipements de l'hôtel",
-    "amenities": {
-      "wifi": "WIFI GRATUIT",
-      "beds": "LITS EN COTON",
-      "bathroom": "ARTICLES DE TOILETTE LUXUEUX",
-      "housekeeping": "MÉNAGE QUOTIDIEN ET SERVICES DE BLANCHISSERIE/NETTOYAGE À SEC",
-      "concierge": "CONCIERGERIE PAR APPLICATION",
-      "restaurant": "RESTAURANT ET SALLE DE CONFÉRENCE",
-      "parking": "PARKING INTÉRIEUR"
-    }
+    "bookNow": "Réserver maintenant"
   },
   "explore": {
     "title": "Explorer",
@@ -82,53 +41,6 @@
     "title": "Contact",
     "intro": "Avec une approche personnelle du service, tout le monde chez Shed. HOTEL est à votre disposition pour s'assurer que même vos demandes les plus spontanées sont satisfaites lors de la réservation de votre prochain séjour chez nous. Appelez-nous ou envoyez-nous un e-mail pour toute demande.",
     "restaurantQuestion": "Vous avez des questions sur notre restaurant ? Veuillez contacter"
-  },
-  "faq": {
-    "checkInOut": {
-      "question": "Quelles sont vos heures d'arrivée et de départ ?",
-      "answer": "L'enregistrement se fait à 15h et le départ à 11h. Nous demandons gentiment à tous les clients de s'enregistrer avant 21h, mais nous faisons des exceptions pour les arrivées tardives. Si vous prévoyez d'arriver après 21h, veuillez nous en informer à l'avance afin que nous puissions organiser un processus d'enregistrement fluide pour vous."
-    },
-    "ageLimit": {
-      "question": "Y a-t-il une limite d'âge pour les clients ?",
-      "answer": "Non, il n'y a pas de limite d'âge pour les clients. Nous accueillons les voyageurs de tous âges et nous nous efforçons de fournir un environnement sûr, confortable et accueillant pour tous ceux qui séjournent chez nous. Que vous soyez une famille avec des enfants, un voyageur solo ou un groupe d'amis, nous avons quelque chose pour tout le monde."
-    },
-    "pets": {
-      "question": "Les animaux de compagnie sont-ils autorisés à l'hôtel ?",
-      "answer": "Oui, nous acceptons les animaux de compagnie, mais des frais peuvent s'appliquer. Nous comprenons que les animaux font partie de la famille et nous voulons nous assurer qu'ils sont aussi confortables que leurs propriétaires pendant leur séjour. Si vous voyagez avec un animal de compagnie, veuillez nous en informer à l'avance afin que nous puissions prendre des dispositions pour vous et votre ami à quatre pattes. Des frais minimes peuvent s'appliquer pour ce service, mais cela en vaudra la peine d'avoir votre animal à vos côtés pendant votre séjour."
-    },
-    "breakfast": {
-      "question": "Le petit-déjeuner est-il inclus dans le tarif de la chambre ?",
-      "answer": "Oui, le petit-déjeuner est inclus dans le tarif de la chambre et est servi quotidiennement dans notre restaurant sur place."
-    },
-    "restaurant": {
-      "question": "Avez-vous un restaurant sur place ?",
-      "answer": "Oui, nous avons un restaurant situé à l'intérieur de l'hôtel. Consultez le lien pour plus d'informations"
-    },
-    "payment": {
-      "question": "Quel type de paiement acceptez-vous ?",
-      "answer": "Nous acceptons toutes les principales cartes de crédit et les paiements en espèces. Nous utilisons des systèmes de traitement des paiements sécurisés pour assurer la sécurité et la sûreté de vos informations personnelles et financières. Vous pouvez effectuer des paiements pour votre séjour ou pour tout service ou équipement supplémentaire en toute facilité et confiance, sachant que vos informations sont protégées en tout temps."
-    },
-    "airportTransfer": {
-      "question": "Proposez-vous des services de transfert aéroport ?",
-      "answer": "Nous nous sommes associés à des compagnies de transport locales pour des transferts aéroport fiables. Faites-nous savoir vos plans de voyage et nous organiserons le transport pour vous. Nous nous engageons à rendre votre expérience de voyage confortable et sans tracas."
-    },
-    "parking": {
-      "question": "Un parking est-il disponible pour les clients ?",
-      "answer": "Nous proposons un parking sur place dans un garage moyennant des frais, mais veuillez noter qu'il est limité et soumis à disponibilité. En raison de la disponibilité limitée des places de parking, nous vous recommandons de réserver votre place à l'avance pour assurer la disponibilité pendant votre séjour. Notre équipe se fera un plaisir de vous aider pour toute question ou préoccupation concernant le stationnement."
-    }
-  },
-  "goomah": {
-    "title": "Shed. GOOMAH",
-    "intro": "Shed. GOOMAH apporte la Petite Italie à Verbier, en mélangeant les favoris américains avec une cuisine italienne luxueuse. Tout est fait maison avec une touche créative sur les plats classiques. Ne manquez pas l'entrecôte au beurre de moelle osseuse ou les arancini au taleggio et à la truffe noire. Chez GOOMAH, chaque bouchée est élaborée avec passion et originalité.",
-    "bookTable": "Réservez votre table",
-    "groupBooking": "Pour les groupes de plus de 12 personnes, nous proposons une salle à manger privée avec un attrait intime et familial. Pour réserver cet espace, veuillez nous contacter directement par téléphone ou par e-mail.",
-    "favouritePick": "Notre choix préféré",
-    "takeAway": "À emporter",
-    "takeAwayText": "Commandez en ligne et venez chercher votre pizza.",
-    "orderTakeAway": "commander à emporter",
-    "delivery": "Livraison",
-    "deliveryText": "Nous serons heureux d'apporter la pizza à votre table, commandez ici pour la livraison.",
-    "orderDelivery": "commander la livraison"
   },
   "subscribe": {
     "placeholder": "Adresse e-mail",

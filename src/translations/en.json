@@ -29,48 +29,7 @@
   "rooms": {
     "title": "Our Rooms",
     "intro": "With categories that cater to everyone's demands, all our newly renovated rooms feature ultra-comfy beds, desks for your remote work, smart TVs, views over the mountain peaks, eccentric books and curated artworks.",
-    "bookNow": "Book Now",
-    "roomie": {
-      "name": "Roomie",
-      "capacity": "1 king size beds + 1 single bed | approx 30m²",
-      "adults": "up to 3 adults",
-      "description": "With lots of space to take in the air of the Alps, Roomie is the go-to room for those wanting that extra space to stretch out the legs after a day on the mountain. Enjoy your après on the big balcony, your book on the sofa and your sleep in the comfy king size bed."
-    },
-    "biggie": {
-      "name": "Biggie",
-      "capacity": "2 king size beds | approx 45m²",
-      "adults": "up to 5 adults + 1 children",
-      "description": "With extra space over two connected bedrooms, featuring a king size bed in each, Biggie is perfect for longer stays with friends or family. After a full day of exploring the mountains, this room, with its big sunny balcony, brings you back together."
-    },
-    "suite": {
-      "name": "Big Buddie Suite",
-      "capacity": "1 king size bed + 1 sofa bed | approx 40m²",
-      "adults": "up to 2 adults + 2 children",
-      "description": "Situated on the top floor with a sunny balcony overlooking the Grand Combin, our Big Buddie Suite is the ideal nest for your Alp holiday. Spacious, comfortable and contemporary, this suite welcomes you with luxurious duvets, an area for relaxation and a desk for your work break."
-    },
-    "buddy": {
-      "name": "Buddie",
-      "capacity": "1 King size bed | Approx 20m²",
-      "adults": "up to 2 adults.",
-      "description": "Comfortable and contemporary, Buddie is the perfect choice for those traveling with a partner or a friend. Oriented north, the room offers a view of Alpine peaks, a king size bed, a desk and all the essentials you'll need."
-    },
-    "loonie": {
-      "name": "Loonie",
-      "capacity": "1 large single bed | approx 15m²",
-      "adults": "up to 1 adult",
-      "description": "Loonie is compact yet comfy - the perfect room for the mountaineer. Expect views of your next mission's peaks, a desk for your remote work and a comfortable, large single bed for a good night's sleep."
-    },
-    "amenitiesTitle": "Guest Room Experience",
-    "amenitiesSubtitle": "and Hotel Amenities",
-    "amenities": {
-      "wifi": "FREE WIFI",
-      "beds": "BEDS DRESSED IN COTTON",
-      "bathroom": "LUXURIOUS BATHROOM AMENITIES",
-      "housekeeping": "DAILY HOUSEKEEPING & LAUNDRY/DRY CLEANING SERVICES",
-      "concierge": "APP CONCIERGE",
-      "restaurant": "RESTAURANT & CONFERENCE ROOM",
-      "parking": "INDOOR PARKING"
-    }
+    "bookNow": "Book Now"
   },
   "explore": {
     "title": "Explore",
@@ -82,53 +41,6 @@
     "title": "Contact",
     "intro": "With a personal approach to service, everyone at Shed. HOTEL is at your disposal to ensure that even your most spontaneous requests are met when booking your next stay with us. Just call or email us with any enquiries.",
     "restaurantQuestion": "Having questions about our restaurant? Please contact"
-  },
-  "faq": {
-    "checkInOut": {
-      "question": "What are your check-in and check-out times?",
-      "answer": "Check-in is at 3 PM and check-out is at 11 AM. We kindly request that all guests check-in before 9 PM, but we do make exceptions for late arrivals. If you plan to arrive after 9 PM, please inform us beforehand so that we can arrange a smooth check-in process for you."
-    },
-    "ageLimit": {
-      "question": "Is there an age limit for guests?",
-      "answer": "No, there is no age limit for guests. We welcome travelers of all ages, and we strive to provide a safe, comfortable, and welcoming environment for everyone who stays with us. Whether you are a family with children, a solo traveler, or a group of friends, we have something for everyone."
-    },
-    "pets": {
-      "question": "Are pets allowed in the hotel?",
-      "answer": "Yes, we do allow pets, but a fee may apply. We understand that pets are part of the family and we want to ensure that they are as comfortable as their owners during their stay. If you are traveling with a pet, please inform us in advance so that we can make arrangements for you and your furry friend. There may be a small fee for this service, but it will be worth it to have your pet by your side during your stay."
-    },
-    "breakfast": {
-      "question": "Is breakfast included in the room rate?",
-      "answer": "Yes, breakfast is included in the room rate and is served daily in our on-site restaurant."
-    },
-    "restaurant": {
-      "question": "Do you have a restaurant on-site?",
-      "answer": "Yes, we have a restaurant located inside the hotel. Check the link for more information"
-    },
-    "payment": {
-      "question": "What type of payment do you accept?",
-      "answer": "We accept all major credit cards and cash payments. We use secure payment processing systems to ensure the safety and security of your personal and financial information. You can make payments for your stay or for any additional services or amenities with ease and confidence, knowing that your information is protected at all times."
-    },
-    "airportTransfer": {
-      "question": "Do you offer airport transfer services?",
-      "answer": "We've partnered with local transportation companies for reliable airport transfers. Let us know your travel plans and we'll arrange transportation for you. We're committed to making your travel experience comfortable and hassle-free."
-    },
-    "parking": {
-      "question": "Is parking available for guests?",
-      "answer": "We offer on-site parking in a garage for a fee, but please note that it is limited and subject to availability. Due to the limited availability of parking spaces, we recommend reserving your spot in advance to ensure availability during your stay. Our team will be happy to assist you with any questions or concerns you may have about parking."
-    }
-  },
-  "goomah": {
-    "title": "Shed. GOOMAH",
-    "intro": "Shed. GOOMAH brings Little Italy to Verbier, blending American favourites with luxurious Italian cuisine. Everything is homemade with a creative twist on classic dishes. Don't miss the entrecôte with bone marrow butter or the taleggio and black truffle arancini. At GOOMAH each bite is crafted with passion and originality.",
-    "bookTable": "Book your table",
-    "groupBooking": "For groups larger than 12 guests, we offer a private dining room with an intimate homelike appeal. To book this space, please contact us directly via phone or email.",
-    "favouritePick": "Our Favourite Pick",
-    "takeAway": "Take Away",
-    "takeAwayText": "Order online and pick up your pizza.",
-    "orderTakeAway": "order take away",
-    "delivery": "Delivery",
-    "deliveryText": "We're happy to bring the pizza to your table, order here for delivery.",
-    "orderDelivery": "order delivery"
   },
   "subscribe": {
     "placeholder": "Email address",

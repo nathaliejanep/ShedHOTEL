@@ -1,0 +1,45 @@
+{
+  "faqs": [
+    {
+      "id": "checkInOut",
+      "question": "Quelles sont vos heures d'arrivée et de départ ?",
+      "answer": "L'enregistrement se fait à 15h et le départ à 11h. Nous demandons gentiment à tous les clients de s'enregistrer avant 21h, mais nous faisons des exceptions pour les arrivées tardives. Si vous prévoyez d'arriver après 21h, veuillez nous en informer à l'avance afin que nous puissions organiser un processus d'enregistrement fluide pour vous."
+    },
+    {
+      "id": "ageLimit",
+      "question": "Y a-t-il une limite d'âge pour les clients ?",
+      "answer": "Non, il n'y a pas de limite d'âge pour les clients. Nous accueillons les voyageurs de tous âges et nous nous efforçons de fournir un environnement sûr, confortable et accueillant pour tous ceux qui séjournent chez nous. Que vous soyez une famille avec des enfants, un voyageur solo ou un groupe d'amis, nous avons quelque chose pour tout le monde."
+    },
+    {
+      "id": "pets",
+      "question": "Les animaux de compagnie sont-ils autorisés à l'hôtel ?",
+      "answer": "Oui, nous acceptons les animaux de compagnie, mais des frais peuvent s'appliquer. Nous comprenons que les animaux font partie de la famille et nous voulons nous assurer qu'ils sont aussi confortables que leurs propriétaires pendant leur séjour. Si vous voyagez avec un animal de compagnie, veuillez nous en informer à l'avance afin que nous puissions prendre des dispositions pour vous et votre ami à quatre pattes. Des frais minimes peuvent s'appliquer pour ce service, mais cela en vaudra la peine d'avoir votre animal à vos côtés pendant votre séjour."
+    },
+    {
+      "id": "breakfast",
+      "question": "Le petit-déjeuner est-il inclus dans le tarif de la chambre ?",
+      "answer": "Oui, le petit-déjeuner est inclus dans le tarif de la chambre et est servi quotidiennement dans notre restaurant sur place."
+    },
+    {
+      "id": "restaurant",
+      "question": "Avez-vous un restaurant sur place ?",
+      "answer": "Oui, nous avons un restaurant situé à l'intérieur de l'hôtel. Consultez le lien pour plus d'informations",
+      "hasLink": true
+    },
+    {
+      "id": "payment",
+      "question": "Quel type de paiement acceptez-vous ?",
+      "answer": "Nous acceptons toutes les principales cartes de crédit et les paiements en espèces. Nous utilisons des systèmes de traitement des paiements sécurisés pour assurer la sécurité et la sûreté de vos informations personnelles et financières. Vous pouvez effectuer des paiements pour votre séjour ou pour tout service ou équipement supplémentaire en toute facilité et confiance, sachant que vos informations sont protégées en tout temps."
+    },
+    {
+      "id": "airportTransfer",
+      "question": "Proposez-vous des services de transfert aéroport ?",
+      "answer": "Nous nous sommes associés à des compagnies de transport locales pour des transferts aéroport fiables. Faites-nous savoir vos plans de voyage et nous organiserons le transport pour vous. Nous nous engageons à rendre votre expérience de voyage confortable et sans tracas."
+    },
+    {
+      "id": "parking",
+      "question": "Un parking est-il disponible pour les clients ?",
+      "answer": "Nous proposons un parking sur place dans un garage moyennant des frais, mais veuillez noter qu'il est limité et soumis à disponibilité. En raison de la disponibilité limitée des places de parking, nous vous recommandons de réserver votre place à l'avance pour assurer la disponibilité pendant votre séjour. Notre équipe se fera un plaisir de vous aider pour toute question ou préoccupation concernant le stationnement."
+    }
+  ]
+}

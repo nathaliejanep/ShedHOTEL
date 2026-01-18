@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Goomah.scss';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 import goomahHero from '../../assets/images/goomah/goomah-hero.jpg';
@@ -12,12 +13,25 @@ import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Reservation from '../../components/Reservation/Reservation';
 import { useLanguage } from '../../context/LanguageContext';
-import translationsEN from '../../translations/en.json';
-import translationsFR from '../../translations/fr.json';
 
 const Goomah = () => {
   const { language } = useLanguage();
-  const t = language === 'fr' ? translationsFR : translationsEN;
+  const [data, setData] = useState(null);
+
+  const getData = () => {
+    axios
+      .get(`api/goomah.${language}.json`)
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    getData();
+  }, [language]);
+
+  if (!data) return null;
   return (
     <div className='goomah'>
       {/* EDIT move to navbar */}
@@ -51,9 +65,9 @@ const Goomah = () => {
 
       <div className='container'>
         <section className='container__section goomah__about'>
-          <h1>{t.goomah.title}</h1>
+          <h1>{data.title}</h1>
           <p>
-            {t.goomah.intro}
+            {data.intro}
           </p>
 
           <p>
@@ -74,7 +88,7 @@ const Goomah = () => {
         </section>
 
         <section className='container__section goomah__book'>
-          <h2>{t.goomah.bookTable}</h2>
+          <h2>{data.bookTable}</h2>
           <Reservation />
           {/* <div className='goomah__book-btn'>
             <p>
@@ -89,7 +103,7 @@ const Goomah = () => {
           </div> */}
           <div className='goomah__book-groups'>
             <p>
-              {t.goomah.groupBooking}
+              {data.groupBooking}
             </p>
             <p>
               <a href='tel:+41782260226'>+41 78 226 02 26</a>
@@ -104,15 +118,14 @@ const Goomah = () => {
 
         <section className='card'>
           <div className='card__text goomah__monthly'>
-            <p className='font-sans'>{t.goomah.favouritePick}</p>
+            <p className='font-sans'>{data.featuredPizza.label}</p>
 
             <h2>
-              Robert <br />
-              De Nitro
+              {data.featuredPizza.name.split(' ')[0]} <br />
+              {data.featuredPizza.name.split(' ').slice(1).join(' ')}
             </h2>
             <p className='goomah__monthly-ingredients'>
-              San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja,
-              Pickled Jalapeños, Basil, Oregano
+              {data.featuredPizza.ingredients}
             </p>
           </div>
 
@@ -136,8 +149,8 @@ const Goomah = () => {
         </section>
         <section className='container goomah__menu'>
           <div className='goomah__menu-take-away'>
-            <h2>{t.goomah.takeAway}</h2>
-            <p>{t.goomah.takeAwayText}</p>
+            <h2>{data.takeAway.title}</h2>
+            <p>{data.takeAway.description}</p>
             <button
               className='goomah__menu-btn'
               onClick={() =>
@@ -147,13 +160,13 @@ const Goomah = () => {
                 )
               }
             >
-              {t.goomah.orderTakeAway}
+              {data.takeAway.buttonText}
             </button>
           </div>
           <div className='goomah__menu-delivery'>
-            <h2>{t.goomah.delivery}</h2>
+            <h2>{data.delivery.title}</h2>
             <p>
-              {t.goomah.deliveryText}
+              {data.delivery.description}
             </p>
             <button
               className='goomah__menu-btn'
@@ -164,7 +177,7 @@ const Goomah = () => {
                 )
               }
             >
-              {t.goomah.orderDelivery}
+              {data.delivery.buttonText}
             </button>
           </div>
         </section>

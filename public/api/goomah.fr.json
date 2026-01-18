@@ -1,0 +1,21 @@
+{
+  "title": "Shed. GOOMAH",
+  "intro": "Shed. GOOMAH apporte la Petite Italie à Verbier, en mélangeant les favoris américains avec une cuisine italienne luxueuse. Tout est fait maison avec une touche créative sur les plats classiques. Ne manquez pas l'entrecôte au beurre de moelle osseuse ou les arancini au taleggio et à la truffe noire. Chez GOOMAH, chaque bouchée est élaborée avec passion et originalité.",
+  "bookTable": "Réservez votre table",
+  "groupBooking": "Pour les groupes de plus de 12 personnes, nous proposons une salle à manger privée avec un attrait intime et familial. Pour réserver cet espace, veuillez nous contacter directement par téléphone ou par e-mail.",
+  "featuredPizza": {
+    "label": "Notre choix préféré",
+    "name": "Robert De Nitro",
+    "ingredients": "San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja, Jalapeños marinés, Basilic, Origan"
+  },
+  "takeAway": {
+    "title": "À emporter",
+    "description": "Commandez en ligne et venez chercher votre pizza.",
+    "buttonText": "commander à emporter"
+  },
+  "delivery": {
+    "title": "Livraison",
+    "description": "Nous serons heureux d'apporter la pizza à votre table, commandez ici pour la livraison.",
+    "buttonText": "commander la livraison"
+  }
+}

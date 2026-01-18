@@ -22,7 +22,7 @@ const Policy = () => {
       .catch((err) => console.log(err));
     return;
   };
-  console.log('data', data);
+
   useEffect(() => {
     getData();
   }, [language]);
