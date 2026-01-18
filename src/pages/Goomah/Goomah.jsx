@@ -125,32 +125,50 @@ const Goomah = () => {
           </div>
         </section>
 
-        {/* <section className='container__section goomah__menu'> */}
-        <section className='container goomah__section goomah__menu'>
-          <h2>Take Away & Delivery</h2>
-          <p>
-            We're happy to bring the pizza to your table, order online for
-            delivery.
-          </p>
-          <button
-            className='goomah__menu-btn'
-            onClick={() =>
-              window.open(
-                'https://mylightspeed.app/WUWNSVOE/C-ordering/menu',
-                '_blank'
-              )
-            }
-          >
-            order now
-          </button>
-          {/* <img
+        <section className='container__section goomah__menu'>
+          <img
             src={menu}
             alt='Take Away menu'
           />
           <img
             src={menu2}
             alt='Take Away menu'
-          /> */}
+          />
+        </section>
+        <section className='container goomah__menu'>
+          <div className='goomah__menu-take-away'>
+            <h2>Take Away</h2>
+            <p>Order online and pick up your pizza.</p>
+            <button
+              className='goomah__menu-btn'
+              onClick={() =>
+                window.open(
+                  'https://mylightspeed.app/OFELXQJO/C-ordering/menu',
+                  '_blank'
+                )
+              }
+            >
+              order take away
+            </button>
+          </div>
+          <div className='goomah__menu-delivery'>
+            <h2>Delivery</h2>
+            <p>
+              We're happy to bring the pizza to your table, order here for
+              delivery.
+            </p>
+            <button
+              className='goomah__menu-btn'
+              onClick={() =>
+                window.open(
+                  'https://mylightspeed.app/WUWNSVOE/C-ordering',
+                  '_blank'
+                )
+              }
+            >
+              order delivery
+            </button>
+          </div>
         </section>
 
         <section className='container__section goomah__soprano'>
