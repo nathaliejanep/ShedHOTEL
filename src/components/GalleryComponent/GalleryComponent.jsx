@@ -1,25 +1,26 @@
 import axios from 'axios';
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext, useCallback } from 'react';
 import './GalleryComponent.scss';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const GalleryComponent = ({ tab }) => {
   const [data, setData] = useState([]);
+  const { language } = useContext(LanguageContext);
 
-  const getData = () => {
+  const getData = useCallback(() => {
     axios
-      .get('api/gallery.json')
+      .get(`/api/gallery.${language}.json`)
       .then((res) => {
         // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));
-    return;
-  };
+  }, [language]);
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [getData]);
 
   return (
     <div className="gallery-wrapper">

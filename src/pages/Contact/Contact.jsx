@@ -1,7 +1,10 @@
 import React from 'react';
 import './Contact.scss';
 import contactHero from '../../assets/images/contact.jpg';
+import { useTranslation } from '../../context/LanguageContext';
+
 const Contact = () => {
+  const t = useTranslation();
   return (
     <div className="contact">
       <section className="hero">
@@ -14,22 +17,19 @@ const Contact = () => {
 
       <div className="container">
         <section className="container__section">
-          <h1>Contact</h1>
+          <h1>{t('contact.title')}</h1>
           <p>
-            With a personal approach to service, everyone at Shed. HOTEL is at
-            your disposal to ensure that even your most spontaneous requests are
-            met when booking your next stay with us. Just call or email us with
-            any enquiries.
+            {t('contact.description')}
           </p>
           <br />
           <p>
-            <a href="mailto:info@shedhotels.com">info@shedhotels.com</a>
+            <a href="mailto:info@shedhotels.com">{t('contact.email')}</a>
           </p>
           <br />
           <p>
-            Having questions about our restaurant? Please contact
+            {t('contact.restaurant.text')}
             <br />
-            <a href="tel:+41782260226">078 226 02 26</a>
+            <a href="tel:+41782260226">{t('contact.restaurant.phone')}</a>
           </p>
         </section>
       </div>

@@ -1,8 +1,10 @@
 import React from 'react';
 import './Button.scss';
 import { mewsReserveLink } from '../../utils/config';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Button = () => {
+  const t = useTranslation();
   return (
     <a
       href={mewsReserveLink}
@@ -10,7 +12,7 @@ const Button = () => {
       rel='noopener noreferrer'
       className='green-btn'
     >
-      Reserve
+      {t('button.reserve')}
     </a>
   );
 };

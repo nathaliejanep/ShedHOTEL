@@ -1,27 +1,28 @@
 import axios from 'axios';
 import React from 'react';
-import { useEffect, useContext, useState } from 'react';
+import { useEffect, useContext, useState, useCallback } from 'react';
 import { Context } from '../../context/SeasonContext';
+import { LanguageContext } from '../../context/LanguageContext';
 import './ActivityComponent.scss';
 
 const ActivityComponent = ({ tab }) => {
   const { winter } = useContext(Context);
+  const { language } = useContext(LanguageContext);
   const [data, setData] = useState([]);
 
-  const getData = () => {
+  const getData = useCallback(() => {
     axios
-      .get('api/activities.json')
+      .get(`/api/activities.${language}.json`)
       .then((res) => {
         // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));
-    return;
-  };
+  }, [language]);
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [getData]);
 
   return (
     <div>

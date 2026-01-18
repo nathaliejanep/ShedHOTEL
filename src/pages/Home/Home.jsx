@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
-import winterHero from '../../assets/images/home/view.jpg';
+import { useTranslation } from '../../context/LanguageContext';
 import summerHero from '../../assets/images/home/summer-hero.jpg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 import fasade from '../../assets/images/home/fasade-drawing.gif';
@@ -17,6 +17,7 @@ import Button from '../../components/Button/Button';
 
 const Home = () => {
   const { winter } = useContext(Context);
+  const t = useTranslation();
 
   const navigation = useNavigation();
 
@@ -72,14 +73,9 @@ const Home = () => {
       </section>
       <div className='container'>
         <section className='container__section'>
-          <h1>Welcome</h1>
+          <h1>{t('home.welcome.title')}</h1>
           <p>
-            Footsteps from the center of Verbier, Shed. HOTEL offers everything
-            you need and nothing you don't. Renovated and rebranded in 2022 by
-            three Swedish friends, the building now houses a vibrant, intimate
-            sportique hotel with spacious rooms, a stone-baked pizza restaurant,
-            a bold feel at home energy, and a personal team that caters to your
-            most spontaneous requests.
+            {t('home.welcome.text')}
           </p>
 
           <img
@@ -99,30 +95,25 @@ const Home = () => {
         </section>
 
         <section className='container__section'>
-          <h3>Stay with us</h3>
+          <h3>{t('home.stayWithUs.title')}</h3>
           <p>
-            Our selection of 16 newly renovated rooms feature contemporary
-            comfort in an alpine-scandi setting. In airy spaces, abstract art
-            and eccentric books co-exist with luxurious duvets, while Tom Dixon
-            carpets and views of craggy mountains create a contrast between
-            industrial landscapes and nature.
+            {t('home.stayWithUs.text')}
           </p>
         </section>
 
         <section className='card'>
           <div className='card__text'>
-            <h2>Shed. GROUP</h2>
+            <h2>{t('home.shedGroup.title')}</h2>
             <p>
-              It all started with a dream about turning our strong gastronomic
-              affinity into passion projects.
+              {t('home.shedGroup.text')}
               <br />
-              This is Shed. GROUP.
+              {t('home.shedGroup.subtext')}
             </p>
             <NavLink
-              to='/shedgoomah'
+              to={`/${window.location.pathname.split('/')[1] || 'en'}/shedgoomah`}
               className='card-link'
             >
-              Shed. GOOMAH
+              {t('home.shedGroup.goomah')}
             </NavLink>
             <a
               href='https://shedburgers.ch/'
@@ -130,7 +121,7 @@ const Home = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Shed. BURGERS
+              {t('home.shedGroup.burgers')}
             </a>
           </div>
           <div className='card__image'>
@@ -142,18 +133,16 @@ const Home = () => {
         </section>
 
         <section className='container__section home__ramble'>
-          <h3>Come ramble with us</h3>
+          <h3>{t('home.ramble.title')}</h3>
           <p>
-            Shed. HOTEL welcomes everyone to step into comfortable living with a
-            youthful and personal touch. It's your holiday home where you sleep
-            like a log, eat like De Niro and get treated like family.
+            {t('home.ramble.text')}
           </p>
           <Button />
         </section>
 
         {/* <Carousel /> */}
         <section className='container__section subscribe'>
-          <h3>Stay In Touch</h3>
+          <h3>{t('home.stayInTouch.title')}</h3>
           <Subscribe />
         </section>
       </div>

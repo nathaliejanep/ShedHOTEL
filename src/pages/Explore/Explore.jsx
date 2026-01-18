@@ -2,22 +2,19 @@ import React from 'react';
 import DynamicMenu from '../../components/DynamicContainer/DynamicContainer';
 import SeasonPicker from '../../components/SeasonPicker/SeasonPicker';
 import './Explore.scss';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Explore = () => {
-  const explore = ['Explore', 'Wine & Dine'];
+  const t = useTranslation();
+  const explore = [t('explore.tabs.explore'), t('explore.tabs.wineDine')];
 
   // console.log(active);
   return (
     <div className="container">
       <section className="container__section">
-        <h1>Explore</h1>
+        <h1>{t('explore.title')}</h1>
         <p>
-          Verbier's potential as a ski resort was not discovered until 1925 when
-          a group of mountaineers hiked up 15km for the sole purpose of skiing
-          back down again. Today, the place is one of the world's foremost
-          freeride paradises, equally down to earth and out of this world.
-          Explore the place where ski bums, families and celebs slalom, eat and
-          paraglide in harmony.
+          {t('explore.description')}
         </p>
         <div className="season-section">
           <SeasonPicker />

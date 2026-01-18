@@ -1,0 +1,51 @@
+{
+  "winterActivities": [
+    {
+      "title": "Slopes",
+      "text": "In the 4 Vallées playground, a single ticket gives you access to 412 km of bumps, steeps, trees and runs suitable for all levels of skill - whether you're here to ski, snowboard or toboggan.",
+      "imgUrl": "../images/winter-activities/slopes.jpg"
+    },
+    {
+      "title": "Town",
+      "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. So - whether you're looking for it melted, in a pot or on a burger, cheese lovers: we welcome you home.",
+      "imgUrl": "../images/winter-activities/town.jpg"
+    },
+    {
+      "title": "Sky",
+      "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+  "summerActivities": [
+    {
+      "title": "Trails",
+      "text": "Want to run trails, get on a downhill bike, swim in mountain lakes or spend the night in a hut? Thanks to a vast network of routes and hikes, this place allows you to lose yourself in nature.",
+      "imgUrl": "../images/summer-activities/trails.jpg"
+    },
+    {
+      "title": "Town",
+      "text": "Equally a mountain town and a modern hub, Verbier is a place for everyone. Summer here welcomes music festivals, a horse show, golf, yoga classes, kids camps, cows and edelweiss.",
+      "imgUrl": "../images/summer-activities/town.jpg"
+    },
+    {
+      "title": "Sky",
+      "text": "Despite Verbier being down to earth, some activities take you way above ground. In for a thrill? We'll set you up with your next tandem paraglide or skydive over the Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+
+  "restaurants": [
+    {
+      "title": "Shed. GOOMAH",
+      "text": "Indulge in American-Italian cuisine with a trendy twist at our Hotel. Savor delicious dishes and craft cocktails in a stylish setting. Book your table and experience dining like a boss.",
+      "imgUrl": "../images/eat/goomah.jpg",
+      "link": "https://shedburgers.ch/"
+    },
+    {
+      "title": "Shed. Burgers",
+      "text": "Satisfy your cravings after a long day on the slopes. Enjoy juicy burgers made with top-quality ingredients, paired with crafted cocktails in a relaxed and friendly atmosphere.",
+      "imgUrl": "../images/eat/shed.jpg",
+      "link": "https://www.shedhotels.com/goomah"
+    }
+  ]
+}

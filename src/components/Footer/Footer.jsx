@@ -1,14 +1,22 @@
 import React from 'react';
 import './Footer.scss';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useParams } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import shedFooterLogo from '../../assets/images/logos/shed-footer-logo.svg';
 import goomahLogo from '../../assets/images/logos/goomah-logo.svg';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Footer = () => {
   const path = useLocation().pathname;
+  const { lang } = useParams();
+  const t = useTranslation();
+
+  const getLocalizedPath = (path) => {
+    const currentLang = lang || window.location.pathname.split('/')[1] || 'en';
+    return `/${currentLang}${path}`;
+  };
   return (
     <div>
       <footer
@@ -62,10 +70,10 @@ const Footer = () => {
           </a>
         </div>
         <div className='footer-links'>
-          <NavLink to='/faq'>FAQ</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
-          <NavLink to='/terms'>Terms of Use</NavLink>
-          <NavLink to='/hotelpolicy'>Hotel Policy</NavLink>
+          <NavLink to={getLocalizedPath('/faq')}>{t('footer.faq')}</NavLink>
+          <NavLink to={getLocalizedPath('/contact')}>{t('footer.contact')}</NavLink>
+          <NavLink to={getLocalizedPath('/terms')}>{t('footer.terms')}</NavLink>
+          <NavLink to={getLocalizedPath('/hotelpolicy')}>{t('footer.policy')}</NavLink>
         </div>
       </footer>
     </div>

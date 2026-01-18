@@ -1,0 +1,51 @@
+{
+  "winterActivities": [
+    {
+      "title": "Pistes",
+      "text": "Dans le terrain de jeu des 4 Vallées, un seul billet vous donne accès à 412 km de bosses, pentes raides, arbres et pistes adaptées à tous les niveaux - que vous soyez là pour skier, faire du snowboard ou de la luge.",
+      "imgUrl": "../images/winter-activities/slopes.jpg"
+    },
+    {
+      "title": "Ville",
+      "text": "À la fois ville de montagne et hub moderne, Verbier est un endroit pour tous. Donc - que vous le cherchiez fondu, dans un pot ou sur un burger, amateurs de fromage : nous vous accueillons chez vous.",
+      "imgUrl": "../images/winter-activities/town.jpg"
+    },
+    {
+      "title": "Ciel",
+      "text": "Malgré que Verbier soit terre à terre, certaines activités vous emmènent bien au-dessus du sol. Envie de sensations fortes ? Nous vous organiserons votre prochain parapente en tandem ou saut en parachute au-dessus du Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+  "summerActivities": [
+    {
+      "title": "Sentiers",
+      "text": "Vous voulez courir sur les sentiers, faire du VTT, nager dans les lacs de montagne ou passer la nuit dans un refuge ? Grâce à un vaste réseau de routes et de randonnées, cet endroit vous permet de vous perdre dans la nature.",
+      "imgUrl": "../images/summer-activities/trails.jpg"
+    },
+    {
+      "title": "Ville",
+      "text": "À la fois ville de montagne et hub moderne, Verbier est un endroit pour tous. L'été ici accueille des festivals de musique, un spectacle équestre, du golf, des cours de yoga, des camps pour enfants, des vaches et des edelweiss.",
+      "imgUrl": "../images/summer-activities/town.jpg"
+    },
+    {
+      "title": "Ciel",
+      "text": "Malgré que Verbier soit terre à terre, certaines activités vous emmènent bien au-dessus du sol. Envie de sensations fortes ? Nous vous organiserons votre prochain parapente en tandem ou saut en parachute au-dessus du Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+
+  "restaurants": [
+    {
+      "title": "Shed. GOOMAH",
+      "text": "Savourez une cuisine américano-italienne avec une touche tendance dans notre hôtel. Dégustez des plats délicieux et des cocktails artisanaux dans un cadre élégant. Réservez votre table et vivez une expérience culinaire de chef.",
+      "imgUrl": "../images/eat/goomah.jpg",
+      "link": "https://shedburgers.ch/"
+    },
+    {
+      "title": "Shed. Burgers",
+      "text": "Satisfaites vos envies après une longue journée sur les pistes. Dégustez des burgers juteux préparés avec des ingrédients de première qualité, accompagnés de cocktails artisanaux dans une atmosphère détendue et conviviale.",
+      "imgUrl": "../images/eat/shed.jpg",
+      "link": "https://www.shedhotels.com/goomah"
+    }
+  ]
+}

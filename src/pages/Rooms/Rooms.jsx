@@ -7,8 +7,10 @@ import roomHero from '../../assets/images/rooms/room-hero.jpg';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import keyLogo from '../../assets/images/logos/key-logo.svg';
 import { mewsReserveLink } from '../../utils/config';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Rooms = () => {
+  const t = useTranslation();
   // const [data, setData] = useState([]);
   // const getData = () => {
   //   axios
@@ -89,12 +91,9 @@ const Rooms = () => {
 
       <div className='container'>
         <section className='container__section'>
-          <h1>Our Rooms</h1>
+          <h1>{t('rooms.title')}</h1>
           <p>
-            With categories that cater to everyone's demands, all our newly
-            renovated rooms feature ultra-comfy beds, desks for your remote
-            work, smart TVs, views over the mountain peaks, eccentric books and
-            curated artworks.
+            {t('rooms.description')}
           </p>
         </section>
         <div className='rooms__card-wrapper'>
@@ -103,17 +102,12 @@ const Rooms = () => {
               <ImageSlider slides={roomie} />
             </div>
             <div className='rooms__card-text'>
-              <h3>Roomie</h3>
+              <h3>{t('rooms.roomie.name')}</h3>
               <p className='rooms__card-text__capacity'>
-                1 king size beds + 1 single bed | approx 30m² <br /> up to 3
-                adults
+                {t('rooms.roomie.capacity')} <br /> {t('rooms.roomie.capacityLine2')}
               </p>
               <p>
-                With lots of space to take in the air of the Alps, Roomie is the
-                go-to room for those wanting that extra space to stretch out the
-                legs after a day on the mountain. Enjoy your après on the big
-                balcony, your book on the sofa and your sleep in the comfy king
-                size bed.
+                {t('rooms.roomie.description')}
               </p>
             </div>
             <a
@@ -122,7 +116,7 @@ const Rooms = () => {
               rel='noopener noreferrer'
               className='green-btn'
             >
-              Book Now
+              {t('rooms.bookNow')}
             </a>
           </div>
 
@@ -131,16 +125,13 @@ const Rooms = () => {
               <ImageSlider slides={biggie} />
             </div>
             <div className='rooms__card-text'>
-              <h3>Biggie</h3>
+              <h3>{t('rooms.biggie.name')}</h3>
               <p className='rooms__card-text__capacity'>
-                2 king size beds | approx 45m² <br />
-                up to 5 adults + 1 children
+                {t('rooms.biggie.capacity')} <br />
+                {t('rooms.biggie.capacityLine2')}
               </p>
               <p>
-                With extra space over two connected bedrooms, featuring a king
-                size bed in each, Biggie is perfect for longer stays with
-                friends or family. After a full day of exploring the mountains,
-                this room, with its big sunny balcony, brings you back together.
+                {t('rooms.biggie.description')}
               </p>
             </div>
             <a
@@ -149,7 +140,7 @@ const Rooms = () => {
               rel='noopener noreferrer'
               className='green-btn'
             >
-              Book Now
+              {t('rooms.bookNow')}
             </a>
           </div>
 
@@ -158,17 +149,13 @@ const Rooms = () => {
               <ImageSlider slides={suite} />
             </div>
             <div className='rooms__card-text'>
-              <h3>Big Buddie Suite</h3>
+              <h3>{t('rooms.suite.name')}</h3>
               <p className='rooms__card-text__capacity'>
-                1 king size bed + 1 sofa bed | approx 40m² <br />
-                up to 2 adults + 2 children
+                {t('rooms.suite.capacity')} <br />
+                {t('rooms.suite.capacityLine2')}
               </p>
               <p>
-                Situated on the top floor with a sunny balcony overlooking the
-                Grand Combin, our Big Buddie Suite is the ideal nest for your
-                Alp holiday. Spacious, comfortable and contemporary, this suite
-                welcomes you with luxurious duvets, an area for relaxation and a
-                desk for your work break.
+                {t('rooms.suite.description')}
               </p>
             </div>
             <a
@@ -177,7 +164,7 @@ const Rooms = () => {
               rel='noopener noreferrer'
               className='green-btn'
             >
-              Book Now
+              {t('rooms.bookNow')}
             </a>
           </div>
 
@@ -186,16 +173,13 @@ const Rooms = () => {
               <ImageSlider slides={buddy} />
             </div>
             <div className='rooms__card-text'>
-              <h3>Buddie</h3>
+              <h3>{t('rooms.buddy.name')}</h3>
               <p className='rooms__card-text__capacity'>
-                1 King size bed | Approx 20m² <br />
-                up to 2 adults.
+                {t('rooms.buddy.capacity')} <br />
+                {t('rooms.buddy.capacityLine2')}
               </p>
               <p>
-                Comfortable and contemporary, Buddie is the perfect choice for
-                those traveling with a partner or a friend. Oriented north, the
-                room offers a view of Alpine peaks, a king size bed, a desk and
-                all the essentials you'll need.
+                {t('rooms.buddy.description')}
               </p>
             </div>
             <a
@@ -204,7 +188,7 @@ const Rooms = () => {
               rel='noopener noreferrer'
               className='green-btn'
             >
-              Book Now
+              {t('rooms.bookNow')}
             </a>
           </div>
 
@@ -213,16 +197,13 @@ const Rooms = () => {
               <ImageSlider slides={loonie} />
             </div>
             <div className='rooms__card-text'>
-              <h3>Loonie</h3>
+              <h3>{t('rooms.loonie.name')}</h3>
               <p className='rooms__card-text__capacity'>
-                1 large single bed | approx 15m² <br />
-                up to 1 adult
+                {t('rooms.loonie.capacity')} <br />
+                {t('rooms.loonie.capacityLine2')}
               </p>
               <p>
-                Loonie is compact yet comfy - the perfect room for the
-                mountaineer. Expect views of your next mission's peaks, a desk
-                for your remote work and a comfortable, large single bed for a
-                good night's sleep.
+                {t('rooms.loonie.description')}
               </p>
             </div>
             <a
@@ -231,7 +212,7 @@ const Rooms = () => {
               rel='noopener noreferrer'
               className='green-btn book-now'
             >
-              Book Now
+              {t('rooms.bookNow')}
             </a>
           </div>
         </div>
@@ -242,17 +223,15 @@ const Rooms = () => {
             alt='Logo of Key'
           />
           <h3>
-            <span>Guest Room Experience</span>
-            <span>and Hotel Amenities</span>
+            <span>{t('rooms.amenities.title')}</span>
+            <span>{t('rooms.amenities.titleLine2')}</span>
           </h3>
           <p>
-            <span>FREE WIFI</span>
-            <span>BEDS DRESSED IN COTTON</span>
-            <span>LUXURIOUS BATHROOM AMENITIES</span>
-            <span>DAILY HOUSEKEEPING & LAUNDRY/DRY CLEANING SERVICES</span>
-            <span>APP CONCIERGE</span>
-            <span>RESTAURANT & CONFERENCE ROOM</span>
-            <span>INDOOR PARKING</span>
+            {Array.isArray(t('rooms.amenities.items')) ? (
+              t('rooms.amenities.items').map((item, index) => (
+                <span key={index}>{item}</span>
+              ))
+            ) : null}
           </p>
         </section>
         {/* DYNAMIC SOLUTION */}

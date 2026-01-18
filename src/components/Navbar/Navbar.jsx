@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useParams } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import { Squeeze as Hamburger } from 'hamburger-react';
 // import LinkNewWindow from '../../utils/linkNewWindow';
 import Button from '../Button/Button';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const path = useLocation();
+  const { lang } = useParams();
+  const t = useTranslation();
 
   // const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
@@ -22,26 +26,35 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const getLocalizedPath = (path) => {
+    const currentLang = lang || window.location.pathname.split('/')[1] || 'en';
+    return `/${currentLang}${path}`;
+  };
+
   return (
     <>
-      {path.pathname !== '/shedgoomah' ? (
+      {!path.pathname.includes('/shedgoomah') ? (
         <nav className='nav'>
           <div className='burger-season-wrapper'>
-            {path.pathname === '/' ? (
+            {path.pathname === `/${lang || 'en'}` || path.pathname === '/' ? (
               <div className='season-wrapper'>
                 <SeasonPicker />
+                <LanguageSelector />
               </div>
             ) : (
-              <NavLink
-                to='/'
-                className='nav-logo-phone'
-              >
-                <img
-                  src={ShedLogoBlack}
-                  alt='Shed Hotel Logo'
-                  onClick={closeMobileMenu}
-                />
-              </NavLink>
+              <>
+                <NavLink
+                  to={getLocalizedPath('')}
+                  className='nav-logo-phone'
+                >
+                  <img
+                    src={ShedLogoBlack}
+                    alt='Shed Hotel Logo'
+                    onClick={closeMobileMenu}
+                  />
+                </NavLink>
+                <LanguageSelector />
+              </>
             )}
 
             <Hamburger
@@ -52,7 +65,7 @@ const Navbar = () => {
 
           <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
             <NavLink
-              to='/'
+              to={getLocalizedPath('')}
               className={'nav-logo' + (open ? ' open' : '')}
               style={({ isActive }) =>
                 isActive ? { display: 'none' } : { display: 'block' }
@@ -67,7 +80,7 @@ const Navbar = () => {
 
             {/* Show this on expanded phone */}
             <NavLink
-              to='/'
+              to={getLocalizedPath('')}
               className={'nav-logo phone' + (open ? ' open' : '')}
             >
               <img
@@ -79,25 +92,25 @@ const Navbar = () => {
             <ul>
               <li>
                 <NavLink
-                  to='/rooms'
+                  to={getLocalizedPath('/rooms')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Rooms
+                  {t('navbar.rooms')}
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  to='/explore'
+                  to={getLocalizedPath('/explore')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Explore
+                  {t('navbar.explore')}
                 </NavLink>
               </li>
 
@@ -105,49 +118,49 @@ const Navbar = () => {
                 {/* Use this to open in new window - not working on deployment on Netlify, should work on goDaddy */}
                 {/* <LinkNewWindow to="/shedgoomah">Caffè Goomah</LinkNewWindow> */}
                 <NavLink
-                  to='/shedgoomah'
+                  to={getLocalizedPath('/shedgoomah')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Eat
+                  {t('navbar.eat')}
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  to='/gallery'
+                  to={getLocalizedPath('/gallery')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Gallery
+                  {t('navbar.gallery')}
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  to='/contact'
+                  to={getLocalizedPath('/contact')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  Contact
+                  {t('navbar.contact')}
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                  to='/faq'
+                  to={getLocalizedPath('/faq')}
                   className={({ isActive }) =>
                     'nav-links' + (isActive ? ' active' : ' inactive')
                   }
                   onClick={closeMobileMenu}
                 >
-                  FAQ
+                  {t('navbar.faq')}
                 </NavLink>
               </li>
               <li>

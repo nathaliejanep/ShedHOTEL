@@ -1,38 +1,29 @@
 import React from 'react';
 import '../../sassStyles/layouts/_terms-layout.scss';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Terms = () => {
+  const t = useTranslation();
   return (
     <div className="terms">
       <section className="terms__section">
-        <h1>Terms of Use</h1>
+        <h1>{t('terms.title')}</h1>
         <p>
-          Responsible for content, design, programming and operation:
-          <br /> Shed Hotel
-          <br /> Shed Hotels sarl
-          <br /> Tel: +41 77 269 97 95
-          <br /> Email: info@shedhotels.com
-          <br /> Website: www.shedhotels.com
-          <br /> VAT/uniform identification number: CHE-305.511.172
+          {t('terms.responsible.text')}
+          <br /> {t('terms.responsible.company')}
+          <br /> {t('terms.responsible.legal')}
+          <br /> {t('terms.responsible.tel')}: +41 77 269 97 95
+          <br /> {t('terms.responsible.email')}: info@shedhotels.com
+          <br /> {t('terms.responsible.website')}: www.shedhotels.com
+          <br /> {t('terms.responsible.vat')}
         </p>
-        <h3>Legal Disclaimer</h3>
+        <h3>{t('terms.legalDisclaimer.title')}</h3>
         <p>
-          Shed Hotel provides general information about the company on this
-          website, and reserves all rights to change or supplement the content
-          at any time and without prior justification. Data protection: All
-          information will be used only for the stated purposes and will not be
-          passed on to uninvolved third parties. Shed Hotel does not make any
-          warranty or representation regarding the content of this website in
-          terms of the availability of products, services, its completeness and
-          timeliness. The author expressly reserves the right to change parts of
-          or the entire website without prior notice and to add to, delete, or
-          cease publication temporarily or permanently.
+          {t('terms.legalDisclaimer.text')}
         </p>
-        <h3>Liability for Links</h3>
+        <h3>{t('terms.liability.title')}</h3>
         <p>
-          Despite careful content control, we assume no liability for the
-          content of links to third-party websites. The content of the linked
-          pages are the sole responsibility of their operators.
+          {t('terms.liability.text')}
         </p>
 
         <h2>Privacy Policy</h2>

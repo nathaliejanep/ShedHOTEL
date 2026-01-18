@@ -1,15 +1,11 @@
-import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import './Subscribe.scss';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Subscribe = () => {
   const [email, setEmail] = useState('');
-  const handleSubmit = (event) => {
-    // event.preventDefault();
-    setEmail('');
-    // Implement the form submission logic here
-  };
+  const t = useTranslation();
 
   //   const handleSubmit = (event) => {
   //     event.preventDefault();
@@ -45,14 +41,14 @@ const Subscribe = () => {
         <input
           type="email"
           name="EMAIL"
-          placeholder="Email address"
+          placeholder={t('subscribe.placeholder')}
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           className="subscribe__input"
         />
         <button type="submit" className="subscribe__btn">
-          Subscribe
+          {t('subscribe.button')}
         </button>
 
         <input type="hidden" name="b_YOUR_UNIQUE_ID_YOUR_LIST_ID" value="" />

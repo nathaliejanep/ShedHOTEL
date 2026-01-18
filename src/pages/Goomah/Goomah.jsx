@@ -9,16 +9,23 @@ import menu from '../../assets/images/goomah/menu.svg';
 import menu2 from '../../assets/images/goomah/menu2.svg';
 import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import Reservation from '../../components/Reservation/Reservation';
+import { useTranslation } from '../../context/LanguageContext';
 
 const Goomah = () => {
+  const t = useTranslation();
+  const { lang } = useParams();
+  const getLocalizedPath = (path) => {
+    const currentLang = lang || window.location.pathname.split('/')[1] || 'en';
+    return `/${currentLang}${path}`;
+  };
   return (
     <div className='goomah'>
       {/* EDIT move to navbar */}
       <div className='goomah__nav'>
         <NavLink
-          to='/'
+          to={getLocalizedPath('')}
           className='goomah__nav-logo '
         >
           <img
@@ -46,13 +53,9 @@ const Goomah = () => {
 
       <div className='container'>
         <section className='container__section goomah__about'>
-          <h1>Shed. GOOMAH</h1>
+          <h1>{t('goomah.title')}</h1>
           <p>
-            Shed. GOOMAH brings Little Italy to Verbier, blending American
-            favourites with luxurious Italian cuisine. Everything is homemade
-            with a creative twist on classic dishes. Don't miss the entrecôte
-            with bone marrow butter or the taleggio and black truffle arancini.
-            At GOOMAH each bite is crafted with passion and originality.
+            {t('goomah.description')}
           </p>
 
           <p>
@@ -61,7 +64,7 @@ const Goomah = () => {
               target='_blank'
               rel='noreferrer'
             >
-              INSTAGRAM
+              {t('goomah.instagram')}
             </a>
           </p>
 
@@ -73,7 +76,7 @@ const Goomah = () => {
         </section>
 
         <section className='container__section goomah__book'>
-          <h2>Book your table</h2>
+          <h2>{t('goomah.bookTable.title')}</h2>
           <Reservation />
           {/* <div className='goomah__book-btn'>
             <p>
@@ -88,16 +91,14 @@ const Goomah = () => {
           </div> */}
           <div className='goomah__book-groups'>
             <p>
-              For groups larger than 12 guests, we offer a private dining room
-              with an intimate homelike appeal. To book this space, please
-              contact us directly via phone or email.
+              {t('goomah.bookTable.groups.text')}
             </p>
             <p>
-              <a href='tel:+41782260226'>+41 78 226 02 26</a>
+              <a href='tel:+41782260226'>{t('goomah.bookTable.groups.phone')}</a>
             </p>
             <p>
               <a href='mailto:goomah@shedhotels.com?subject=Booking Inquiry&body=Hello, I would like to make a reservation.'>
-                goomah@shedhotels.com
+                {t('goomah.bookTable.groups.email')}
               </a>
             </p>
           </div>
@@ -105,15 +106,14 @@ const Goomah = () => {
 
         <section className='card'>
           <div className='card__text goomah__monthly'>
-            <p className='font-sans'>Our Favourite Pick</p>
+            <p className='font-sans'>{t('goomah.monthly.label')}</p>
 
             <h2>
-              Robert <br />
-              De Nitro
+              {t('goomah.monthly.title')} <br />
+              {t('goomah.monthly.titleLine2')}
             </h2>
             <p className='goomah__monthly-ingredients'>
-              San Marzano, Fior Di Latte, Pecorino, Salami Piccante, 'Nduja,
-              Pickled Jalapeños, Basil, Oregano
+              {t('goomah.monthly.ingredients')}
             </p>
           </div>
 
@@ -137,8 +137,8 @@ const Goomah = () => {
         </section>
         <section className='container goomah__menu'>
           <div className='goomah__menu-take-away'>
-            <h2>Take Away</h2>
-            <p>Order online and pick up your pizza.</p>
+            <h2>{t('goomah.takeAway.title')}</h2>
+            <p>{t('goomah.takeAway.description')}</p>
             <button
               className='goomah__menu-btn'
               onClick={() =>
@@ -148,14 +148,13 @@ const Goomah = () => {
                 )
               }
             >
-              order take away
+              {t('goomah.takeAway.button')}
             </button>
           </div>
           <div className='goomah__menu-delivery'>
-            <h2>Delivery</h2>
+            <h2>{t('goomah.delivery.title')}</h2>
             <p>
-              We're happy to bring the pizza to your table, order here for
-              delivery.
+              {t('goomah.delivery.description')}
             </p>
             <button
               className='goomah__menu-btn'
@@ -166,7 +165,7 @@ const Goomah = () => {
                 )
               }
             >
-              order delivery
+              {t('goomah.delivery.button')}
             </button>
           </div>
         </section>
