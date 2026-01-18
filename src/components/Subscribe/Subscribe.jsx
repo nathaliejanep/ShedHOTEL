@@ -2,9 +2,15 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import './Subscribe.scss';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Subscribe = () => {
   const [email, setEmail] = useState('');
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
+  
   const handleSubmit = (event) => {
     // event.preventDefault();
     setEmail('');
@@ -45,14 +51,14 @@ const Subscribe = () => {
         <input
           type="email"
           name="EMAIL"
-          placeholder="Email address"
+          placeholder={t.subscribe.placeholder}
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           className="subscribe__input"
         />
         <button type="submit" className="subscribe__btn">
-          Subscribe
+          {t.subscribe.button}
         </button>
 
         <input type="hidden" name="b_YOUR_UNIQUE_ID_YOUR_LIST_ID" value="" />

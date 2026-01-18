@@ -1,0 +1,59 @@
+{
+  "winterActivities": [
+    {
+      "key": "Slopes",
+      "title": "Pistes",
+      "text": "Dans le terrain de jeu des 4 Vallées, un seul billet vous donne accès à 412 km de bosses, de pentes raides, de forêts et de pistes adaptées à tous les niveaux de compétence - que vous soyez là pour skier, faire du snowboard ou de la luge.",
+      "imgUrl": "../images/winter-activities/slopes.jpg"
+    },
+    {
+      "key": "Town",
+      "title": "Ville",
+      "text": "À la fois ville de montagne et centre moderne, Verbier est un endroit pour tous. Alors - que vous le cherchiez fondu, dans une casserole ou sur un burger, amateurs de fromage : nous vous accueillons chez vous.",
+      "imgUrl": "../images/winter-activities/town.jpg"
+    },
+    {
+      "key": "Sky",
+      "title": "Ciel",
+      "text": "Bien que Verbier soit terre-à-terre, certaines activités vous emmènent bien au-dessus du sol. Envie de sensations fortes ? Nous vous organiserons votre prochain vol en parapente tandem ou votre saut en parachute au-dessus du Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+  "summerActivities": [
+    {
+      "key": "Trails",
+      "title": "Sentiers",
+      "text": "Envie de courir sur des sentiers, de faire du VTT de descente, de nager dans des lacs de montagne ou de passer la nuit dans un refuge ? Grâce à un vaste réseau de routes et de randonnées, cet endroit vous permet de vous perdre dans la nature.",
+      "imgUrl": "../images/summer-activities/trails.jpg"
+    },
+    {
+      "key": "Town",
+      "title": "Ville",
+      "text": "À la fois ville de montagne et centre moderne, Verbier est un endroit pour tous. L'été ici accueille des festivals de musique, un spectacle équestre, du golf, des cours de yoga, des camps pour enfants, des vaches et des edelweiss.",
+      "imgUrl": "../images/summer-activities/town.jpg"
+    },
+    {
+      "key": "Sky",
+      "title": "Ciel",
+      "text": "Bien que Verbier soit terre-à-terre, certaines activités vous emmènent bien au-dessus du sol. Envie de sensations fortes ? Nous vous organiserons votre prochain vol en parapente tandem ou votre saut en parachute au-dessus du Grand Combin.",
+      "imgUrl": "../images/winter-activities/sky.jpg"
+    }
+  ],
+
+  "restaurants": [
+    {
+      "key": "Goomah",
+      "title": "Shed. GOOMAH",
+      "text": "Laissez-vous tenter par une cuisine italo-américaine avec une touche tendance dans notre hôtel. Savourez des plats délicieux et des cocktails artisanaux dans un cadre élégant. Réservez votre table et vivez une expérience culinaire de chef.",
+      "imgUrl": "../images/eat/goomah.jpg",
+      "link": "https://shedburgers.ch/"
+    },
+    {
+      "key": "Burgers",
+      "title": "Shed. Burgers",
+      "text": "Satisfaites vos envies après une longue journée sur les pistes. Dégustez des burgers juteux préparés avec des ingrédients de qualité supérieure, accompagnés de cocktails artisanaux dans une atmosphère décontractée et conviviale.",
+      "imgUrl": "../images/eat/shed.jpg",
+      "link": "https://www.shedhotels.com/goomah"
+    }
+  ]
+}

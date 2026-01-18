@@ -6,9 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import shedFooterLogo from '../../assets/images/logos/shed-footer-logo.svg';
 import goomahLogo from '../../assets/images/logos/goomah-logo.svg';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Footer = () => {
   const path = useLocation().pathname;
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
   return (
     <div>
       <footer
@@ -62,10 +67,10 @@ const Footer = () => {
           </a>
         </div>
         <div className='footer-links'>
-          <NavLink to='/faq'>FAQ</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
-          <NavLink to='/terms'>Terms of Use</NavLink>
-          <NavLink to='/hotelpolicy'>Hotel Policy</NavLink>
+          <NavLink to='/faq'>{t.footer.faq}</NavLink>
+          <NavLink to='/contact'>{t.footer.contact}</NavLink>
+          <NavLink to='/terms'>{t.footer.termsOfUse}</NavLink>
+          <NavLink to='/hotelpolicy'>{t.footer.hotelPolicy}</NavLink>
         </div>
       </footer>
     </div>

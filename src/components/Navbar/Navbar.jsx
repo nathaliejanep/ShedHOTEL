@@ -6,10 +6,18 @@ import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
 // import LinkNewWindow from '../../utils/linkNewWindow';
 import Button from '../Button/Button';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const path = useLocation();
+  const { language } = useLanguage();
+
+  // Load translations based on current language
+  const t = language === 'fr' ? translationsFR : translationsEN;
 
   // const toggleNav = () => setOpen(!open);
   const closeMobileMenu = () => setOpen(false);
@@ -85,7 +93,7 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Rooms
+                  {t.nav.rooms}
                 </NavLink>
               </li>
 
@@ -97,7 +105,7 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Explore
+                  {t.nav.explore}
                 </NavLink>
               </li>
 
@@ -111,7 +119,7 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Eat
+                  {t.nav.eat}
                 </NavLink>
               </li>
 
@@ -123,7 +131,7 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Gallery
+                  {t.nav.gallery}
                 </NavLink>
               </li>
 
@@ -135,7 +143,7 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Contact
+                  {t.nav.contact}
                 </NavLink>
               </li>
 
@@ -147,11 +155,15 @@ const Navbar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  FAQ
+                  {t.nav.faq}
                 </NavLink>
               </li>
+    
               <li>
                 <Button />
+              </li>
+              <li>
+                <LanguageSelector />
               </li>
             </ul>
           </div>

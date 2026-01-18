@@ -1,0 +1,42 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  button {
+    background: none;
+    border: none;
+    color: $black;
+    font-family: 'Untitled Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.active {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 2px solid $black;
+      outline-offset: 2px;
+    }
+  }
+
+  .separator {
+    color: $black;
+    font-size: 0.875rem;
+    opacity: 0.5;
+  }
+}

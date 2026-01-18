@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "rooms": "Chambres",
+    "explore": "Explorer",
+    "eat": "Restaurant",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "reserve": "Réserver"
+  },
+  "footer": {
+    "faq": "FAQ",
+    "contact": "Contact",
+    "termsOfUse": "Conditions d'utilisation",
+    "hotelPolicy": "Politique de l'hôtel"
+  },
+  "home": {
+    "welcome": "Bienvenue",
+    "welcomeText": "À quelques pas du centre de Verbier, Shed. HOTEL offre tout ce dont vous avez besoin et rien de superflu. Rénové et rebaptisé en 2022 par trois amis suédois, le bâtiment abrite désormais un hôtel sportique vibrant et intime avec des chambres spacieuses, un restaurant de pizzas au feu de bois, une énergie audacieuse comme à la maison et une équipe personnelle qui répond à vos demandes les plus spontanées.",
+    "stayWithUs": "Séjournez avec nous",
+    "stayWithUsText": "Notre sélection de 16 chambres récemment rénovées offre un confort contemporain dans un cadre alpin-scandinave. Dans des espaces aérés, l'art abstrait et les livres excentriques coexistent avec des couettes luxueuses, tandis que les tapis Tom Dixon et les vues sur les montagnes escarpées créent un contraste entre paysages industriels et nature.",
+    "shedGroup": "Shed. GROUP",
+    "shedGroupText": "Tout a commencé avec un rêve de transformer notre forte affinité gastronomique en projets passionnants.",
+    "shedGroupSubtext": "C'est Shed. GROUP.",
+    "comeRamble": "Venez vous balader avec nous",
+    "comeRambleText": "Shed. HOTEL accueille tout le monde pour entrer dans une vie confortable avec une touche jeune et personnelle. C'est votre maison de vacances où vous dormez comme un loir, mangez comme De Niro et êtes traité comme en famille.",
+    "stayInTouch": "Restez en contact"
+  },
+  "rooms": {
+    "title": "Nos chambres",
+    "intro": "Avec des catégories qui répondent aux exigences de chacun, toutes nos chambres récemment rénovées disposent de lits ultra-confortables, de bureaux pour votre travail à distance, de téléviseurs intelligents, de vues sur les sommets montagneux, de livres excentriques et d'œuvres d'art soigneusement sélectionnées.",
+    "bookNow": "Réserver maintenant",
+    "roomie": {
+      "name": "Roomie",
+      "capacity": "1 lit king size + 1 lit simple | env. 30m²",
+      "adults": "jusqu'à 3 adultes",
+      "description": "Avec beaucoup d'espace pour profiter de l'air des Alpes, Roomie est la chambre idéale pour ceux qui veulent cet espace supplémentaire pour s'étirer les jambes après une journée en montagne. Profitez de votre après-ski sur le grand balcon, de votre livre sur le canapé et de votre sommeil dans le lit king size confortable."
+    },
+    "biggie": {
+      "name": "Biggie",
+      "capacity": "2 lits king size | env. 45m²",
+      "adults": "jusqu'à 5 adultes + 1 enfant",
+      "description": "Avec un espace supplémentaire réparti sur deux chambres connectées, avec un lit king size dans chacune, Biggie est parfait pour les séjours prolongés avec des amis ou en famille. Après une journée complète d'exploration des montagnes, cette chambre, avec son grand balcon ensoleillé, vous réunit."
+    },
+    "suite": {
+      "name": "Big Buddie Suite",
+      "capacity": "1 lit king size + 1 canapé-lit | env. 40m²",
+      "adults": "jusqu'à 2 adultes + 2 enfants",
+      "description": "Située au dernier étage avec un balcon ensoleillé surplombant le Grand Combin, notre Big Buddie Suite est le nid idéal pour vos vacances alpines. Spacieuse, confortable et contemporaine, cette suite vous accueille avec des couettes luxueuses, un espace de détente et un bureau pour votre pause de travail."
+    },
+    "buddy": {
+      "name": "Buddie",
+      "capacity": "1 lit king size | Env. 20m²",
+      "adults": "jusqu'à 2 adultes.",
+      "description": "Confortable et contemporain, Buddie est le choix parfait pour ceux qui voyagent avec un partenaire ou un ami. Orientée au nord, la chambre offre une vue sur les sommets alpins, un lit king size, un bureau et tous les éléments essentiels dont vous aurez besoin."
+    },
+    "loonie": {
+      "name": "Loonie",
+      "capacity": "1 grand lit simple | env. 15m²",
+      "adults": "jusqu'à 1 adulte",
+      "description": "Loonie est compact mais confortable - la chambre parfaite pour l'alpiniste. Attendez-vous à des vues sur les sommets de votre prochaine mission, un bureau pour votre travail à distance et un grand lit simple confortable pour une bonne nuit de sommeil."
+    },
+    "amenitiesTitle": "Expérience en chambre",
+    "amenitiesSubtitle": "et équipements de l'hôtel",
+    "amenities": {
+      "wifi": "WIFI GRATUIT",
+      "beds": "LITS EN COTON",
+      "bathroom": "ARTICLES DE TOILETTE LUXUEUX",
+      "housekeeping": "MÉNAGE QUOTIDIEN ET SERVICES DE BLANCHISSERIE/NETTOYAGE À SEC",
+      "concierge": "CONCIERGERIE PAR APPLICATION",
+      "restaurant": "RESTAURANT ET SALLE DE CONFÉRENCE",
+      "parking": "PARKING INTÉRIEUR"
+    }
+  },
+  "explore": {
+    "title": "Explorer",
+    "intro": "Le potentiel de Verbier en tant que station de ski n'a été découvert qu'en 1925, lorsqu'un groupe d'alpinistes a parcouru 15 km à pied dans le seul but de skier pour redescendre. Aujourd'hui, l'endroit est l'un des paradis du freeride les plus importants au monde, à la fois terre-à-terre et hors du commun. Explorez l'endroit où les skieurs, les familles et les célébrités font du slalom, mangent et font du parapente en harmonie.",
+    "explore": "Explorer",
+    "wineDine": "Vin et repas"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Avec une approche personnelle du service, tout le monde chez Shed. HOTEL est à votre disposition pour s'assurer que même vos demandes les plus spontanées sont satisfaites lors de la réservation de votre prochain séjour chez nous. Appelez-nous ou envoyez-nous un e-mail pour toute demande.",
+    "restaurantQuestion": "Vous avez des questions sur notre restaurant ? Veuillez contacter"
+  },
+  "faq": {
+    "checkInOut": {
+      "question": "Quelles sont vos heures d'arrivée et de départ ?",
+      "answer": "L'enregistrement se fait à 15h et le départ à 11h. Nous demandons gentiment à tous les clients de s'enregistrer avant 21h, mais nous faisons des exceptions pour les arrivées tardives. Si vous prévoyez d'arriver après 21h, veuillez nous en informer à l'avance afin que nous puissions organiser un processus d'enregistrement fluide pour vous."
+    },
+    "ageLimit": {
+      "question": "Y a-t-il une limite d'âge pour les clients ?",
+      "answer": "Non, il n'y a pas de limite d'âge pour les clients. Nous accueillons les voyageurs de tous âges et nous nous efforçons de fournir un environnement sûr, confortable et accueillant pour tous ceux qui séjournent chez nous. Que vous soyez une famille avec des enfants, un voyageur solo ou un groupe d'amis, nous avons quelque chose pour tout le monde."
+    },
+    "pets": {
+      "question": "Les animaux de compagnie sont-ils autorisés à l'hôtel ?",
+      "answer": "Oui, nous acceptons les animaux de compagnie, mais des frais peuvent s'appliquer. Nous comprenons que les animaux font partie de la famille et nous voulons nous assurer qu'ils sont aussi confortables que leurs propriétaires pendant leur séjour. Si vous voyagez avec un animal de compagnie, veuillez nous en informer à l'avance afin que nous puissions prendre des dispositions pour vous et votre ami à quatre pattes. Des frais minimes peuvent s'appliquer pour ce service, mais cela en vaudra la peine d'avoir votre animal à vos côtés pendant votre séjour."
+    },
+    "breakfast": {
+      "question": "Le petit-déjeuner est-il inclus dans le tarif de la chambre ?",
+      "answer": "Oui, le petit-déjeuner est inclus dans le tarif de la chambre et est servi quotidiennement dans notre restaurant sur place."
+    },
+    "restaurant": {
+      "question": "Avez-vous un restaurant sur place ?",
+      "answer": "Oui, nous avons un restaurant situé à l'intérieur de l'hôtel. Consultez le lien pour plus d'informations"
+    },
+    "payment": {
+      "question": "Quel type de paiement acceptez-vous ?",
+      "answer": "Nous acceptons toutes les principales cartes de crédit et les paiements en espèces. Nous utilisons des systèmes de traitement des paiements sécurisés pour assurer la sécurité et la sûreté de vos informations personnelles et financières. Vous pouvez effectuer des paiements pour votre séjour ou pour tout service ou équipement supplémentaire en toute facilité et confiance, sachant que vos informations sont protégées en tout temps."
+    },
+    "airportTransfer": {
+      "question": "Proposez-vous des services de transfert aéroport ?",
+      "answer": "Nous nous sommes associés à des compagnies de transport locales pour des transferts aéroport fiables. Faites-nous savoir vos plans de voyage et nous organiserons le transport pour vous. Nous nous engageons à rendre votre expérience de voyage confortable et sans tracas."
+    },
+    "parking": {
+      "question": "Un parking est-il disponible pour les clients ?",
+      "answer": "Nous proposons un parking sur place dans un garage moyennant des frais, mais veuillez noter qu'il est limité et soumis à disponibilité. En raison de la disponibilité limitée des places de parking, nous vous recommandons de réserver votre place à l'avance pour assurer la disponibilité pendant votre séjour. Notre équipe se fera un plaisir de vous aider pour toute question ou préoccupation concernant le stationnement."
+    }
+  },
+  "goomah": {
+    "title": "Shed. GOOMAH",
+    "intro": "Shed. GOOMAH apporte la Petite Italie à Verbier, en mélangeant les favoris américains avec une cuisine italienne luxueuse. Tout est fait maison avec une touche créative sur les plats classiques. Ne manquez pas l'entrecôte au beurre de moelle osseuse ou les arancini au taleggio et à la truffe noire. Chez GOOMAH, chaque bouchée est élaborée avec passion et originalité.",
+    "bookTable": "Réservez votre table",
+    "groupBooking": "Pour les groupes de plus de 12 personnes, nous proposons une salle à manger privée avec un attrait intime et familial. Pour réserver cet espace, veuillez nous contacter directement par téléphone ou par e-mail.",
+    "favouritePick": "Notre choix préféré",
+    "takeAway": "À emporter",
+    "takeAwayText": "Commandez en ligne et venez chercher votre pizza.",
+    "orderTakeAway": "commander à emporter",
+    "delivery": "Livraison",
+    "deliveryText": "Nous serons heureux d'apporter la pizza à votre table, commandez ici pour la livraison.",
+    "orderDelivery": "commander la livraison"
+  },
+  "subscribe": {
+    "placeholder": "Adresse e-mail",
+    "button": "S'abonner"
+  },
+  "banner": {
+    "monday": "lundi",
+    "friday": "vendredi",
+    "late": "TARD",
+    "weekendSchedule": "samedi - dimanche 12:00 - 14:30 / 18:00 - TARD"
+  },
+  "season": {
+    "winter": "Hiver",
+    "summer": "Été"
+  },
+  "gallery": {
+    "intro": "Promenez-vous visuellement à travers notre lieu, nos gens et nos projets."
+  },
+  "policy": {
+    "title": "POLITIQUE DE L'HÔTEL Shed.",
+    "intro": "Nous nous efforçons d'offrir à nos clients une expérience hôtelière exceptionnellement propre, sûre et conviviale. La politique de l'hôtel/règlement intérieur suivante a été établie sur la base des normes de l'industrie, des procédures de gestion et d'exploitation, et de notre expérience personnelle de propriété et d'exploitation du Shed. HOTEL. Cette politique de l'hôtel/règlement intérieur est considérée comme faisant partie de notre accord de réservation avec vous. En tant que client de notre hôtel, en lisant et en signant votre enregistrement à l'hôtel, vous acceptez de respecter toutes nos politiques de l'hôtel/règlement intérieur, termes et conditions, et procédures. Cette politique de l'hôtel/règlement intérieur est présentée ici pour aider à promouvoir la sécurité et le plaisir de nos clients et pour s'assurer que chaque client est conscient des ententes entre le Shed. HOTEL et le client."
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "responsible": "Responsable du contenu, de la conception, de la programmation et de l'exploitation :",
+    "legalDisclaimer": "Avis juridique",
+    "legalDisclaimerText": "Shed Hotel fournit des informations générales sur l'entreprise sur ce site Web et se réserve tous les droits de modifier ou de compléter le contenu à tout moment et sans justification préalable. Protection des données : Toutes les informations ne seront utilisées qu'aux fins déclarées et ne seront pas transmises à des tiers non impliqués. Shed Hotel ne donne aucune garantie ou représentation concernant le contenu de ce site Web en termes de disponibilité des produits, services, son exhaustivité et son actualité. L'auteur se réserve expressément le droit de modifier des parties ou l'ensemble du site Web sans préavis et d'ajouter, de supprimer ou de cesser la publication temporairement ou définitivement.",
+    "liabilityLinks": "Responsabilité pour les liens",
+    "liabilityLinksText": "Malgré un contrôle minutieux du contenu, nous n'assumons aucune responsabilité pour le contenu des liens vers des sites Web tiers. Le contenu des pages liées relève de la seule responsabilité de leurs exploitants.",
+    "privacyPolicy": "Politique de confidentialité",
+    "introduction": "1. Introduction",
+    "introductionText": "En accédant à www.Shedhotels.com, vous pouvez nous fournir des informations personnelles telles que votre nom et prénom (pour une personne physique), le nom de l'entreprise (personne morale), l'adresse résidentielle et l'adresse de domicile, l'adresse e-mail, la profession et le statut professionnel (employé ou indépendant), votre fonction au sein de votre entreprise, votre âge et votre sexe, ainsi que l'adresse IP avec laquelle vous êtes connecté à Internet. Ces informations et la manière dont elles sont traitées sont protégées par la loi fédérale suisse sur la protection des données émise le 19 juin 1992 et, le cas échéant, par le nouveau règlement général sur la protection des données (RGPD) de l'Union européenne entré en vigueur le 25 mai 2018. Cette politique de confidentialité vise à garantir que vous êtes conscient des informations que nous traitons et à vous aider à comprendre la manière dont nous pouvons utiliser ces informations.",
+    "processingData": "2. Traitement de vos données",
+    "processingDataText": "Seules les informations que vous nous fournissez volontairement en tant que visiteur de notre site ou lorsque vous communiquez avec nous de toute autre manière et pour lesquelles vous donnez expressément votre consentement au traitement sont collectées et traitées par nous. Vous pouvez remplir un formulaire de contact via notre site Web dans lequel les informations suivantes sont demandées : nom, prénom, sexe, numéro de téléphone, adresse, adresse e-mail. Pour faciliter la réservation de chambres ou d'autres services, nous offrons la possibilité de réserver en ligne soit via des plateformes de réservation, soit directement sur notre site. Dans le cas de fournisseurs, vous trouverez un lien avec leur politique de confidentialité.",
+    "purpose": "3. Finalité du traitement",
+    "purposeText": "Les données personnelles que nous traitons sont utilisées dans le cadre de notre relation commerciale, ou plus généralement pour que nous puissions communiquer avec vous en envoyant des informations qui peuvent vous être pertinentes et tenir à jour notre liste de contacts et de clients. Nous ne vendons pas vos informations personnelles et ne les mettons pas à la disposition de tiers à l'exception des sous-traitants que nous pouvons utiliser pour le traitement des données. En collectant certaines de vos informations personnelles, le but est un objectif opérationnel pour répondre aux demandes et un objectif marketing pour envoyer des offres.",
+    "transfer": "4. Transfert d'informations",
+    "transferText": "Pour traiter vos données, ainsi que pour la maintenance et le support de nos systèmes informatiques, nous faisons appel à des sous-traitants (prestataires de services) basés en Suisse et à l'étranger. Lorsque les serveurs de nos sous-traitants sont situés à l'étranger, nous veillons à ce qu'ils soient installés dans un État où la législation en matière de protection des données est équivalente à la LFDP et au RGPD et que nos sous-traitants appliquent des mesures organisationnelles et techniques conformes aux deux derniers.",
+    "protection": "5. Mesures de protection des données",
+    "protectionText": "Nous nous engageons à assurer un haut niveau de sécurité en ce qui concerne la collecte, le traitement et la conservation des données en appliquant des mesures organisationnelles et techniques et en prenant toutes les précautions nécessaires et utiles en ce qui concerne la nature des données personnelles que vous pouvez accepter de nous fournir et les risques que leur traitement représente afin de maintenir la sécurité et en particulier d'empêcher qu'elles ne soient altérées, endommagées, détruites ou mises à la disposition de tiers non autorisés. Nous aimerions néanmoins attirer votre attention sur le fait qu'il est impossible de garantir une protection complète et nous vous suggérons d'appliquer de bonnes pratiques afin de contribuer à la sécurité de vos données.",
+    "storage": "6. Durée de conservation",
+    "storageText": "Nous conserverons les données de nature personnelle dans nos systèmes aussi longtemps que nécessaire pour le traitement prévu. Lorsque le traitement est terminé, vos données sont détruites.",
+    "cookies": "7. Cookies et plugins",
+    "cookiesText": "Notre site utilise des cookies et des plugins qui peuvent avoir tendance à enregistrer automatiquement des données. Leur utilisation rend la navigation sur le site plus agréable en améliorant son ergonomie en fonction des données collectées. Ces données peuvent également être utilisées à des fins statistiques, pour analyser le comportement des internautes et la géolocalisation dans le but de personnaliser notre offre commerciale. Lorsque vous naviguez sur notre site, l'ordinateur que vous utilisez dialogue avec un serveur qui lui fournit toutes les ressources nécessaires en enregistrant automatiquement chaque opération dans un fichier spécifique dans lequel l'ordinateur utilisé est identifié par son adresse IP. C'est ainsi que le navigateur que vous utilisez nous envoie certaines données standard, notamment sur le navigateur utilisé et ses fonctionnalités, le système d'exploitation de l'ordinateur, de la tablette ou du smartphone utilisé, les sites tiers (tels que Facebook) à partir desquels vous avez pu vous connecter ainsi que les dates et heures d'accès à notre site. Ces données et surtout l'adresse IP à partir de laquelle vous êtes connecté ne nous permettent pas de vous identifier par votre nom. Si vous ouvrez une page de notre site Web contenant un plugin de réseau social tel que Facebook, votre navigateur Internet établira une connexion directe avec le serveur du réseau social. Le contenu du plugin est directement transmis par le réseau social concerné à votre navigateur Internet et incorporé à la page Web par ce dernier. Grâce à l'inclusion de cookies sur les pages de notre site Web, le réseau social concerné est informé que vous avez consulté une ou plusieurs pages de notre site Web. Si vous êtes connecté à un réseau social lorsque vous visitez notre site, celui-ci est capable d'attribuer votre visite sur notre site à votre compte chez eux. Si vous interagissez avec les plugins, en cliquant sur le bouton \"J'aime\" par exemple, ou en commentant, les informations correspondantes sont envoyées directement par votre navigateur Internet au réseau social et enregistrées sur leurs serveurs. Pour comprendre la finalité et l'étendue de la collecte et du traitement des données par les réseaux sociaux dont vous êtes membre, ainsi que vos droits à cet égard et les options de paramétrage de votre compte afin que vous puissiez protéger votre vie privée, nous vous conseillons de consulter leur politique de confidentialité.",
+    "rights": "8. Vos droits",
+    "rightsText": "Sur la base des lois applicables, y compris le RGPD auquel certains droits sont étendus aux résidents suisses, vous disposez du droit suivant : Droit à l'information, droit d'accès aux données, droit de rectification de vos données, droit à l'oubli, droit à la limitation du traitement des données, droit à la portabilité des données et droit de s'opposer au traitement des données.",
+    "exercising": "9. Exercer vos droits et demandes d'information",
+    "exercisingText": "Si vous souhaitez exercer vos droits ou demander des informations, vous pouvez nous contacter par e-mail à info@shedhotels.com ou en utilisant notre formulaire de contact ou par courrier à l'adresse ci-dessous. Contrôleur : Shed Hotel / Shed Hotels Sarl (Rue de la poste 4, 1936, Verbier, Suisse)",
+    "copyrights": "Droits d'auteur",
+    "copyrightsText": "Le droit d'auteur ainsi que tous les autres droits sur les textes, images, photos ou fichiers du site Web appartiennent exclusivement à l'exploitant du site Web ou aux titulaires de droits cités. La reproduction d'éléments nécessite le consentement écrit des titulaires de droits d'auteur."
+  }
+}

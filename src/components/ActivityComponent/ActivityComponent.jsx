@@ -2,15 +2,17 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect, useContext, useState } from 'react';
 import { Context } from '../../context/SeasonContext';
+import { useLanguage } from '../../context/LanguageContext';
 import './ActivityComponent.scss';
 
 const ActivityComponent = ({ tab }) => {
   const { winter } = useContext(Context);
+  const { language } = useLanguage();
   const [data, setData] = useState([]);
 
   const getData = () => {
     axios
-      .get('api/activities.json')
+      .get(`api/activities.${language}.json`)
       .then((res) => {
         // console.log(res.data);
         setData(res.data);
@@ -21,7 +23,7 @@ const ActivityComponent = ({ tab }) => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [language]);
 
   return (
     <div>
@@ -32,7 +34,7 @@ const ActivityComponent = ({ tab }) => {
               <>
                 {data?.winterActivities?.map((activity, i) => (
                   <section key={i} className="card">
-                    <div className={`card__text winter ${activity.title}`}>
+                    <div className={`card__text winter ${activity.key}`}>
                       <h2>{activity.title}</h2>
                       <p>{activity.text}</p>
                     </div>
@@ -46,7 +48,7 @@ const ActivityComponent = ({ tab }) => {
               <>
                 {data?.summerActivities?.map((activity, i) => (
                   <section key={i} className="card">
-                    <div className={`card__text summer ${activity.title}`}>
+                    <div className={`card__text summer ${activity.key}`}>
                       <h2>{activity.title}</h2>
                       <p>{activity.text}</p>
                     </div>
@@ -64,7 +66,7 @@ const ActivityComponent = ({ tab }) => {
           <>
             {data?.restaurants?.map((restaurant, i) => (
               <section key={i} className="card">
-                <div className={`card__text ${restaurant.title}`}>
+                <div className={`card__text ${restaurant.key}`}>
                   <a href="https://shedburgers.ch/">
                     <h2>{restaurant.title}</h2>
                   </a>

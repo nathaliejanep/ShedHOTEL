@@ -11,8 +11,13 @@ import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Reservation from '../../components/Reservation/Reservation';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Goomah = () => {
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
   return (
     <div className='goomah'>
       {/* EDIT move to navbar */}
@@ -46,13 +51,9 @@ const Goomah = () => {
 
       <div className='container'>
         <section className='container__section goomah__about'>
-          <h1>Shed. GOOMAH</h1>
+          <h1>{t.goomah.title}</h1>
           <p>
-            Shed. GOOMAH brings Little Italy to Verbier, blending American
-            favourites with luxurious Italian cuisine. Everything is homemade
-            with a creative twist on classic dishes. Don't miss the entrecôte
-            with bone marrow butter or the taleggio and black truffle arancini.
-            At GOOMAH each bite is crafted with passion and originality.
+            {t.goomah.intro}
           </p>
 
           <p>
@@ -73,7 +74,7 @@ const Goomah = () => {
         </section>
 
         <section className='container__section goomah__book'>
-          <h2>Book your table</h2>
+          <h2>{t.goomah.bookTable}</h2>
           <Reservation />
           {/* <div className='goomah__book-btn'>
             <p>
@@ -88,9 +89,7 @@ const Goomah = () => {
           </div> */}
           <div className='goomah__book-groups'>
             <p>
-              For groups larger than 12 guests, we offer a private dining room
-              with an intimate homelike appeal. To book this space, please
-              contact us directly via phone or email.
+              {t.goomah.groupBooking}
             </p>
             <p>
               <a href='tel:+41782260226'>+41 78 226 02 26</a>
@@ -105,7 +104,7 @@ const Goomah = () => {
 
         <section className='card'>
           <div className='card__text goomah__monthly'>
-            <p className='font-sans'>Our Favourite Pick</p>
+            <p className='font-sans'>{t.goomah.favouritePick}</p>
 
             <h2>
               Robert <br />
@@ -137,8 +136,8 @@ const Goomah = () => {
         </section>
         <section className='container goomah__menu'>
           <div className='goomah__menu-take-away'>
-            <h2>Take Away</h2>
-            <p>Order online and pick up your pizza.</p>
+            <h2>{t.goomah.takeAway}</h2>
+            <p>{t.goomah.takeAwayText}</p>
             <button
               className='goomah__menu-btn'
               onClick={() =>
@@ -148,14 +147,13 @@ const Goomah = () => {
                 )
               }
             >
-              order take away
+              {t.goomah.orderTakeAway}
             </button>
           </div>
           <div className='goomah__menu-delivery'>
-            <h2>Delivery</h2>
+            <h2>{t.goomah.delivery}</h2>
             <p>
-              We're happy to bring the pizza to your table, order here for
-              delivery.
+              {t.goomah.deliveryText}
             </p>
             <button
               className='goomah__menu-btn'
@@ -166,7 +164,7 @@ const Goomah = () => {
                 )
               }
             >
-              order delivery
+              {t.goomah.orderDelivery}
             </button>
           </div>
         </section>

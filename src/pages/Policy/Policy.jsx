@@ -2,14 +2,19 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 import '../../sassStyles/layouts/_terms-layout.scss';
 
 const Policy = () => {
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
   const [data, setData] = useState([]);
 
   const getData = () => {
     axios
-      .get('api/policies.json')
+      .get(`api/policies.${language}.json`)
       .then((res) => {
         // console.log(res.data);
         setData(res.data);
@@ -17,28 +22,18 @@ const Policy = () => {
       .catch((err) => console.log(err));
     return;
   };
+  console.log('data', data);
   useEffect(() => {
     getData();
-  }, []);
+  }, [language]);
 
   return (
     <div className="terms">
       <section className="terms__section">
-        <h1>Shed. HOTEL POLICY</h1>
+        <h1>{t.policy.title}</h1>
 
         <p>
-          We strive to provide our guests with an exceptionally clean, safe, and
-          friendly hotel experience. The following Hotel Policy/House Rules have
-          been established based on industry standards, management and
-          operational procedures, and our personal experience of owning and
-          operating the Shed. HOTEL. These Hotel Policy/House Rules are
-          considered a part of our reservation agreement with you. As our hotel
-          guest, by reading and signing your hotel registration you are agreeing
-          to abide by all of our Hotel Policy/House Rules, terms and conditions,
-          and procedures. These Hotel Policy/House Rules are presented here to
-          help promote our guests' safety and enjoyment and to ensure that each
-          guest is aware of the understandings between the Shed. HOTEL and the
-          guest.
+          {t.policy.intro}
         </p>
       </section>
       <section className="terms__section">

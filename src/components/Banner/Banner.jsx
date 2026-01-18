@@ -1,12 +1,18 @@
 import React from 'react';
 import './Banner.scss';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Banner = () => {
-  const fromDay = 'monday';
-  const toDay = 'friday';
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
+
+  const fromDay = t.banner.monday;
+  const toDay = t.banner.friday;
   const fromTime = '18:00';
-  const toTime = 'LATE';
-  const fromWeekend = 'saturday - sunday 12:00 - 14:30 / 18:00 - LATE';
+  const toTime = t.banner.late;
+  const fromWeekend = t.banner.weekendSchedule;
 
   const bannerItems = Array(5).fill(null);
 

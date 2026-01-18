@@ -20,6 +20,7 @@ import { determineSeason } from './utils/determineSeason';
 import Footer from './components/Footer/Footer';
 import Policy from './pages/Policy/Policy';
 import Terms from './pages/Terms/Terms';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   // console.log(window.location.pathname);
@@ -75,9 +76,11 @@ function App() {
   );
 
   return (
-    <div className='App'>
-      <RouterProvider router={router} />
-    </div>
+    <LanguageProvider>
+      <div className='App'>
+        <RouterProvider router={router} />
+      </div>
+    </LanguageProvider>
   );
 }
 

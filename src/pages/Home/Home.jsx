@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
+import { useLanguage } from '../../context/LanguageContext';
 import winterHero from '../../assets/images/home/view.jpg';
 import summerHero from '../../assets/images/home/summer-hero.jpg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
@@ -14,9 +15,13 @@ import '../../sassStyles/layouts/_page-layout.scss';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Subscribe from '../../components/Subscribe/Subscribe';
 import Button from '../../components/Button/Button';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
 
 const Home = () => {
   const { winter } = useContext(Context);
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
 
   const navigation = useNavigation();
 
@@ -72,14 +77,9 @@ const Home = () => {
       </section>
       <div className='container'>
         <section className='container__section'>
-          <h1>Welcome</h1>
+          <h1>{t.home.welcome}</h1>
           <p>
-            Footsteps from the center of Verbier, Shed. HOTEL offers everything
-            you need and nothing you don't. Renovated and rebranded in 2022 by
-            three Swedish friends, the building now houses a vibrant, intimate
-            sportique hotel with spacious rooms, a stone-baked pizza restaurant,
-            a bold feel at home energy, and a personal team that caters to your
-            most spontaneous requests.
+            {t.home.welcomeText}
           </p>
 
           <img
@@ -99,24 +99,19 @@ const Home = () => {
         </section>
 
         <section className='container__section'>
-          <h3>Stay with us</h3>
+          <h3>{t.home.stayWithUs}</h3>
           <p>
-            Our selection of 16 newly renovated rooms feature contemporary
-            comfort in an alpine-scandi setting. In airy spaces, abstract art
-            and eccentric books co-exist with luxurious duvets, while Tom Dixon
-            carpets and views of craggy mountains create a contrast between
-            industrial landscapes and nature.
+            {t.home.stayWithUsText}
           </p>
         </section>
 
         <section className='card'>
           <div className='card__text'>
-            <h2>Shed. GROUP</h2>
+            <h2>{t.home.shedGroup}</h2>
             <p>
-              It all started with a dream about turning our strong gastronomic
-              affinity into passion projects.
+              {t.home.shedGroupText}
               <br />
-              This is Shed. GROUP.
+              {t.home.shedGroupSubtext}
             </p>
             <NavLink
               to='/shedgoomah'
@@ -142,18 +137,16 @@ const Home = () => {
         </section>
 
         <section className='container__section home__ramble'>
-          <h3>Come ramble with us</h3>
+          <h3>{t.home.comeRamble}</h3>
           <p>
-            Shed. HOTEL welcomes everyone to step into comfortable living with a
-            youthful and personal touch. It's your holiday home where you sleep
-            like a log, eat like De Niro and get treated like family.
+            {t.home.comeRambleText}
           </p>
           <Button />
         </section>
 
         {/* <Carousel /> */}
         <section className='container__section subscribe'>
-          <h3>Stay In Touch</h3>
+          <h3>{t.home.stayInTouch}</h3>
           <Subscribe />
         </section>
       </div>

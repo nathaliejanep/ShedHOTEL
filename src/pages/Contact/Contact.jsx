@@ -1,7 +1,14 @@
 import React from 'react';
 import './Contact.scss';
 import contactHero from '../../assets/images/contact.jpg';
+import { useLanguage } from '../../context/LanguageContext';
+import translationsEN from '../../translations/en.json';
+import translationsFR from '../../translations/fr.json';
+
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = language === 'fr' ? translationsFR : translationsEN;
+  
   return (
     <div className="contact">
       <section className="hero">
@@ -14,12 +21,9 @@ const Contact = () => {
 
       <div className="container">
         <section className="container__section">
-          <h1>Contact</h1>
+          <h1>{t.contact.title}</h1>
           <p>
-            With a personal approach to service, everyone at Shed. HOTEL is at
-            your disposal to ensure that even your most spontaneous requests are
-            met when booking your next stay with us. Just call or email us with
-            any enquiries.
+            {t.contact.intro}
           </p>
           <br />
           <p>
@@ -27,7 +31,7 @@ const Contact = () => {
           </p>
           <br />
           <p>
-            Having questions about our restaurant? Please contact
+            {t.contact.restaurantQuestion}
             <br />
             <a href="tel:+41782260226">078 226 02 26</a>
           </p>
