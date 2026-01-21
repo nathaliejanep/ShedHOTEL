@@ -20,13 +20,31 @@
   button {
     border: none;
     background: none;
-    color: $black;
+    color: $white;
     font-family: Untitled;
     font-size: 1rem;
     margin: 0;
+  
 
     &:first-child {
       margin-right: 2rem;
+      &.active-season {
+        color: $bagnesBlue;
+      }
+    }
+    &:last-child {
+      &.active-season {
+        color: $sunnyYellow;
+      }
+    }
+    &:hover {
+      color: $sunnyYellow;
+      &:first-child {
+        color: $bagnesBlue;
+      }
+      &:last-child {
+        color: $sunnyYellow;
+      }
     }
   }
 }
