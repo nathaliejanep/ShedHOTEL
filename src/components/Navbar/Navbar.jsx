@@ -10,6 +10,7 @@ import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import { useLanguage } from '../../context/LanguageContext';
 import translationsEN from '../../translations/en.json';
 import translationsFR from '../../translations/fr.json';
+import ReserveButton from '../ReserveButton/ReserveButton';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -171,8 +172,13 @@ const Navbar = () => {
             <li className='season-wrapper-menu'>
               <SeasonPicker />
             </li>
-              <li>
-                <LanguageSelector />
+            <li>
+              <LanguageSelector />
+            </li>
+            
+            {/* ReserveButton in menu on desktop */}
+              <li className='reserve-button'>
+                  <ReserveButton />
               </li>
             </ul>
           </div>
