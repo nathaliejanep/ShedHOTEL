@@ -3,7 +3,6 @@ import { NavLink, useNavigation } from 'react-router-dom';
 
 import { Context } from '../../context/SeasonContext';
 import { useLanguage } from '../../context/LanguageContext';
-import winterHero from '../../assets/images/home/view.jpg';
 import summerHero from '../../assets/images/home/summer-hero.jpg';
 import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 import fasade from '../../assets/images/home/fasade-drawing.gif';
@@ -14,7 +13,7 @@ import '../../sassStyles/layouts/_page-layout.scss';
 // import Carousel from '../../components/Carousel/Carousel';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Subscribe from '../../components/Subscribe/Subscribe';
-import Button from '../../components/Button/Button';
+import ReserveButton from '../../components/ReserveButton/ReserveButton';
 import translationsEN from '../../translations/en.json';
 import translationsFR from '../../translations/fr.json';
 
@@ -74,6 +73,20 @@ const Home = () => {
           src={shedLogoWhite}
           alt='Shed Hotel Logo'
         />
+        <nav className='hero-links'>
+          <NavLink to='/rooms' className='hero-links__item'>
+            {t.nav.rooms}
+          </NavLink>
+          <NavLink to='/shedgoomah' className='hero-links__item'>
+            {t.nav.eat}
+          </NavLink>
+          <NavLink to='/explore' className='hero-links__item'>
+            {t.nav.explore}
+          </NavLink>
+        </nav>
+        <div className='hero-button'>
+          <ReserveButton />
+        </div>
       </section>
       <div className='container'>
         <section className='container__section'>
@@ -141,7 +154,7 @@ const Home = () => {
           <p>
             {t.home.comeRambleText}
           </p>
-          <Button />
+          <ReserveButton />
         </section>
 
         {/* <Carousel /> */}
