@@ -103,6 +103,11 @@
       }
     }
   }
+  
+  // For Goomah page, always position burger on right
+  &.goomah-page .burger-season-wrapper {
+    justify-content: flex-end;
+  }
 
   // OPEN MENU
   &-menu {

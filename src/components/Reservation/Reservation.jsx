@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Reservation = () => {
+  const { language } = useLanguage();
   useEffect(() => {
     // Create the HostMe script element
     const script = document.createElement('script');
@@ -23,10 +25,11 @@ const Reservation = () => {
       {/* HostMe Widget: This is where the widget will render */}
       <hostme-widget-reservation
         data-hostme-id='32514'
-        data-widget-type='horizontal'
+        data-widget-type='vertical'
         data-time-select='step'
         data-allow-fast-booking='true'
         data-color-scheme='light'
+        data-preffered-language={language === 'fr' ? 'fr' : 'en'}
       ></hostme-widget-reservation>
     </div>
   );

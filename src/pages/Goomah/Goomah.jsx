@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Goomah.scss';
-import shedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 import goomahHero from '../../assets/images/goomah/goomah-hero.jpg';
 import goomahLogo from '../../assets/images//logos/goomah-logo.svg';
 import goomahMouth from '../../assets/images/logos/goomah-mouth.png';
@@ -10,13 +9,14 @@ import menu from '../../assets/images/goomah/menu.svg';
 import menu2 from '../../assets/images/goomah/menu2.svg';
 import mrSoprano from '../../assets/images/goomah/pizza-served.jpg';
 import Banner from '../../components/Banner/Banner';
-import { NavLink } from 'react-router-dom';
 import Reservation from '../../components/Reservation/Reservation';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Goomah = () => {
   const { language } = useLanguage();
   const [data, setData] = useState(null);
+  const [showEntrance, setShowEntrance] = useState(true);
+  const [contentVisible, setContentVisible] = useState(false);
 
   const getData = () => {
     axios
@@ -31,25 +31,41 @@ const Goomah = () => {
     getData();
   }, [language]);
 
+  useEffect(() => {
+    // Entrance animation sequence
+    if (showEntrance) {
+      // Make content visible immediately so it's ready when orange slides up
+      setContentVisible(true);
+      
+      // After logo animation and slide up completes, hide entrance overlay
+      const timer = setTimeout(() => {
+        setShowEntrance(false);
+      }, 2500); // Total animation time (1.5s pan + 1s slide up)
+
+      return () => clearTimeout(timer);
+    }
+  }, [showEntrance]);
+
   if (!data) return null;
   return (
-    <div className='goomah'>
-      {/* EDIT move to navbar */}
-      <div className='goomah__nav'>
-        <NavLink
-          to='/'
-          className='goomah__nav-logo '
-        >
-          <img
-            src={shedLogoWhite}
-            alt='Shed Hotel Logo'
-          />
-        </NavLink>
-      </div>
-
-      <section className='hero '>
+    <div className={`goomah ${contentVisible ? 'content-visible' : ''}`}>
+      {/* Entrance Animation Overlay */}
+      {showEntrance && (
+        <div className='goomah__entrance'>
+          <div className='goomah__entrance-logo-wrapper'>
+            <img
+              className='goomah__entrance-logo'
+              src={goomahLogo}
+              alt='Goomah Logo'
+            />
+          </div>
+        </div>
+      )}
+      
+      {/* Page Content */}
+      <section className='hero'>
         <img
-          className='hero-image '
+          className='hero-image'
           src={goomahHero}
           alt='Pizza making at Goomah'
         />
@@ -61,9 +77,11 @@ const Goomah = () => {
         />
       </section>
 
-      <Banner />
+      <div className='goomah__banner-wrapper'>
+        <Banner />
+      </div>
 
-      <div className='container'>
+      <div className='container goomah__container'>
         <section className='container__section goomah__about'>
           <h1>{data.title}</h1>
           <p>
@@ -87,7 +105,7 @@ const Goomah = () => {
           />
         </section>
 
-        <section className='container__section goomah__book'>
+        <section className='goomah__book'>
           <h2>{data.bookTable}</h2>
           <Reservation />
           {/* <div className='goomah__book-btn'>

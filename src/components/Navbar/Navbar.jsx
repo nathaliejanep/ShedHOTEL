@@ -62,17 +62,18 @@ const Navbar = () => {
 
   return (
     <>
-      {path.pathname !== '/shedgoomah' ? (
-        <nav className={`nav ${scrolled && !open ? 'scrolled' : ''}`}>
+      <nav className={`nav ${scrolled && !open ? 'scrolled' : ''} ${path.pathname === '/shedgoomah' ? 'goomah-page' : ''}`}>
           {/* Logo on left when scrolled */}
           <NavLink to='/' className={`nav-logo-left ${!open && (path.pathname !== '/' || scrolled) ? 'visible' : ''}`}>
             <img src={ShedLogoWhite} alt='Shed Hotel Logo' />
           </NavLink>
           
           <div className='burger-season-wrapper'>
-              <div className='season-wrapper'>
-                <SeasonPicker />
-              </div>
+              {path.pathname !== '/shedgoomah' && (
+                <div className='season-wrapper'>
+                  <SeasonPicker />
+                </div>
+              )}
             <Hamburger
               toggled={open}
               toggle={setOpen}
@@ -169,9 +170,11 @@ const Navbar = () => {
               </li>
                     
             {/* SeasonPicker in menu on mobile */}
-            <li className='season-wrapper-menu'>
-              <SeasonPicker />
-            </li>
+            {path.pathname !== '/shedgoomah' && (
+              <li className='season-wrapper-menu'>
+                <SeasonPicker />
+              </li>
+            )}
             <li>
               <LanguageSelector />
             </li>
@@ -183,9 +186,6 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-      ) : (
-        ''
-      )}
     </>
   );
 };

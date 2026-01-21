@@ -1,6 +1,112 @@
 @import '../../sassStyles/_mixins.scss';
 
 .goomah {
+  // Entrance Animation
+  &__entrance {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $signalRed;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 1s ease-out 1.5s forwards;
+
+    &-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-logo {
+      width: 80%;
+      height: auto;
+      animation: panIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      opacity: 0;
+      transform: translateX(-30px) translateY(20px) scale(0.9);
+    }
+  }
+
+  // Content visibility state - page is visible from start, just behind the orange overlay
+  .hero,
+  .goomah__banner-wrapper,
+  .goomah__container {
+    opacity: 1;
+  }
+
+  // Staggered animations for content sections when page becomes visible
+  &.content-visible {
+    .goomah__about {
+      animation: fadeInScale 0.6s ease-out 0.1s both;
+    }
+
+    .goomah__book {
+      animation: fadeInScale 0.6s ease-out 0.2s both;
+    }
+
+    .card {
+      animation: fadeInScale 0.6s ease-out 0.3s both;
+    }
+
+    .goomah__menu {
+      animation: fadeInScale 0.6s ease-out 0.4s both;
+    }
+
+    .goomah__soprano {
+      animation: fadeInScale 0.6s ease-out 0.5s both;
+    }
+  }
+
+  // Animations
+  @keyframes panIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px) translateY(20px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0) scale(1);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   &__nav {
     z-index: 999;
     width: 100%;
@@ -18,15 +124,24 @@
 
   .hero {
     height: calc(100vh - 50px);
+    position: relative;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    
     &-image {
       filter: brightness(60%);
+      transition: filter 0.3s ease-out;
     }
 
     &-logo {
+      position: absolute;
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 80%;
       height: auto;
       filter: none;
       z-index: 1;
+      transition: transform 0.3s ease-out;
     }
   }
 
@@ -44,6 +159,7 @@
     display: flex;
     flex-direction: column;
     background-color: $signalRed;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
     .mouth-logo {
       width: min(25vw, 300px);
@@ -78,11 +194,13 @@
   }
 
   &__book {
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background-color: $goomahBlue;
     color: $white;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
     p {
       font-family: 'Untitled Sans';
@@ -111,7 +229,8 @@
       }
     }
     .reservation-container {
-      width: 100%;
+      min-width: none;
+      max-width: 100%;
     }
     &-groups {
       display: flex;
@@ -126,6 +245,8 @@
 
   &__monthly {
     background-color: $goatBeige;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    
     h2 {
       font-family: 'Untitled Sans';
       text-transform: uppercase;
@@ -152,6 +273,7 @@
     align-items: stretch;
     width: 100%;
     background-color: $goomahGreen;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
     &-take-away,
     &-delivery {
@@ -214,6 +336,7 @@
     justify-content: center;
     align-items: center;
     background-color: $white;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
     img {
       height: 100%;
@@ -224,6 +347,12 @@
   }
 
   @include phone {
+    &__entrance {
+      &-logo {
+        width: min(80vw, 400px);
+      }
+    }
+
     .hero {
       height: calc(100vh - 155px);
     }
@@ -233,6 +362,7 @@
     }
 
     &__book {
+      padding: 40px 20px;
       &-btn {
         width: 100%;
       }
