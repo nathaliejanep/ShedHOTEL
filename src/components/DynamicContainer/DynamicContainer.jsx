@@ -66,7 +66,7 @@ const DynamicContainer = ({ items }) => {
         </ul>
       </div>
 
-      <div className={`${urlPath === '/explore' ? 'explore' : 'gallery'}`}>
+      <div className={`${urlPath === '/explore' ? 'activity-content' : 'gallery-content'}`}>
         {selectedTab()}
       </div>
     </div>

@@ -1,6 +1,9 @@
 @import '../../sassStyles/_mixins';
 
 .explore {
+  background-color: $forestGreen;
+  color: $white;
+  
   .hero {
     position: relative;
 
@@ -52,6 +55,11 @@
     }
   }
 
+  h2 {
+    font-size: toRem(32);
+    margin-bottom: 1.5rem;
+  }
+
   .season-section {
     margin: 2rem;
 
@@ -79,6 +87,10 @@
       }
     }
 
+    h2 {
+      font-size: toRem(24);
+      margin-bottom: 1rem;
+    }
     .season-section {
       margin-top: 1.5rem;
     }
