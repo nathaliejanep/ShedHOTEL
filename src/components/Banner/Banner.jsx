@@ -9,12 +9,11 @@ const Banner = () => {
   const t = language === 'fr' ? translationsFR : translationsEN;
 
   const fromDay = t.banner.monday;
-  const toDay = t.banner.friday;
+  const toDay = t.banner.sunday;
   const fromTime = '18:00';
   const toTime = t.banner.late;
-  const fromWeekend = t.banner.weekendSchedule;
 
-  const bannerItems = Array(5).fill(null);
+  const bannerItems = Array(8).fill(null);
 
   return (
     <div className='banner'>
@@ -22,9 +21,8 @@ const Banner = () => {
         {bannerItems.map((_, index) => (
           <React.Fragment key={index}>
             <span className='banner__day'>
-              {'\u00A0\u00A0\u00A0'} {fromDay} - {toDay}: {fromTime} - {toTime}
+              {'\u00A0\u00A0\u00A0'} {fromDay} - {toDay} {fromTime} - {toTime}
               {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}
-              {fromWeekend}
             </span>
           </React.Fragment>
         ))}

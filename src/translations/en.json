@@ -48,9 +48,8 @@
   },
   "banner": {
     "monday": "monday",
-    "friday": "friday",
-    "late": "LATE",
-    "weekendSchedule": "saturday - sunday 12:00 - 14:30 / 18:00 - LATE"
+    "sunday": "sunday",
+    "late": "late"
   },
   "season": {
     "winter": "Winter",
