@@ -8,9 +8,72 @@
   justify-content: center;
   font-family: 'Untitled Sans';
   background-color: $goatBeige;
+  color: $goatBeige;
   height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+
+  &.scrolled {
+    background-color: rgba($black, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  // Logo on left side
+  .nav-logo-left {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
   .season-wrapper {
     transform: translateX(2rem);
+    
+    // Hide on mobile
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  // SeasonPicker inside burger menu (mobile only)
+  .season-wrapper-menu {
+    display: none;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+  
+  &-menu.expanded .season-wrapper-menu {
+    opacity: 1;
+    animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation-delay: 0.15s;
   }
 
   .burger-season-wrapper {
@@ -18,11 +81,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    // On mobile, position hamburger on right
+    @media (max-width: 768px) {
+      justify-content: flex-end;
+    }
+    
     // BURGER / CLOSE
     .hamburger-react {
       z-index: 999;
       margin: 0;
       margin-right: 1rem;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+      
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
 
@@ -38,13 +116,19 @@
     z-index: 2;
     text-align: center;
     font-size: toRem(20);
-
-    // line-height: 3rem;
+    background-color: rgba($forestGreen, 0.6);
+    backdrop-filter: blur(10px);
     text-transform: uppercase;
-
-    background-color: $goatBeige; // maybe opacity
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     &.expanded {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+      
       .nav-links {
         margin-bottom: 1rem;
       }
@@ -53,30 +137,44 @@
         right: 2rem;
       }
 
-      // &.hidden {
-      //   display: flex;
-      // }
-      display: flex;
+      // Staggered animation for list items
+      ul li {
+        animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+        
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation-delay: #{0.1 + ($i * 0.05)}s;
+          }
+        }
+      }
+    }
+  }
+
+  // Keyframes for menu items
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
   // NAV LOGO PHONE - CLOSED
   .nav-logo-phone {
     transform: translateX(2rem);
+    transition: transform 0.3s ease;
 
-    // position: absolute;
-    // top: 0;
-    // margin-top: 2rem;
-
-    // &.hidden {
-    //   display: none;
-    // }
-    // &.open {
-    //   display: flex;
-    // }
     img {
       width: 150px;
       height: auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
     }
   }
 
@@ -84,25 +182,42 @@
   &-logo {
     position: absolute;
     top: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     &.open {
       margin-top: 1.5rem;
+      animation: fadeInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    // z-index: 999;
+
+    &.phone {
+      &.open {
+        animation: fadeInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
 
     &.hidden {
       display: none;
     }
 
-    // DELETE OPEN & I JSX
-    // &.open {
-    //   display: flex;
-    //   border: 10px solid dodgerblue;
-    // }
-
     img {
       width: 150px;
       height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
@@ -112,44 +227,81 @@
     li {
       margin: 0;
       white-space: nowrap;
+      opacity: 0;
+    }
+
+    // Dim non-hovered links
+    &:hover .nav-links {
+      opacity: 0.4;
+    }
+
+    &:hover .nav-links:hover {
+      opacity: 1;
     }
 
     .nav-links {
       text-decoration: none;
-      color: $black;
-
+      color: $white;
       display: inline-block;
       padding: 2%;
-      transition: all 1s;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
+      overflow: visible;
+      letter-spacing: 0.08em;
+      font-size: 1.1em;
+      opacity: 1;
+
+      // Modern gradient underline effect
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, $forestGreen, transparent);
+        transform: translateX(-50%);
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      // Glow effect on hover
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background-color: $sunnyYellow;
+        transform: translateX(-50%);
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+      }
 
       &.active {
-        border-bottom: 1px solid $black;
+        color: $forestGreen;
+        
+        &::before {
+          width: 100%;
+        }
       }
 
-      // &.inactive:hover::before {
-      // content: '';
-      // position: absolute;
-      // bottom: 0;
-      // left: 0;
-      // height: 0;
-      // width: 0;
-      // // z-index: 1;
-      // border-bottom: 1px solid $black;
-      // animation: grow 0.4s linear;
-      // animation-fill-mode: forwards;
-      // }
       &:hover {
-        color: $bagnesBlue;
+        color: $sunnyYellow;
+        transform: scale(1.05);
+        
+        &::before {
+          width: 100%;
+        }
+        
+        &::after {
+          width: 100%;
+          opacity: 0.6;
+        }
       }
 
-      // @keyframes grow {
-      //   100% {
-      //     width: 100%;
-      //   }
-      // }
-      &.inactive:hover {
-        // color: $black;
+      &:active {
+        transform: scale(0.98);
       }
 
       &.hidden {
@@ -159,69 +311,5 @@
   }
 }
 
-@media (min-width: 880px) {
-  .nav {
-    padding: 2rem;
-
-    margin: 10px 200px;
-    flex-direction: column;
-    height: 120px;
-
-    .season-wrapper {
-      transform: translateX(0);
-    }
-
-    .nav-logo-phone {
-      visibility: hidden;
-      img {
-        display: none;
-      }
-    }
-    // DELETE !!!!
-    // .burger-season-wrapper {
-    //   visibility: hidden;
-    //   img {
-    //     display: none;
-    //   }
-    // }
-
-    &-menu {
-      position: relative;
-      display: flex;
-      font-size: toRem(16);
-      // padding: 1rem;
-
-      // DESKTOP LOGO
-      .nav-logo {
-        margin-top: 1rem;
-        position: relative;
-
-        &.phone {
-          display: none;
-        }
-      }
-
-      ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        justify-items: center;
-        align-items: center;
-        padding: 1rem;
-        li {
-          width: 100%;
-          margin-right: 1rem;
-          text-align: center;
-        }
-      }
-    }
-    .hamburger-react {
-      visibility: hidden;
-      display: none;
-    }
-
-    .goomah__nav {
-      position: absolute;
-    }
-  }
-}
+// Navbar now uses burger menu on all screen sizes
+// Desktop media query removed to keep consistent burger menu UX

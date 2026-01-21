@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import ShedLogoBlack from '../../assets/images/logos/shed-logo-black.svg';
+import ShedLogoWhite from '../../assets/images/logos/shed-logo-white.svg';
 import SeasonPicker from '../SeasonPicker/SeasonPicker';
 import { Squeeze as Hamburger } from 'hamburger-react';
 // import LinkNewWindow from '../../utils/linkNewWindow';
-import Button from '../Button/Button';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import { useLanguage } from '../../context/LanguageContext';
 import translationsEN from '../../translations/en.json';
@@ -13,6 +13,7 @@ import translationsFR from '../../translations/fr.json';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const path = useLocation();
   const { language } = useLanguage();
 
@@ -30,28 +31,47 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Prevent body scroll when navbar is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to ensure scroll is restored
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [open]);
+
   return (
     <>
       {path.pathname !== '/shedgoomah' ? (
-        <nav className='nav'>
+        <nav className={`nav ${scrolled && !open ? 'scrolled' : ''}`}>
+          {/* Logo on left when scrolled */}
+          <NavLink to='/' className={`nav-logo-left ${!open && (path.pathname !== '/' || scrolled) ? 'visible' : ''}`}>
+            <img src={ShedLogoWhite} alt='Shed Hotel Logo' />
+          </NavLink>
+          
           <div className='burger-season-wrapper'>
-            {path.pathname === '/' ? (
               <div className='season-wrapper'>
                 <SeasonPicker />
               </div>
-            ) : (
-              <NavLink
-                to='/'
-                className='nav-logo-phone'
-              >
-                <img
-                  src={ShedLogoBlack}
-                  alt='Shed Hotel Logo'
-                  onClick={closeMobileMenu}
-                />
-              </NavLink>
-            )}
-
             <Hamburger
               toggled={open}
               toggle={setOpen}
@@ -59,7 +79,7 @@ const Navbar = () => {
           </div>
 
           <div className={open ? 'nav-menu expanded' : 'nav-menu'}>
-            <NavLink
+            {/* <NavLink
               to='/'
               className={'nav-logo' + (open ? ' open' : '')}
               style={({ isActive }) =>
@@ -71,7 +91,7 @@ const Navbar = () => {
                 alt='Shed Hotel Logo'
                 onClick={closeMobileMenu}
               />
-            </NavLink>
+            </NavLink> */}
 
             {/* Show this on expanded phone */}
             <NavLink
@@ -79,7 +99,7 @@ const Navbar = () => {
               className={'nav-logo phone' + (open ? ' open' : '')}
             >
               <img
-                src={ShedLogoBlack}
+                src={ShedLogoWhite}
                 alt='Shed Hotel Logo'
                 onClick={closeMobileMenu}
               />
@@ -146,22 +166,11 @@ const Navbar = () => {
                   {t.nav.contact}
                 </NavLink>
               </li>
-
-              <li>
-                <NavLink
-                  to='/faq'
-                  className={({ isActive }) =>
-                    'nav-links' + (isActive ? ' active' : ' inactive')
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  {t.nav.faq}
-                </NavLink>
-              </li>
-    
-              <li>
-                <Button />
-              </li>
+                    
+            {/* SeasonPicker in menu on mobile */}
+            <li className='season-wrapper-menu'>
+              <SeasonPicker />
+            </li>
               <li>
                 <LanguageSelector />
               </li>
