@@ -5,6 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import translationsEN from '../../translations/en.json';
 import translationsFR from '../../translations/fr.json';
 import './Explore.scss';
+import roomHero from '../../assets/images/explore/explore-hero.jpg';
 
 const Explore = () => {
   const { language } = useLanguage();
@@ -15,18 +16,26 @@ const Explore = () => {
 
   // console.log(active);
   return (
-    <div className="container">
-      <section className="container__section">
-        <h1>{t.explore.title}</h1>
-        <p>
-          {t.explore.intro}
-        </p>
-        <div className="season-section">
-          <SeasonPicker />
+    <div className='explore'>
+      <section className='hero'>
+        <img
+          className='explore-hero-image'
+          src={roomHero}
+          alt='Explore'
+        />
+        <div className="hero-content">
+          <h1>{t.explore.title}</h1>
+          <p>{t.explore.intro}</p>
         </div>
       </section>
 
-      <DynamicMenu items={explore} />
+      <div className="container">
+      <div className="season-section">
+        <h2 className='season-section__title'>Explore Verbier</h2>
+            <SeasonPicker />
+          </div>
+        <DynamicMenu items={explore} />
+      </div>
     </div>
   );
 };
