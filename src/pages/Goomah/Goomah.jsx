@@ -106,7 +106,8 @@ const Goomah = () => {
         </section>
 
         <section className='goomah__book'>
-          <h2>{data.bookTable}</h2>
+    
+          <div className='goomah__book-reservation'>
           <Reservation />
           {/* <div className='goomah__book-btn'>
             <p>
@@ -120,6 +121,7 @@ const Goomah = () => {
             </p>
           </div> */}
           <div className='goomah__book-groups'>
+          <h2>{data.bookTable}</h2>
             <p>
               {data.groupBooking}
             </p>
@@ -131,6 +133,7 @@ const Goomah = () => {
                 goomah@shedhotels.com
               </a>
             </p>
+          </div>
           </div>
         </section>
 
