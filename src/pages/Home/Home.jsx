@@ -158,10 +158,10 @@ const Home = () => {
         </section>
 
         {/* <Carousel /> */}
-        <section className='container__section subscribe'>
+        {/* <section className='container__section subscribe'>
           <h3>{t.home.stayInTouch}</h3>
           <Subscribe />
-        </section>
+        </section> */}
       </div>
     </div>
   );

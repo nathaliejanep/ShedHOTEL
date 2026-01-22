@@ -60,16 +60,21 @@ const Navbar = () => {
     };
   }, [open]);
 
+  // Pages where SeasonPicker should not be shown
+  const hideSeasonPicker = ['/shedgoomah', '/faq', '/hotelpolicy', '/terms'].includes(path.pathname);
+  
+
   return (
     <>
-      <nav className={`nav ${scrolled && !open ? 'scrolled' : ''} ${path.pathname === '/shedgoomah' ? 'goomah-page' : ''}`}>
+    {/* // makes burger menu on the right on certain pages */}
+      <nav className={`nav ${scrolled && !open ? 'scrolled' : ''} ${path.pathname === '/shedgoomah' ? 'goomah-page' : ''} ${hideSeasonPicker ? 'burger-right' : ''}`}> 
           {/* Logo on left when scrolled */}
           <NavLink to='/' className={`nav-logo-left ${!open && (path.pathname !== '/' || scrolled) ? 'visible' : ''}`}>
-            <img src={ShedLogoWhite} alt='Shed Hotel Logo' />
+            <img src={ShedLogoBlack} alt='Shed Hotel Logo' />
           </NavLink>
           
           <div className='burger-season-wrapper'>
-              {path.pathname !== '/shedgoomah' && (
+              {!hideSeasonPicker && (
                 <div className='season-wrapper'>
                   <SeasonPicker />
                 </div>
@@ -170,7 +175,7 @@ const Navbar = () => {
               </li>
                     
             {/* SeasonPicker in menu on mobile */}
-            {path.pathname !== '/shedgoomah' && (
+            {!hideSeasonPicker && (
               <li className='season-wrapper-menu'>
                 <SeasonPicker />
               </li>

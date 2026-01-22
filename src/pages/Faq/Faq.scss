@@ -1,6 +1,8 @@
 @import '../../sassStyles/_variables.scss';
 
 .faq {
+  padding-top: 120px; // Account for fixed navbar (100px) + extra spacing
+  
   p {
     margin-bottom: 3rem;
   }

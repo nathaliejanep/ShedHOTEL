@@ -1,0 +1,5 @@
+@import '../../sassStyles/_variables.scss';
+
+.gallery.container {
+  padding-top: 120px; // Account for fixed navbar (100px) + extra spacing
+}

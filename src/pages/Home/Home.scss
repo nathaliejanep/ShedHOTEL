@@ -90,7 +90,8 @@
   &__ramble {
     display: flex;
     flex-direction: column;
-
+    background-color: $sunnyYellow;
+    color: $forestGreen;
     a {
       margin-top: 1rem;
     }

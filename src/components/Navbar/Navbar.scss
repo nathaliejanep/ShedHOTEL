@@ -8,7 +8,7 @@
   justify-content: center;
   font-family: 'Untitled Sans';
   background-color: $goatBeige;
-  color: $goatBeige;
+  color: $forestGreen;
   height: 100px;
   position: fixed;
   top: 0;
@@ -106,6 +106,11 @@
   
   // For Goomah page, always position burger on right
   &.goomah-page .burger-season-wrapper {
+    justify-content: flex-end;
+  }
+  
+  // For Terms, Policy, and FAQ pages, position burger on right
+  &.burger-right .burger-season-wrapper {
     justify-content: flex-end;
   }
 

@@ -1,5 +1,7 @@
 @import '../_mixins.scss';
 .terms {
+  padding-top: 120px; // Account for fixed navbar (100px) + extra spacing
+  
   &__section {
     padding: 0 50px;
   }

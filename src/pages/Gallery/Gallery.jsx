@@ -12,7 +12,7 @@ const Gallery = () => {
   const galleries = ['Hotel', 'Rooms'];
 
   return (
-    <div className="container">
+    <div className="container gallery">
       <section className="container__section">
         <h1>{t.nav.gallery}</h1>
         <p>{t.gallery.intro}</p>
