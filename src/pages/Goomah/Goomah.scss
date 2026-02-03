@@ -125,8 +125,10 @@
   .hero {
     height: calc(100vh - 50px);
     position: relative;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
+
     &-image {
       filter: brightness(60%);
       transition: filter 0.3s ease-out;
@@ -159,7 +161,9 @@
     display: flex;
     flex-direction: column;
     background-color: $signalRed;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
 
     .mouth-logo {
       width: min(25vw, 300px);
@@ -200,7 +204,9 @@
     gap: 1rem;
     background-color: $goomahBlue;
     color: $white;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
 
     p {
       font-family: 'Untitled Sans';
@@ -230,7 +236,7 @@
     }
     &-reservation {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 1rem;
@@ -257,8 +263,10 @@
 
   &__monthly {
     background-color: $goatBeige;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
+
     h2 {
       font-family: 'Untitled Sans';
       text-transform: uppercase;
@@ -285,7 +293,9 @@
     align-items: stretch;
     width: 100%;
     background-color: $goomahGreen;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
 
     &-take-away,
     &-delivery {
@@ -348,7 +358,9 @@
     justify-content: center;
     align-items: center;
     background-color: $white;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
 
     img {
       height: 100%;

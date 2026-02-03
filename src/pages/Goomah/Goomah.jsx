@@ -36,7 +36,7 @@ const Goomah = () => {
     if (showEntrance) {
       // Make content visible immediately so it's ready when orange slides up
       setContentVisible(true);
-      
+
       // After logo animation and slide up completes, hide entrance overlay
       const timer = setTimeout(() => {
         setShowEntrance(false);
@@ -61,7 +61,7 @@ const Goomah = () => {
           </div>
         </div>
       )}
-      
+
       {/* Page Content */}
       <section className='hero'>
         <img
@@ -84,9 +84,7 @@ const Goomah = () => {
       <div className='container goomah__container'>
         <section className='container__section goomah__about'>
           <h1>{data.title}</h1>
-          <p>
-            {data.intro}
-          </p>
+          <p>{data.intro}</p>
 
           <p>
             <a
@@ -106,10 +104,10 @@ const Goomah = () => {
         </section>
 
         <section className='goomah__book'>
-    
           <div className='goomah__book-reservation'>
-          <Reservation />
-          {/* <div className='goomah__book-btn'>
+            <h2>{data.bookTable}</h2>
+            <Reservation />
+            {/* <div className='goomah__book-btn'>
             <p>
               <a
                 href='https://tables.hostmeapp.com/reserve/32514'
@@ -120,20 +118,17 @@ const Goomah = () => {
               </a>
             </p>
           </div> */}
-          <div className='goomah__book-groups'>
-          <h2>{data.bookTable}</h2>
-            <p>
-              {data.groupBooking}
-            </p>
-            <p>
-              <a href='tel:+41782260226'>+41 78 226 02 26</a>
-            </p>
-            <p>
-              <a href='mailto:goomah@shedhotels.com?subject=Booking Inquiry&body=Hello, I would like to make a reservation.'>
-                goomah@shedhotels.com
-              </a>
-            </p>
-          </div>
+            <div className='goomah__book-groups'>
+              <p>{data.groupBooking}</p>
+              <p>
+                <a href='tel:+41782260226'>+41 78 226 02 26</a>
+              </p>
+              <p>
+                <a href='mailto:goomah@shedhotels.com?subject=Booking Inquiry&body=Hello, I would like to make a reservation.'>
+                  goomah@shedhotels.com
+                </a>
+              </p>
+            </div>
           </div>
         </section>
 
@@ -177,7 +172,7 @@ const Goomah = () => {
               onClick={() =>
                 window.open(
                   'https://mylightspeed.app/OFELXQJO/C-ordering/menu',
-                  '_blank'
+                  '_blank',
                 )
               }
             >
@@ -186,15 +181,13 @@ const Goomah = () => {
           </div>
           <div className='goomah__menu-delivery'>
             <h2>{data.delivery.title}</h2>
-            <p>
-              {data.delivery.description}
-            </p>
+            <p>{data.delivery.description}</p>
             <button
               className='goomah__menu-btn'
               onClick={() =>
                 window.open(
                   'https://mylightspeed.app/WUWNSVOE/C-ordering',
-                  '_blank'
+                  '_blank',
                 )
               }
             >
