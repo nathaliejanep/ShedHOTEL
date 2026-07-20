@@ -47,8 +47,8 @@
     "button": "S'abonner"
   },
   "banner": {
-    "monday": "lundi",
-    "sunday": "dimanche",
+    "fromDay": "mercredi",
+    "toDay": "dimanche",
     "late": "tard"
   },
   "season": {

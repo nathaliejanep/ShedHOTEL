@@ -8,8 +8,8 @@ const Banner = () => {
   const { language } = useLanguage();
   const t = language === 'fr' ? translationsFR : translationsEN;
 
-  const fromDay = t.banner.monday;
-  const toDay = t.banner.sunday;
+  const fromDay = t.banner.fromDay;
+  const toDay = t.banner.toDay;
   const fromTime = '18:00';
   const toTime = t.banner.late;
 

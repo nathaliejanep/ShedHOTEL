@@ -307,7 +307,18 @@
     }
 
     &-take-away {
+      width: 100%;
       background-color: $signalRed;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       button:hover {
         background-color: #fff;
         color: $signalRed;

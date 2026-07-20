@@ -47,8 +47,8 @@
     "button": "Subscribe"
   },
   "banner": {
-    "monday": "monday",
-    "sunday": "sunday",
+    "fromDay": "wednesday",
+    "toDay": "sunday",
     "late": "late"
   },
   "season": {
